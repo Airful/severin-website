@@ -41,7 +41,7 @@ export default function Hero() {
             Over the last decade I&apos;ve guided thousands through Darkness
             Retreats, built and sold The Hermitage retreat center at Lake
             Atitlán, and walked my path as a monk, a father, and a man learning
-            to integrate it all. What I share doesn&apos;t come from theory —
+            to integrate it all. What I share doesn&apos;t come from theory 
             it comes from lived experience.
           </p>
 
