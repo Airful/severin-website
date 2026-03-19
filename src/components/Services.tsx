@@ -22,7 +22,7 @@ const services = [
   {
     id: "04",
     title: "Grief Work",
-image: "/Services/Griefs.png",
+    image: "/services/Griefs.png",
     highlighted: false,
   },
   {
