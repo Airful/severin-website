@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #C8A76D;
+  --gold-dark: #A8873D;
+  --off-white: #FAF8F5;
+  --black: #111111;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+/* Work With Me section — scoped styles */
+.work-section-bg {
+  background-image: url('/works.png');
+  background-size: 100%;
+  background-position: 99% 88%;
+  background-repeat: no-repeat;
+  height: 480px;
+  display: flex;
+  align-items: center;
+}
+
+.work-section-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding-left: 63px;
+}
+
+.work-section-btn {
+  max-width: 300px;
+  text-align: center;
+  background: #B59328;
+}
+
+@layer utilities {
+  .text-h1 {
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+  }
+  .text-h2 {
+    font-size: 56px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    font-weight: 400;
+  }
+  .text-h3 {
+    font-size: 32px;
+    line-height: 110%;
+    font-weight: 400;
+  }
+  .text-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FAF8F5;
+    font-family: var(--font-inter-tight);
+    letter-spacing: 0.08em;
+  }
+  .text-para {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: var(--font-inter-tight);
+  }
+}
