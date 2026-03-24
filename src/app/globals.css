@@ -9,7 +9,9 @@
   --black: #111111;
 }
 
-html {
+html,
+body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 

@@ -3,14 +3,14 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
-      className="relative w-full h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/BG.jpg')" }}
+      className="relative w-full h-screen bg-cover bg-top"
+      style={{ backgroundImage: "url('/BG.png')" }}
     >
       {/* Left-to-right dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent" />
+      <div className="" />
 
       {/* Content — left aligned inside 1400px container */}
-      <div className="relative z-10 h-full max-w-[1340px] mx-auto px-[40px] flex flex-col justify-center">
+      <div className="relative z-10 h-full max-w-[1340px] mx-auto px-5 md:px-[40px] flex flex-col justify-center">
         <div className="max-w-[600px]">
           {/* Label */}
           <p
@@ -24,13 +24,13 @@ export default function Hero() {
           <h1
             className="font-caslon text-white mb-6"
             style={{
-              fontSize: "72px",
+              fontSize: "clamp(42px, 7vw, 72px)",
               lineHeight: "110%",
               letterSpacing: "-0.04em",
               fontWeight: "400",
             }}
           >
-            Holding the Fire of Initiation.
+          Fire of Initiation
           </h1>
 
           {/* Body */}
@@ -38,11 +38,14 @@ export default function Hero() {
             className="font-abeezee text-white/75 mb-10"
             style={{ fontSize: "18px", lineHeight: "150%", maxWidth: "560px" }}
           >
-            Over the last decade I&apos;ve guided thousands through Darkness
-            Retreats, built and sold The Hermitage retreat center at Lake
-            Atitlán, and walked my path as a monk, a father, and a man learning
-            to integrate it all. What I share doesn&apos;t come from theory -
-            it comes from lived experience.
+         For over a decade, I have guided people through darkness retreats, deep transitions, and inner rebirth.My work is not theoretical. It is lived.I offer a grounded space to slow down, feel what is true, and meet the next step with clarity and courage.
+          </p>
+
+           <p
+            className="font-abeezee text-white/75 mb-10"
+            style={{ fontSize: "18px", lineHeight: "150%", maxWidth: "560px" }}
+          >
+     I support individuals and leaders through life transitions using somatic work, astrology, and 15 years of experience guiding deep initiatory processes.
           </p>
 
           {/* CTA */}

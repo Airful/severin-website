@@ -4,103 +4,108 @@ const services = [
   {
     id: "01",
     title: "Somatic Astrology",
-    image: "/services/Somatic.png",
-    highlighted: false,
+    image: "/Somatic.png",
   },
   {
     id: "02",
     title: "Dark Retreat Preparation & Integration",
-    image: "/services/Dark.png",
-    highlighted: false,
+    image: "/Dark.png",
   },
   {
     id: "03",
-    title: "Relationship Sessions",
-    image: "/services/Relationship.jpg",
-    highlighted: false,
+    title: "Astrology Sessions",
+    image: "/astrology.png",
   },
   {
     id: "04",
-    title: "Grief Work",
-    image: "/services/Griefs.png",
-    highlighted: false,
-  },
-  {
-    id: "05",
-    title: "Lilith Work: Shame, Sexuality & Wildness",
-    image: "/services/Lilith.png",
-    highlighted: false,
-  },
-  {
-    id: "06",
-    title: "Provider Sessions",
-    image: "/services/Provider.png",
-    highlighted: false,
+    title: "Men's Work",
+    image: "/men.png",
   },
 ];
 
+function ServiceCard({
+  id,
+  title,
+  image,
+}: {
+  id: string;
+  title: string;
+  image: string;
+}) {
+  return (
+    <div className="rounded-2xl overflow-hidden flex flex-col bg-[#C8A76D] shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl group cursor-pointer">
+      {/* Image */}
+      <div className="relative w-full h-[230px] sm:h-[270px] overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        {/* Number badge over image */}
+        <span className="absolute bottom-3 left-4 text-white/70 font-inter text-[13px] tracking-widest drop-shadow-sm">
+          {id}
+        </span>
+      </div>
+
+      {/* Content */}
+      <div className="p-6 flex flex-col flex-1 gap-3">
+        <h3
+          className="font-caslon text-black flex-1"
+          style={{
+            fontSize: "clamp(22px, 2.2vw, 30px)",
+            lineHeight: "115%",
+            letterSpacing: "-0.02em",
+          }}
+        >
+          {title}
+        </h3>
+        <Link
+          href="#"
+          className="inline-flex items-center gap-1 text-[13px] font-inter text-black hover:text-black transition-colors duration-200 underline underline-offset-4 w-fit"
+        >
+          Learn more →
+        </Link>
+      </div>
+    </div>
+  );
+}
+
 export default function Services() {
   return (
-    <section className="bg-[#161616] py-24 px-6" id="services">
+    <section className="bg-black py-24 px-6" id="services">
       <div className="max-w-[1340px] mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
-          <p className="text-label uppercase tracking-widest text-[#FAF8F5]/60 mb-3 opacity-60">
-            Real Transformations, Real People
+          <p
+            className="uppercase tracking-widest font-inter text-[12px] mb-4"
+            style={{ color: "rgba(250,248,245,0.5)" }}
+          >
+            Current Focus
           </p>
           <h2
-            className="font-caslon text-white mb-4"
-            style={{ fontSize: "clamp(40px, 5vw, 56px)", lineHeight: "110%", letterSpacing: "-0.04em" }}
+            className="font-caslon text-white mb-5"
+            style={{
+              fontSize: "clamp(40px, 5vw, 56px)",
+              lineHeight: "110%",
+              letterSpacing: "-0.04em",
+            }}
           >
-            Services
+            4 Areas
           </h2>
-          <p className="text-para text-white mx-auto">
-            I&apos;ve curated the most trusted, transformational darkness
-            retreats across the globe.
+          <p
+            className="font-inter text-[16px] leading-relaxed mx-auto"
+            style={{ maxWidth: "620px", color: "rgba(255,255,255,0.45)" }}
+          >
+            These are the four areas I work with most. Each one is evolving. If
+            you feel resonance, start with a conversation.
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        {/* Grid: 1 col mobile → 2 col desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {services.map((service) => (
-            <div
-              key={service.id}
-              className="rounded-2xl overflow-hidden flex flex-col bg-[#1a1a1a] text-white hover:bg-[#C8A76D] hover:text-black transition-all duration-300 group"
-            >
-              {/* Image */}
-              <div className="relative w-full h-[200px] overflow-hidden">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover"
-                />
-                {/* Number badge — top-left over image */}
-                <span className="absolute bottom-[12px] left-[12px] text-white/70 font-inter text-[14px]">
-                  {service.id}
-                </span>
-              </div>
-
-              {/* Content */}
-              <div className="p-6 flex flex-col flex-1">
-                <h3
-                  className="font-caslon mb-6 flex-1"
-                  style={{
-                    fontSize: "clamp(22px, 2.5vw, 32px)",
-                    lineHeight: "115%",
-                    maxWidth: "260px",
-                  }}
-                >
-                  {service.title}
-                </h3>
-                <Link
-                  href="#"
-                  className="text-sm font-inter flex items-center gap-1 underline underline-offset-2 text-white/60 group-hover:text-black/80 transition-colors"
-                >
-                  Learn more →
-                </Link>
-              </div>
-            </div>
+            <ServiceCard key={service.id} {...service} />
           ))}
         </div>
       </div>

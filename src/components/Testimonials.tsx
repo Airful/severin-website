@@ -4,18 +4,21 @@ const testimonials = [
     quote:
       '"Participating in the dark retreat allowed my nervous system to slowly unravel, giving me the most profound sense of peace and safety I haven\'t felt since childhood."',
     name: "Erika Lucivero",
+    image: "/Erika.png",
   },
   {
     stars: 5,
     quote:
       '"Severin acts as a guide to unlock new dimensions of thinking and break out of deep-rooted patterns to embody my highest, most integrated self."',
     name: "Neal Bakshi",
+    image: "/Neal.png",
   },
   {
     stars: 5,
     quote:
       '"For the first time in my life, I feel clearer than ever before—I now see that my gifts were right in front of me all along."',
     name: "Lauren Folan",
+    image: "/Lauren.png",
   },
 ];
 
@@ -31,36 +34,71 @@ function StarRating({ count }: { count: number }) {
   );
 }
 
+function TestimonialCard({
+  stars,
+  quote,
+  name,
+  image,
+}: {
+  stars: number;
+  quote: string;
+  name: string;
+  image: string;
+}) {
+  return (
+    <div className="bg-white/[0.04] rounded-2xl p-6 flex flex-col justify-between gap-6 border border-white/[0.08] shadow-lg transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]">
+      {/* Top: stars + quote */}
+      <div>
+        <StarRating count={stars} />
+        <p
+          className="font-inter text-[16px] sm:text-[18px] leading-relaxed"
+          style={{ color: "rgba(255, 255, 255, 0.55)" }}
+        >
+          {quote}
+        </p>
+      </div>
+
+      {/* Bottom: avatar + name */}
+      <div className="flex items-center gap-3 pt-2 border-white/[0.07]">
+        <img
+          src={image}
+          alt={name}
+          className="w-11 h-11 rounded-full object-cover shrink-0 ring-1 ring-white/10"
+        />
+        <span className="text-white font-inter font-semibold text-[15px] leading-tight">
+          {name}
+        </span>
+      </div>
+    </div>
+  );
+}
+
 export default function Testimonials() {
   return (
     <section className="bg-[#1a1a1a] py-20 px-6" id="testimonials">
       <div className="max-w-[1340px] mx-auto">
         <div className="text-center mb-14">
-          <p className="text-label uppercase tracking-widest tont-inter text-[rgba(250,248,245,0.56)] mb-3" style={{  opacity: 0.6, marginBottom:"20px" }}>
+          <p
+            className="uppercase tracking-widest font-inter text-[12px] mb-4"
+            style={{ color: "rgba(250,248,245,0.56)" }}
+          >
             Real Transformations, Real People
           </p>
           <h2
             className="font-caslon text-white"
-            style={{ fontSize: "clamp(36px, 5vw, 56px)", lineHeight: "110%", letterSpacing: "-0.04em" }}
+            style={{
+              fontSize: "clamp(36px, 5vw, 56px)",
+              lineHeight: "110%",
+              letterSpacing: "-0.04em",
+            }}
           >
-            What My Clients Are Saying
+            What Clients Say
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {testimonials.map((t, i) => (
-            <div
-              key={i}
-              className="bg-white/[0.01] rounded-[16px] p-[24px] flex flex-col transition-all duration-300 border border-transparent hover:border-white/20 hover:bg-white/[0.06]"
-            >
-              <StarRating count={t.stars} />
-              <p className=" font-inter text-[18px] leading-relaxed mb-6 flex-1" color="#ffffff6e" style={{ color: "rgba(255, 255, 255, 0.43)" }}>
-                {t.quote}
-              </p>
-              <p className="text-white font-inter font-semibold text-[18px]">
-                {t.name}
-              </p>
-            </div>
+            <TestimonialCard key={i} {...t} />
           ))}
         </div>
       </div>

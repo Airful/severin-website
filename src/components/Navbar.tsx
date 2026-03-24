@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 w-full bg-black/60 backdrop-blur-sm">
       {/* Inner container — 1400px centered, 40px horizontal padding */}
-      <div className="max-w-[1340px] mx-auto px-[40px] h-[72px] flex items-center justify-between">
+      <div className="max-w-[1340px] mx-auto px-5 md:px-[40px] h-[72px] flex items-center justify-between">
 
         {/* Logo icon only */}
         <Link href="/" className="flex items-center">
@@ -97,7 +97,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden max-w-[1340px] mx-auto px-[40px] pb-4 flex flex-col gap-4 border-t border-white/10">
+        <div className="md:hidden max-w-[1340px] mx-auto px-5 pb-4 flex flex-col gap-4 border-t border-white/10">
           {["About", "Darkness Retreat", "Services"].map((item) => (
             <Link
               key={item}
