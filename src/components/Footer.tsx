@@ -15,7 +15,7 @@ const bottomLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-black px-5 pb-6 pt-16 text-white sm:pt-20">
+    <footer className="bg-black px-5 pb-6 pt-8 text-white md:pt-16 lg:pt-20">
       <div className="mx-auto max-w-[1200px]">
 
         {/* TOP CTA */}

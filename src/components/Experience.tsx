@@ -14,7 +14,7 @@ export default function Experience() {
       
       </div>
 
-      <div className="relative z-10 max-w-[1340px] mx-auto px-6 py-24">
+      <div className="relative z-10 max-w-[1340px] mx-auto px-6 pt-16 pb-24 md:py-24">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 justify-between">
           {/* Left text */}
           <div className="flex-1 max-w-[660px]">

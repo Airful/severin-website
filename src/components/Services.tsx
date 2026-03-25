@@ -73,7 +73,7 @@ function ServiceCard({
 
 export default function Services() {
   return (
-    <section className="bg-black py-24 px-6" id="services">
+    <section className="bg-black pt-0 pb-12 md:py-24 px-6" id="services">
       <div className="max-w-[1340px] mx-auto">
         {/* Header */}
         <div className="text-center mb-14">

@@ -29,7 +29,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="bg-black py-24 px-6" id="faq">
+    <section className="bg-black pt-12 pb-0 md:py-24 px-6" id="faq">
       <div className="max-w-[1340px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-16 items-start">
 
