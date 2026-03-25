@@ -41,10 +41,9 @@ export default function Footer() {
             />
 
             <button
-              style={{ width: "180px" }}
               type="submit"
-              className="h-12 rounded-full bg-[#C8A76D] px-6 font-inter text-[15px] font-medium text-black 
-              transition-all duration-300 
+              className="h-12 w-full md:w-[180px] rounded-full bg-[#C8A76D] px-6 font-inter text-[15px] font-medium text-black
+              transition-all duration-300
               hover:bg-[#d4b57f] hover:scale-[1.05] hover:shadow-[0_0_20px_rgba(200,167,109,0.4)]"
             >
               Sign Up
@@ -53,7 +52,7 @@ export default function Footer() {
         </div>
 
         {/* CENTER */}
-        <div className="mt-20 text-center">
+        <div className="mt-4 md:mt-20 text-center">
           <img src="./logo.svg" alt="" style={{ margin: "0 auto" }} />
 
           {/* NAV */}

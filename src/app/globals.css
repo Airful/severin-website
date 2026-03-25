@@ -46,6 +46,13 @@ body {
   background: #B59328;
 }
 
+/* Mobile h2 typography */
+@media (max-width: 767px) {
+  h2 {
+    font-size: 30px !important;
+  }
+}
+
 @layer utilities {
   .text-h1 {
     font-size: 72px;
