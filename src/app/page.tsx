@@ -12,12 +12,9 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#111111]">
-      {/* Navbar is absolute-positioned over Hero — wrap in relative so it's scoped correctly */}
-      <div className="relative">
-        <Navbar />
-        <Hero />
-      </div>
+    <main className="min-h-screen bg-[#111111] pt-[90px]">
+      <Navbar />
+      <Hero />
 
       {/* Trusted bar — full width, no container (has its own internal max-w) */}
       <TrustedBy />

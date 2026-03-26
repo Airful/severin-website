@@ -12,14 +12,25 @@ export default function TrustedBy() {
 
         {/* Right — logos */}
         <div className="w-full md:w-[70%] flex flex-wrap items-center justify-start md:justify-between gap-x-8 gap-y-5">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/retarte.svg"     alt="Retarte"        className="h-7 w-auto object-contain opacity-50" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/Logo Item.svg"   alt="Logo Partner"   className="h-7 w-auto object-contain opacity-50" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/Logo Item 2.svg" alt="Logo Partner 2" className="h-7 w-auto object-contain opacity-50" />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/Logo Image.png"  alt="Logo Partner 3" className="h-7 w-auto object-contain opacity-50" />
+          {[
+            { src: "/retarte.svg",     alt: "Retarte" },
+            { src: "/Logo Item.svg",   alt: "Logo Partner" },
+            { src: "/Logo Item 2.svg", alt: "Logo Partner 2" },
+            { src: "/Logo Image.png",  alt: "Logo Partner 3" },
+          ].map(({ src, alt }) => (
+            <div
+              key={src}
+              className="flex items-center justify-center opacity-50"
+              style={{ width: "120px", height: "48px", flexShrink: 0 }}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={src}
+                alt={alt}
+                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

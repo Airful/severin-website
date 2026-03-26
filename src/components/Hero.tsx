@@ -2,60 +2,118 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section
-      className="relative w-full h-screen bg-cover bg-top"
-      style={{ backgroundImage: "url('/BG.png')" }}
-    >
-      {/* Left-to-right dark gradient overlay */}
-      <div className="" />
+    <section className="relative w-full min-h-[calc(100vh-90px)] bg-[#111111] overflow-hidden">
 
-      {/* Content — left aligned inside 1400px container */}
-      <div className="relative z-10 h-full max-w-[1340px] mx-auto px-5 md:px-[40px] flex flex-col justify-center">
-        <div className="max-w-[600px]">
+      {/* ── Right column: full-height image (desktop) ───────────────── */}
+      <div className="absolute right-0 top-0 bottom-0 w-[50%] hidden md:block">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/BG.png"
+          alt=""
+          aria-hidden="true"
+          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
+        />
+        {/* Gradient: dark on the left edge so text stays readable */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, #111111 0%, rgba(17,17,17,0.55) 28%, rgba(17,17,17,0.1) 60%, transparent 100%)",
+          }}
+        />
+      </div>
+
+      {/* ── Mobile background image ──────────────────────────────────── */}
+      <div className="md:hidden absolute inset-0">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/BG.png"
+          alt=""
+          aria-hidden="true"
+          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }}
+        />
+        <div className="absolute inset-0" style={{ background: "rgba(17,17,17,0.78)" }} />
+      </div>
+
+      {/* ── Left column: text content ────────────────────────────────── */}
+      <div className="relative z-10 max-w-[1340px] mx-auto px-5 md:px-[40px] min-h-[calc(100vh-90px)] flex items-center">
+        <div className="w-full md:w-[52%]">
+
           {/* Label */}
           <p
-  className="font-inter text-[rgba(250,248,245,0.56)] uppercase mb-4"
-  style={{ fontSize: "14px", letterSpacing: "0.12em", fontWeight: "400" }}
->
+            className="font-inter uppercase mb-5"
+            style={{
+              fontSize: "13px",
+              letterSpacing: "0.18em",
+              fontWeight: "400",
+              color: "rgba(250,248,245,0.50)",
+            }}
+          >
             Feel Again, Live Fully.
           </p>
 
           {/* Heading */}
           <h1
-            className="font-caslon text-white mb-6"
+            className="font-caslon text-white mb-7"
             style={{
-              fontSize: "clamp(42px, 7vw, 72px)",
+              fontSize: "clamp(44px, 5.8vw, 80px)",
               lineHeight: "110%",
               letterSpacing: "-0.04em",
               fontWeight: "400",
+              maxWidth: "560px",
             }}
           >
-          Fire of Initiation
+            Fire of<br />Initiation
           </h1>
 
-          {/* Body */}
-          <p
-            className="font-abeezee text-white/75 mb-10"
-            style={{ fontSize: "18px", lineHeight: "150%", maxWidth: "560px" }}
+          {/* Body copy */}
+          <div
+            className="font-inter text-white/70 mb-10"
+            style={{
+              fontSize: "clamp(15px, 1.45vw, 18px)",
+              lineHeight: "1.65",
+              maxWidth: "510px",
+              display: "flex",
+              flexDirection: "column",
+              gap: "14px",
+            }}
           >
-         For over a decade, I have guided people through darkness retreats, deep transitions, and inner rebirth.My work is not theoretical. It is lived.I offer a grounded space to slow down, feel what is true, and meet the next step with clarity and courage.
-          </p>
+            <p>
+              For over a decade, I have guided people through darkness retreats,
+              deep transitions, and inner rebirth. My work is not theoretical.
+              It is lived.
+            </p>
+            <p>
+              I support individuals and leaders through life transitions using
+              somatic work, astrology, and 15 years of experience guiding deep
+              initiatory processes.
+            </p>
+          </div>
 
-           <p
-            className="font-abeezee text-white/75 mb-10"
-            style={{ fontSize: "18px", lineHeight: "150%", maxWidth: "560px" }}
-          >
-     I support individuals and leaders through life transitions using somatic work, astrology, and 15 years of experience guiding deep initiatory processes.
-          </p>
+          {/* CTA buttons */}
+          <div className="flex flex-wrap items-center gap-4">
+            <Link
+              href="#services"
+              className="font-inter font-medium text-black bg-[#C8A76D] rounded-full transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(200,167,109,0.35)]"
+              style={{ fontSize: "15px", letterSpacing: "0.02em", padding: "14px 38px" }}
+            >
+              Work With Me
+            </Link>
 
-          {/* CTA */}
-          <Link
-            href="#services"
-            className="inline-block bg-[#B59328] hover:bg-[#b8965c] text-black font-inter font-medium text-[16px] rounded-full transition-colors"
-            style={{ padding: "14px 40px" }}
-          >
-            Work With Me
-          </Link>
+            <Link
+              href="#about"
+              className="font-inter text-white rounded-full transition-all duration-300 hover:bg-white/8 hover:border-white/80"
+              style={{
+                fontSize: "15px",
+                letterSpacing: "0.02em",
+                padding: "13px 37px",
+                border: "1px solid rgba(255,255,255,0.38)",
+              }}
+            >
+              Learn More
+            </Link>
+          </div>
+
         </div>
       </div>
     </section>
