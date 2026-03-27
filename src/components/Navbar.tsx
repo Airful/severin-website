@@ -27,7 +27,7 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            href="#darkness-retreat"
+            href="/darkness-retreat"
             className="text-white/80 hover:text-white font-inter text-[16px] transition-colors"
           >
             Darkness Retreat
@@ -106,7 +106,7 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            href="#darkness-retreat"
+            href="/darkness-retreat"
             className="text-white/80 hover:text-white font-inter text-[14px] transition-colors"
             onClick={() => setMobileOpen(false)}
           >

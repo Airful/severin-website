@@ -1,9 +1,8 @@
-# TODO: Fix div closing error in somatic-astrology/page.tsx
+# TODO: Fix /darkness-retreat page errors
 
-- [ ] Step 1: Replace all <img> tags with proper Next.js Image components to eliminate lint warnings
-- [ ] Step 2: Audit and balance all div nesting/structure 
-- [ ] Step 3: Simplify complex height calculations in hero section
-- [ ] Step 4: Test page reload on localhost:3001/somatic-astrology
-- [ ] Step 5: Run npx next lint to verify fixes
-- [ ] Step 6: Complete task
+- [x] Create TODO.md and plan
+- [x] Fix typos/invalid styles in page.tsx
+- [x] Add functionality to buttons
+- [x] Test page after edits (no errors found, code clean)
+- [x] Complete task
 
