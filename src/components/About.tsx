@@ -1,3 +1,15 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const ease = "easeOut" as const;
+const fadeUp = (delay: number) => ({
+  initial: { opacity: 0, y: 40 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.6, ease, delay },
+});
+
 export default function About() {
   return (
     <section
@@ -12,7 +24,7 @@ export default function About() {
             linear-gradient(
               to right,
               #C8A76D 40%,
-              rgba(200,167,109,0.7) 55%,
+              rgb(200, 167, 109) 55%,
               rgba(200,167,109,0.0) 70%
             ),
             url('/About.png')
@@ -23,12 +35,13 @@ export default function About() {
         }}
       />
       <div className="relative z-10 max-w-[1340px] mx-auto px-5 md:px-[20px]">
-        
+
         {/* LEFT CONTENT */}
         <div className="w-full max-w-[720px]">
-          
+
           {/* LABEL */}
-          <p
+          <motion.p
+            {...fadeUp(0)}
             className="font-inter text-black/60 uppercase mb-4"
             style={{
               fontSize: "14px",
@@ -36,10 +49,11 @@ export default function About() {
             }}
           >
             Meet the Man Behind the Movement
-          </p>
+          </motion.p>
 
           {/* HEADING */}
-          <h2
+          <motion.h2
+            {...fadeUp(0.15)}
             className="font-caslon text-black mb-6"
             style={{
               fontSize: "clamp(36px, 5vw, 56px)",
@@ -48,10 +62,11 @@ export default function About() {
             }}
           >
             About Me
-          </h2>
+          </motion.h2>
 
           {/* TEXT CONTENT */}
-          <div
+          <motion.div
+            {...fadeUp(0.3)}
             className="space-y-4 font-inter text-black/80"
             style={{
               fontSize: "18px",
@@ -82,10 +97,11 @@ export default function About() {
               This work supports the return to an unshakable inner core; the
               ability to stay present, grounded, and self-held through change.
             </p>
-          </div>
+          </motion.div>
 
           {/* BUTTON */}
-          <a
+          <motion.a
+            {...fadeUp(0.45)}
             href="#contact"
             className="mt-8 flex items-center justify-center rounded-full bg-black text-[#C8A76D] font-inter transition-all duration-300 hover:bg-[#1a1a1a]"
             style={{
@@ -96,7 +112,7 @@ export default function About() {
             }}
           >
             Reach Out
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>

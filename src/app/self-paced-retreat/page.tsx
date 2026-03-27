@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ParallaxImg from "@/components/animations/ParallaxImg";
 
 export const metadata = {
   title: "Self-Paced Darkness Retreat Prep Course — Severin Geser",
@@ -73,35 +74,20 @@ export default function SelfPacedRetreatPage() {
         className="relative w-full overflow-hidden bg-[#111111]"
         style={{ minHeight: "calc(100vh - 90px)" }}
       >
-        {/* Right-side background image */}
-        <div className="absolute inset-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/self-praced/baner.jpg"
-            alt=""
-            aria-hidden="true"
-            style={{
-              position: "absolute",
-              inset: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              objectPosition: "right center",
-            }}
-          />
-          {/* Left dark gradient overlay */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to right, #111111 0%, rgba(17,17,17,0.88) 35%, rgba(17,17,17,0.55) 60%, rgba(17,17,17,0.15) 85%, transparent 100%)",
-            }}
-          />
-        </div>
+        {/* Right-side background image with parallax */}
+        <ParallaxImg src="/self-praced/baner.jpg" alt="" strength={10} objectPosition="right center" />
+        {/* Left dark gradient overlay */}
+        <div
+          className="absolute inset-0 z-10"
+          style={{
+            background:
+              "linear-gradient(to right, #111111 0%, rgba(17,17,17,0.88) 35%, rgba(17,17,17,0.55) 60%, rgba(17,17,17,0.15) 85%, transparent 100%)",
+          }}
+        />
 
         {/* Content — left-aligned */}
         <div
-          className="relative z-10 max-w-[1340px] mx-auto px-5 md:px-[40px] flex items-center"
+          className="relative z-20 max-w-[1340px] mx-auto px-5 md:px-[40px] flex items-center"
           style={{ minHeight: "calc(100vh - 90px)" }}
         >
           <div style={{ maxWidth: "980px", width: "100%" }}>
@@ -180,21 +166,8 @@ export default function SelfPacedRetreatPage() {
       <section className="w-full bg-[#111111] flex flex-col md:flex-row" style={{ minHeight: "680px" }}>
 
           {/* Left: image — 60% width, flush to screen edge */}
-          <div className="relative w-full md:w-[60%] flex-shrink-0" style={{ minHeight: "420px" }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/self-praced/most.jpg"
-              alt=""
-              aria-hidden="true"
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
+          <div className="relative w-full md:w-[60%] flex-shrink-0 overflow-hidden" style={{ minHeight: "420px" }}>
+            <ParallaxImg src="/self-praced/most.jpg" alt="" strength={10} />
           </div>
 
           {/* Right: content — 40% width */}
@@ -292,21 +265,8 @@ export default function SelfPacedRetreatPage() {
 
       {/* Self-Paced Modules */}
       <section className="relative w-full overflow-hidden" style={{ padding: "100px 20px", marginTop: "66px" }}>
-        {/* Background image */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/self-praced/5.png"
-          alt=""
-          aria-hidden="true"
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            objectPosition: "center",
-          }}
-        />
+        {/* Background image with parallax */}
+        <ParallaxImg src="/self-praced/5.png" alt="" strength={10} />
         {/* Content */}
         <div className="relative z-10 max-w-[1100px] mx-auto flex flex-col items-center text-center">
 
@@ -466,15 +426,9 @@ export default function SelfPacedRetreatPage() {
 
           </div>
 
-          {/* Right: image — full height, flush */}
-          <div className="w-full lg:w-1/2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/self-praced/you.png"
-              alt="Retreat"
-              className="w-full h-full object-cover"
-              style={{ minHeight: "650px", display: "block" }}
-            />
+          {/* Right: image — full height, flush, with parallax */}
+          <div className="relative w-full lg:w-1/2 overflow-hidden" style={{ minHeight: "650px" }}>
+            <ParallaxImg src="/self-praced/you.png" alt="Retreat" strength={8} />
           </div>
 
       </section>
@@ -506,19 +460,7 @@ export default function SelfPacedRetreatPage() {
 
           {/* Left: image + overlay card */}
           <div className="relative w-full lg:w-1/2 flex-shrink-0 rounded-2xl overflow-hidden" style={{ minHeight: "520px" }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/self-praced/pray.svg"
-              alt="Severin Geser"
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                objectPosition: "center top",
-              }}
-            />
+            <ParallaxImg src="/self-praced/pray.svg" alt="Severin Geser" strength={8} objectPosition="center top" />
 
             {/* Glass overlay card — bottom left */}
             <div className="sss"
@@ -605,19 +547,15 @@ export default function SelfPacedRetreatPage() {
       {/* Pricing and Guarantee */}
       <section
         className="relative w-full overflow-hidden"
-        style={{
-          backgroundImage: "url('/self-praced/Background.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          padding: "112px 24px",
-        }}
+        style={{ padding: "112px 24px" }}
       >
+        {/* Background image with parallax */}
+        <ParallaxImg src="/self-praced/Background.jpg" alt="" strength={10} />
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 z-10 bg-black/60" />
 
         {/* Content */}
-        <div className="relative z-10 max-w-[900px] mx-auto flex flex-col items-center text-center">
+        <div className="relative z-20 max-w-[900px] mx-auto flex flex-col items-center text-center">
 
           {/* Eyebrow */}
           <p

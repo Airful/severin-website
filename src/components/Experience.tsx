@@ -1,27 +1,46 @@
+"use client";
+
 import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
+const ease = "easeOut" as const;
+const fadeUp = (delay: number) => ({
+  initial: { opacity: 0, y: 40 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.6, ease, delay },
+});
 
 export default function Experience() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+
   return (
-    <section className="relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0">
+    <section ref={sectionRef} className="relative overflow-hidden">
+      {/* Background with parallax */}
+      <motion.div className="absolute inset-0 will-change-transform" style={{ y: bgY }}>
         <Image
-         src="/qw.png"
+          src="/qw.png"
           alt="Background"
           fill
           className="object-cover object-center"
         />
-      
-      </div>
+      </motion.div>
 
       <div className="relative z-10 max-w-[1340px] mx-auto px-6 pt-16 pb-24 md:py-24">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 justify-between">
           {/* Left text */}
           <div className="flex-1 max-w-[660px]">
-            <p className="text-label uppercase tracking-widest text-[#FAF8F5]/10 mb-4 mb-6" >
-           FROM DARKNESS TO REBIRTH
-            </p>
-            <h2
+            <motion.p {...fadeUp(0)} className="text-label uppercase tracking-widest text-[#FAF8F5]/10 mb-4 mb-6">
+              FROM DARKNESS TO REBIRTH
+            </motion.p>
+            <motion.h2
+              {...fadeUp(0.15)}
               className="font-caslon text-white mb-6"
               style={{
                 fontSize: "clamp(36px, 4vw, 56px)",
@@ -29,16 +48,16 @@ export default function Experience() {
                 letterSpacing: "-0.02em",
               }}
             >
-             15 Years of Guiding Humans through Deep Transformation
-            </h2>
-            <p className="text-para text-white">
+              15 Years of Guiding Humans through Deep Transformation
+            </motion.h2>
+            <motion.p {...fadeUp(0.3)} className="text-para text-white">
               My path has been lived, not theoretical. I have guided thousands of
               hours of retreats and one to one work through darkness, grief,
               relationship transitions, and personal initiation. I walk beside
               those who are ready to meet themselves honestly and build a life
               that feels true.
-            </p>
-            <div className="mt-6">
+            </motion.p>
+            <motion.div {...fadeUp(0.45)} className="mt-6">
               <p className="text-para text-white">This work is for you if:</p>
               <ul className="mt-3 space-y-2 pl-5 list-disc marker:text-white/70">
                 <li className="text-para text-white">
@@ -57,17 +76,20 @@ export default function Experience() {
                   You don&apos;t want quick fixes, but real, lived transformation
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
 
           {/* Right stats */}
           <div className="flex flex-col gap-4 w-full lg:w-auto lg:min-w-[380px]">
-            <div className="rounded-[16px] px-8 py-7 flex items-top gap-8 border border-white/20 backdrop-blur-sm bg-[linear-gradient(90deg,rgba(181,147,40,0.15),rgba(181,147,40,0.08))]">
-             <img src="/om.svg" alt="" />
+            <motion.div
+              {...fadeUp(0.2)}
+              className="rounded-[16px] px-8 py-7 flex items-top gap-8 border border-white/20 backdrop-blur-sm bg-[linear-gradient(90deg,rgba(181,147,40,0.15),rgba(181,147,40,0.08))]"
+            >
+              <img src="/om.svg" alt="" />
               <div className="text-center min-w-[180px]">
                 <p
                   className="text-white font-caslon"
-                  style={{ fontSize: "40px", lineHeight: "1", letterSpacing: "-0.02em", marginBottom: "10px"}}
+                  style={{ fontSize: "40px", lineHeight: "1", letterSpacing: "-0.02em", marginBottom: "10px" }}
                 >
                   1,000+
                 </p>
@@ -75,11 +97,14 @@ export default function Experience() {
                   Dark Retreats Guided
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="rounded-[16px] px-8 py-7 flex items-top gap-8 border border-white/20 backdrop-blur-sm bg-[linear-gradient(90deg,rgba(181,147,40,0.15),rgba(181,147,40,0.08))]">
-            <img src="/om.svg" alt="" />
-         <div className="text-center min-w-[180px]" >
+            <motion.div
+              {...fadeUp(0.35)}
+              className="rounded-[16px] px-8 py-7 flex items-top gap-8 border border-white/20 backdrop-blur-sm bg-[linear-gradient(90deg,rgba(181,147,40,0.15),rgba(181,147,40,0.08))]"
+            >
+              <img src="/om.svg" alt="" />
+              <div className="text-center min-w-[180px]">
                 <p
                   className="text-white font-caslon margainbottom-20px"
                   style={{ fontSize: "40px", lineHeight: "1", letterSpacing: "-0.02em", marginBottom: "10px" }}
@@ -87,10 +112,10 @@ export default function Experience() {
                   100+
                 </p>
                 <p className="text-white font-inter text-sm mt-1">
-                Astrology & Somatic Session Offered
+                  Astrology & Somatic Session Offered
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

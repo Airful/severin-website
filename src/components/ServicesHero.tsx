@@ -1,18 +1,19 @@
+"use client";
+
 import Link from "next/link";
+import ParallaxImg from "@/components/animations/ParallaxImg";
 
 export default function ServicesHero() {
   return (
     <section
-      className="relative w-full min-h-[50vh] md:min-h-[85vh] flex items-center justify-center"
-      style={{
-        backgroundImage: "url('/services/baner.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="relative w-full min-h-[50vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden"
     >
-      {/* Dark gradient overlay — left-heavy so text stays readable */}
+      {/* Parallax background image */}
+      <ParallaxImg src="/services/baner.png" alt="" strength={10} />
+
+      {/* Dark gradient overlay */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 z-10"
         style={{
           background:
             "linear-gradient(to right, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.50) 50%, rgba(0,0,0,0.25) 100%)",
@@ -20,7 +21,7 @@ export default function ServicesHero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-5 md:px-10">
+      <div className="relative z-20 flex flex-col items-center text-center px-5 md:px-10">
 
         {/* Label */}
         <p

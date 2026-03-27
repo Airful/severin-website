@@ -4,6 +4,7 @@ import TrustedBy from "@/components/TrustedBy";
 import Testimonials from "@/components/Testimonials";
 import DarkCTA from "@/components/DarkCTA";
 import Footer from "@/components/Footer";
+import ParallaxImg from "@/components/animations/ParallaxImg";
 
 export const metadata = {
   title: "Services — Severin Geser",
@@ -102,13 +103,8 @@ export default function ServicePage() {
           id={service.id}
           style={{ position: "relative", width: "100%", height: "clamp(480px, 60vw, 650px)", overflow: "hidden", display: "flex", alignItems: "center", scrollMarginTop: "72px" }}
         >
-          {/* Background image */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={service.image}
-            alt={service.heading}
-            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
-          />
+          {/* Background image with parallax */}
+          <ParallaxImg src={service.image} alt={service.heading} strength={8} />
 
           {/* Gradient overlay */}
           <div

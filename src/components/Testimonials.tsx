@@ -1,3 +1,15 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+const ease = "easeOut" as const;
+const fadeUp = (delay: number) => ({
+  initial: { opacity: 0, y: 40 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.6, ease, delay },
+});
+
 const testimonials = [
   {
     stars: 5,
@@ -39,14 +51,19 @@ function TestimonialCard({
   quote,
   name,
   image,
+  index,
 }: {
   stars: number;
   quote: string;
   name: string;
   image: string;
+  index: number;
 }) {
   return (
-    <div className="bg-white/[0.04] rounded-2xl p-6 flex flex-col justify-between gap-6 border border-white/[0.08] shadow-lg transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]">
+    <motion.div
+      {...fadeUp(index * 0.15)}
+      className="bg-white/[0.04] rounded-2xl p-6 flex flex-col justify-between gap-6 border border-white/[0.08] shadow-lg transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]"
+    >
       {/* Top: stars + quote */}
       <div>
         <StarRating count={stars} />
@@ -69,7 +86,7 @@ function TestimonialCard({
           {name}
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -78,13 +95,15 @@ export default function Testimonials() {
     <section className="bg-[#1a1a1a] py-20 px-6" id="testimonials">
       <div className="max-w-[1340px] mx-auto">
         <div className="text-center mb-14">
-          <p
+          <motion.p
+            {...fadeUp(0)}
             className="uppercase tracking-widest font-inter text-[12px] mb-4"
             style={{ color: "rgba(250,248,245,0.56)" }}
           >
             Real Transformations, Real People
-          </p>
-          <h2
+          </motion.p>
+          <motion.h2
+            {...fadeUp(0.15)}
             className="font-caslon text-white"
             style={{
               fontSize: "clamp(36px, 5vw, 56px)",
@@ -93,12 +112,12 @@ export default function Testimonials() {
             }}
           >
             What Clients Say
-          </h2>
+          </motion.h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {testimonials.map((t, i) => (
-            <TestimonialCard key={i} {...t} />
+            <TestimonialCard key={i} {...t} index={i} />
           ))}
         </div>
       </div>

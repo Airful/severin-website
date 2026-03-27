@@ -2,6 +2,8 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InitiationSection from "@/components/InitiationSection";
+import FadeIn from "@/components/animations/FadeIn";
+import ParallaxImg from "@/components/animations/ParallaxImg";
 
 export const metadata = {
   title: "Darkness Retreat - Severin Geser",
@@ -52,14 +54,9 @@ function AlternatingBlock({
 }) {
   const imageEl = (
     <div className={`relative h-[420px] md:h-[750px] overflow-hidden ${!imageLeft ? "md:order-last" : ""}`}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={image}
-        alt={heading}
-        className="w-full h-full object-cover absolute inset-0"
-      />
+      <ParallaxImg src={image} alt={heading} strength={10} />
       {/* subtle dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+      <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/30 to-transparent" />
     </div>
   );
 
@@ -70,34 +67,40 @@ function AlternatingBlock({
       }`}
     >
       <div className="flex flex-col gap-5" style={{ maxWidth: "500px" }}>
-        <p className="uppercase text-white/50 text-[12px] tracking-[2px]">
-          {tag}
-        </p>
-        <h2
-          className="font-caslon text-white"
-          style={{
-            fontSize: "clamp(32px, 4vw, 56px)",
-            lineHeight: "110%",
-            fontWeight: 400,
-          }}
-        >
-          {heading}
-        </h2>
-        <div className="flex flex-col gap-4">
-          {text.split("\n\n").map((para, i) => (
-            <p
-              key={i}
-              className="font-inter text-white/70 text-[16px] leading-[150%]"
-            >
-              {para.split("\n").map((line, j, arr) => (
-                <span key={j}>
-                  {line}
-                  {j < arr.length - 1 && <br />}
-                </span>
-              ))}
-            </p>
-          ))}
-        </div>
+        <FadeIn>
+          <p className="uppercase text-white/50 text-[12px] tracking-[2px]">
+            {tag}
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.15}>
+          <h2
+            className="font-caslon text-white"
+            style={{
+              fontSize: "clamp(32px, 4vw, 56px)",
+              lineHeight: "110%",
+              fontWeight: 400,
+            }}
+          >
+            {heading}
+          </h2>
+        </FadeIn>
+        <FadeIn delay={0.3}>
+          <div className="flex flex-col gap-4">
+            {text.split("\n\n").map((para, i) => (
+              <p
+                key={i}
+                className="font-inter text-white/70 text-[16px] leading-[150%]"
+              >
+                {para.split("\n").map((line, j, arr) => (
+                  <span key={j}>
+                    {line}
+                    {j < arr.length - 1 && <br />}
+                  </span>
+                ))}
+              </p>
+            ))}
+          </div>
+        </FadeIn>
       </div>
     </div>
   );
@@ -118,45 +121,46 @@ export default function DarknessRetreatPage() {
       <Navbar />
 
       <section className="relative flex min-h-[90vh] items-center overflow-hidden">
-        <div className="absolute inset-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/dark/baner.jpg"
-            alt="Darkness retreat"
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/55" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-transparent" />
-        </div>
+        <ParallaxImg src="/dark/baner.jpg" alt="Darkness retreat" strength={10} />
+        <div className="absolute inset-0 z-10 bg-black/55" />
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/85 via-black/55 to-transparent" />
 
-        <div className="relative z-10 mx-auto flex w-full max-w-[1200px] px-6 py-24">
+        <div className="relative z-20 mx-auto flex w-full max-w-[1200px] px-6 py-24">
           <div className="max-w-[620px]">
-            <p className="mb-5 text-[12px] uppercase tracking-[0.2em] text-white/50">
-              Darkness
-            </p>
-            <h1
-              className="font-caslon text-white"
-              style={{
-                fontSize: "clamp(40px, 6vw, 80px)",
-                lineHeight: "100%",
-                fontWeight: 400,
-              }}
-            >
-              What is a Dark Retreat?
-            </h1>
-            <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
-              This is not a place to fix yourself or<br /> heal something that is broken.
-            </p>
-            <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
-              It is a space where nothing is required of you.<br />
-In darkness, the nervous system can finally slow down.
-            </p>
-            <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
-              Old emotions surface not because they are pushed,<br />but because there is enough safety for them to complete.
-            </p>
-            <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
-              From doing to being.<br />From effort to listening.
-            </p>
+            <FadeIn>
+              <p className="mb-5 text-[12px] uppercase tracking-[0.2em] text-white/50">
+                Darkness
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.15}>
+              <h1
+                className="font-caslon text-white"
+                style={{
+                  fontSize: "clamp(40px, 6vw, 80px)",
+                  lineHeight: "100%",
+                  fontWeight: 400,
+                }}
+              >
+                What is a Dark Retreat?
+              </h1>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <div>
+                <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
+                  This is not a place to fix yourself or<br /> heal something that is broken.
+                </p>
+                <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
+                  It is a space where nothing is required of you.<br />
+                  In darkness, the nervous system can finally slow down.
+                </p>
+                <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
+                  Old emotions surface not because they are pushed,<br />but because there is enough safety for them to complete.
+                </p>
+                <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
+                  From doing to being.<br />From effort to listening.
+                </p>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -175,68 +179,73 @@ In darkness, the nervous system can finally slow down.
 
           {/* LEFT — full-bleed image */}
           <div className="relative h-[460px] md:h-[750px] overflow-hidden">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/dark/The.jpg"
-              alt="Preparation and Integration"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/40" />
+            <ParallaxImg src="/dark/The.jpg" alt="Preparation and Integration" strength={10} />
+            <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent via-transparent to-black/40" />
           </div>
 
           {/* RIGHT — content */}
           <div className="flex items-center py-[60px] md:py-[40px] px-6 md:pl-[80px] md:pr-10 pb-[60px]">
             <div className="flex flex-col gap-6" style={{ maxWidth: "500px" }}>
 
-              <p className="uppercase text-white/50 text-[12px] tracking-[2px]">
-                The Journey Begins Before the Retreat
-              </p>
+              <FadeIn>
+                <p className="uppercase text-white/50 text-[12px] tracking-[2px]">
+                  The Journey Begins Before the Retreat
+                </p>
+              </FadeIn>
 
-              <h2
-                className="font-caslon text-white leading-[110%]"
-                style={{ fontSize: "clamp(32px, 4vw, 56px)", fontWeight: 400 }}
-              >
-                Preparation and Integration are the Work
-              </h2>
+              <FadeIn delay={0.15}>
+                <h2
+                  className="font-caslon text-white leading-[110%]"
+                  style={{ fontSize: "clamp(32px, 4vw, 56px)", fontWeight: 400 }}
+                >
+                  Preparation and Integration are the Work
+                </h2>
+              </FadeIn>
 
               {/* Block 1 */}
-              <div className="flex flex-col gap-4 font-inter text-white/70 text-[16px] leading-[160%]">
-                <p>
-                  A Dark Retreat is not something you do.<br />
-                  It is something you move through.
-                </p>
-                <p>
-                  What determines whether it becomes overwhelming or transformative.
-                </p>
-                <p>
-                  It is not willpower, but nervous system capacity.
-                </p>
-              </div>
+              <FadeIn delay={0.3}>
+                <div className="flex flex-col gap-4 font-inter text-white/70 text-[16px] leading-[160%]">
+                  <p>
+                    A Dark Retreat is not something you do.<br />
+                    It is something you move through.
+                  </p>
+                  <p>
+                    What determines whether it becomes overwhelming or transformative.
+                  </p>
+                  <p>
+                    It is not willpower, but nervous system capacity.
+                  </p>
+                </div>
+              </FadeIn>
 
               {/* Block 2 */}
-              <div className="flex flex-col gap-4 font-inter text-[16px] leading-[160%] mt-2">
-                <p className="text-white font-medium">
-                  I help people enter intensity safely and come out integrated.
-                </p>
-                <p className="text-white/70">
-                  This work is not only for physical Dark Retreats.
-                </p>
-                <p className="text-white/70">
-                  Many people are already inside a dark passage, where life and identity collapse.
-                </p>
-                <p className="text-white/70">
-                  Support here is not about fixing, but about slowing down so reorganization can happen safely.
-                </p>
-              </div>
+              <FadeIn delay={0.45}>
+                <div className="flex flex-col gap-4 font-inter text-[16px] leading-[160%] mt-2">
+                  <p className="text-white font-medium">
+                    I help people enter intensity safely and come out integrated.
+                  </p>
+                  <p className="text-white/70">
+                    This work is not only for physical Dark Retreats.
+                  </p>
+                  <p className="text-white/70">
+                    Many people are already inside a dark passage, where life and identity collapse.
+                  </p>
+                  <p className="text-white/70">
+                    Support here is not about fixing, but about slowing down so reorganization can happen safely.
+                  </p>
+                </div>
+              </FadeIn>
 
-              <div className="mt-6">
-                <Link
-                  href="/services"
-                  className="bg-[#C8A46A] text-black font-inter font-medium text-[15px] rounded-full px-6 py-3 hover:opacity-90 transition-opacity cursor-pointer inline-block"
-                >
-                  Work with me for Preparation & Integration
-                </Link>
-              </div>
+              <FadeIn delay={0.6}>
+                <div className="mt-6">
+                  <Link
+                    href="/services"
+                    className="bg-[#C8A46A] text-black font-inter font-medium text-[15px] rounded-full px-6 py-3 hover:opacity-90 transition-opacity cursor-pointer inline-block"
+                  >
+                    Work with me for Preparation & Integration
+                  </Link>
+                </div>
+              </FadeIn>
 
             </div>
           </div>
