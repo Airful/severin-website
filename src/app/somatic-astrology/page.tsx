@@ -708,6 +708,8 @@ export default function SomaticAstrologyPage() {
       {/* CTA BANNER SECTION */}
       <CtaBannerSection />
 
+
+
       <Footer />
     </main>
   );
