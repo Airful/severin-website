@@ -165,7 +165,7 @@ export default function DarknessRetreatPage() {
         </div>
       </section>
 
-      {sections.slice(0, 3).map((section) => (
+      {sections.slice(0, 2).map((section) => (
         <div key={section.heading} className="pt-[70px] bg-black">
           <AlternatingBlock {...section} />
         </div>

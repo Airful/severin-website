@@ -21,7 +21,7 @@ export default function Navbar() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
           <Link
-            href="#about"
+            href="/about"
             className="text-white/80 hover:text-white font-inter text-[16px] transition-colors"
           >
             About
@@ -72,7 +72,7 @@ export default function Navbar() {
           </div>
 
           <Link
-            href="#contact"
+            href="/contact"
             className="bg-[#B59328] hover:bg-[#b8965c] text-black font-inter font-medium text-[16px] rounded-full transition-colors"
             style={{ padding: "10px 32px" }}
           >
@@ -99,7 +99,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="md:hidden max-w-[1340px] mx-auto px-5 pb-4 flex flex-col gap-4 border-t border-white/10">
           <Link
-            href="#about"
+            href="/about"
             className="text-white/80 hover:text-white font-inter text-[14px] transition-colors pt-3"
             onClick={() => setMobileOpen(false)}
           >
@@ -159,7 +159,7 @@ export default function Navbar() {
           </div>
 
           <Link
-            href="#contact"
+            href="/contact"
             className="bg-[#C8A76D] text-black font-inter font-medium text-[14px] rounded-full text-center transition-colors"
             style={{ padding: "10px 22px" }}
             onClick={() => setMobileOpen(false)}
