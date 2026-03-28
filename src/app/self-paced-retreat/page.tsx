@@ -172,7 +172,7 @@ export default function SelfPacedRetreatPage() {
 
           {/* Right: content — 40% width */}
           <div
-            className="w-full md:w-[40%] flex items-center px-8 md:px-12 py-16 md:py-20"
+            className="w-full md:w-[40%] flex items-center px-8 md:px-12 pt-10 pb-[28px] md:py-20"
           >
             <div style={{ maxWidth: "560px", width: "100%" }}>
 
@@ -313,7 +313,7 @@ export default function SelfPacedRetreatPage() {
           </p>
 
           {/* Cards grid — 6 columns: row 1 = 3×col-span-2, row 2 = 2×col-span-3 */}
-          <div className="w-full grid grid-cols-2 sm:grid-cols-6 gap-5">
+          <div className="w-full grid grid-cols-2 sm:grid-cols-6 gap-5 pb-[48px] sm:pb-0">
             {/* Row 1: 3 equal cards at 33% each */}
             <div className="col-span-2" style={{textAlign: "left" }}><ModuleCard num="01" title="Introduction and Foundations" /></div>
 
