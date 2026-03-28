@@ -15,8 +15,11 @@ export default function Navbar() {
 
         {/* Logo icon only */}
         <Link href="/" className="flex items-center">
-          <Image src="/Logo.svg" alt="Severin Geser" width={180} height={40} />
+           <img src="./logo.svg" alt="Severin Geser" width={180} height={40} />
         </Link>
+
+
+
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
@@ -30,6 +33,7 @@ export default function Navbar() {
             href="/darkness-retreat"
             className="text-white/80 hover:text-white font-inter text-[16px] transition-colors"
           >
+            
             Darkness Retreat
           </Link>
 
