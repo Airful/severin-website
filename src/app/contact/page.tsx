@@ -131,6 +131,8 @@ export default function ContactPage() {
             </a>
                  </div>
 
+
+
                  <br></br>     <br></br>
             <a
               href="/somatic-astrology"
