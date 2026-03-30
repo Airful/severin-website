@@ -18,7 +18,7 @@ export default function MensWorkPage() {
       <Navbar />
       <main>
 
-        {/* ── Hero ── */}
+        {/* ── Hero section ── */}
         <section
           className="relative w-full h-auto flex items-center bg-black bg-cover bg-center bg-no-repeat py-12 md:py-32"
           style={{ backgroundImage: "url('/men/bnaer.png')" }}
