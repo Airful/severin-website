@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-black">
       {/* Inner container — 1400px centered, 40px horizontal padding */}
-      <div className="max-w-[1340px] mx-auto px-5 md:px-[40px] h-[72px] flex items-center justify-between">
+      <div className="max-w-[1200px] mx-auto px-6 lg:px-20 h-[72px] flex items-center justify-between">
 
         {/* Logo icon only */}
         <Link href="/" className="flex items-center">
@@ -101,7 +101,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden max-w-[1340px] mx-auto px-5 pb-4 flex flex-col gap-4 border-t border-white/10">
+        <div className="md:hidden max-w-[1200px] mx-auto px-6 lg:px-20 pb-4 flex flex-col gap-4 border-t border-white/10">
           <Link
             href="/about"
             className="text-white/80 hover:text-white font-inter text-[14px] transition-colors pt-3"

@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
+import ServiceCard from "@/components/ServiceCard";
 
 const ease = "easeOut" as const;
 const fadeUp = (delay: number) => ({
@@ -16,76 +16,27 @@ const services = [
     id: "01",
     title: "Somatic Astrology",
     image: "/Somatic.png",
+    href: "/somatic-astrology",
   },
   {
     id: "02",
     title: "Dark Retreat Preparation & Integration",
     image: "/Dark.png",
+    href: "/initiation-integration",
   },
   {
     id: "03",
     title: "Astrology Sessions",
     image: "/astrology.png",
+    href: undefined,
   },
   {
     id: "04",
     title: "Men's Work",
     image: "/men.png",
+    href: "/mens-work",
   },
 ];
-
-function ServiceCard({
-  id,
-  title,
-  image,
-  index,
-}: {
-  id: string;
-  title: string;
-  image: string;
-  index: number;
-}) {
-  return (
-    <motion.div
-      {...fadeUp(index * 0.12)}
-      className="rounded-2xl overflow-hidden flex flex-col bg-[#C8A76D] shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl group cursor-pointer"
-    >
-      {/* Image */}
-      <div className="relative w-full h-[230px] sm:h-[270px] overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        {/* Number badge over image */}
-        <span className="absolute bottom-3 left-4 text-white/70 font-inter text-[13px] tracking-widest drop-shadow-sm">
-          {id}
-        </span>
-      </div>
-
-      {/* Content */}
-      <div className="p-6 flex flex-col flex-1 gap-3">
-        <h3
-          className="font-caslon text-black flex-1"
-          style={{
-            fontSize: "clamp(22px, 2.2vw, 30px)",
-            lineHeight: "115%",
-            letterSpacing: "-0.02em",
-          }}
-        >
-          {title}
-        </h3>
-        <Link
-          href="#"
-          className="inline-flex items-center gap-1 text-[13px] font-inter text-black hover:text-black transition-colors duration-200 underline underline-offset-4 w-fit"
-        >
-          Learn more →
-        </Link>
-      </div>
-    </motion.div>
-  );
-}
 
 export default function Services() {
   return (
@@ -127,6 +78,7 @@ export default function Services() {
             <ServiceCard key={service.id} {...service} index={i} />
           ))}
         </div>
+
       </div>
     </section>
   );

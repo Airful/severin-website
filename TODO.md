@@ -1,8 +1,1 @@
-# TODO: Fix /darkness-retreat page errors
-
-- [x] Create TODO.md and plan
-- [x] Fix typos/invalid styles in page.tsx
-- [x] Add functionality to buttons
-- [x] Test page after edits (no errors found, code clean)
-- [x] Complete task
-
+# Men's Page Mobile Layout Fixes\n\n## Steps\n\n- [ ] 1. Create TODO.md (current)\n- [ ] 2. Edit src/app/mens-work/page.tsx with mobile spacing fixes\n- [ ] 3. Test mobile layout in browser dev tools\n- [ ] 4. Verify desktop unchanged\n- [ ] 5. Complete task\n
