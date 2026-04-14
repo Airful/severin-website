@@ -172,7 +172,7 @@ export default function ServicePage() {
             </div>
 
             <a
-              href="#"
+              href="/contact"
               className="font-inter inline-block bg-[#C8A76D] text-black text-sm font-medium tracking-[0.04em] rounded-[30px] py-3 px-7 no-underline transition-all duration-300 ease-in-out hover:bg-[#b8955f] hover:scale-105 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)]"
             >
               Book a Session
@@ -193,7 +193,7 @@ export default function ServicePage() {
           "This work exists for those moments.",
         ]}
         buttonText="Book a Session"
-        buttonHref="#"
+        buttonHref="/contact"
       />
       <Footer />
     </main>

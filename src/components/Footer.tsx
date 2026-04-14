@@ -1,16 +1,16 @@
 import Link from "next/link";
 
 const navItems = [
-  { label: "Home", href: "#" },
-  { label: "About", href: "#about" },
-  { label: "Darkness Retreat", href: "#services" },
-  { label: "Services", href: "#services" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Darkness Retreat", href: "/darkness-retreat" },
+  { label: "Services", href: "/#services" },
 ];
 
 const bottomLinks = [
   { label: "POLICY", href: "#" },
   { label: "FAQ", href: "#faq" },
-  { label: "CONTACT", href: "#contact" },
+  { label: "CONTACT", href: "/contact" },
 ];
 
 export default function Footer() {

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/animations/FadeIn";
@@ -151,8 +152,9 @@ function PricingSection() {
                 </div>
 
                 {/* Button */}
-                <button
-                  className="w-full rounded-full py-3 transition-opacity hover:opacity-80"
+                <Link
+                  href="/contact"
+                  className="w-full rounded-full py-3 transition-opacity hover:opacity-80 text-center block"
                   style={{
                     fontFamily: "'Inter Tight', sans-serif",
                     fontSize: "14px",
@@ -160,10 +162,11 @@ function PricingSection() {
                     backgroundColor: card.highlighted ? "#111111" : "#1a1a1a",
                     color: card.highlighted ? "#C9A46A" : "#FFFFFF",
                     border: card.highlighted ? "none" : "1px solid rgba(255,255,255,0.12)",
+                    textDecoration: "none",
                   }}
                 >
                   Book Session
-                </button>
+                </Link>
               </div>
             </FadeIn>
           ))}
@@ -240,8 +243,9 @@ function CtaBannerSection() {
         </FadeIn>
 
         <FadeIn delay={0.45}>
-          <button
-            className="transition-opacity hover:opacity-85"
+          <Link
+            href="/contact"
+            className="inline-block transition-opacity hover:opacity-85"
             style={{
               fontFamily: "'Inter Tight', sans-serif",
               fontSize: "14px",
@@ -250,12 +254,12 @@ function CtaBannerSection() {
               color: "#000000",
               padding: "14px 28px",
               borderRadius: "999px",
-              border: "none",
+              textDecoration: "none",
               cursor: "pointer",
             }}
           >
             Book Your Somatic Astrology Session
-          </button>
+          </Link>
         </FadeIn>
       </div>
     </section>
@@ -450,9 +454,9 @@ export default function SomaticAstrologyPage() {
             </FadeIn>
 
             <FadeIn delay={0.45}>
-              <button className="bg-[#C6A15B] text-black px-7 py-3 rounded-full font-medium hover:opacity-90 transition-opacity w-fit mx-auto md:mx-0">
+              <Link href="/contact" className="inline-block bg-[#C6A15B] text-black px-7 py-3 rounded-full font-medium hover:opacity-90 transition-opacity w-fit mx-auto md:mx-0">
                 Begin Your Journey with Severin
-              </button>
+              </Link>
             </FadeIn>
 
           </div>

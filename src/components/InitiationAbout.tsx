@@ -48,7 +48,7 @@ export default function InitiationAbout() {
                 {...fadeUp(0)}
                 className="font-caslon text-black"
                 style={{
-                  fontSize: "clamp(24px, 3.5vw, 44px)",
+                  fontSize: "clamp(24px, 3.5vw, 32px)",
                   lineHeight: "130%",
                   fontWeight: 400,
                   letterSpacing: "-0.01em",
@@ -61,8 +61,8 @@ export default function InitiationAbout() {
 
               <motion.p
                 {...fadeUp(0.2)}
-                className="font-caslon text-black/70 mt-6"
-                style={{ fontSize: "18px", letterSpacing: "0.02em" }}
+                className="font-caslon text-black mt-6"
+                style={{ fontSize: "24px", letterSpacing: "0.02em" }}
               >
                 ~ Francis Weller
               </motion.p>

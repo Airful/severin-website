@@ -138,12 +138,13 @@ export default function InitiationRole() {
           </FadeIn>
 
           <FadeIn delay={0.3}>
-            <button
-              className="mt-6 px-6 py-3 rounded-full bg-[#C8A76D] text-black font-inter font-medium text-[15px]
+            <a
+              href="/contact"
+              className="mt-6 inline-block px-6 py-3 rounded-full bg-[#C8A76D] text-black font-inter font-medium text-[15px]
                          transition-all duration-300 hover:scale-[1.04] hover:opacity-90"
             >
               Get Started
-            </button>
+            </a>
           </FadeIn>
         </div>
 

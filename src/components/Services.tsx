@@ -14,21 +14,21 @@ const fadeUp = (delay: number) => ({
 const services = [
   {
     id: "01",
-    title: "Somatic Astrology",
+    title: "Somatic Embodiment",
     image: "/Somatic.png",
-    href: "/somatic-astrology",
+    href: "/somatic-embodiment",
   },
   {
     id: "02",
-    title: "Dark Retreat Preparation & Integration",
+    title: "Dark Room",
     image: "/Dark.png",
-    href: "/initiation-integration",
+    href: "/darkness-retreat",
   },
   {
     id: "03",
     title: "Astrology Sessions",
     image: "/astrology.png",
-    href: undefined,
+    href: "/somatic-astrology",
   },
   {
     id: "04",

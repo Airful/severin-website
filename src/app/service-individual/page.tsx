@@ -108,7 +108,7 @@ export default function ServiceIndividualPage() {
 
             {/* Button */}
             <a
-              href="#"
+              href="/contact"
               className="font-inter font-medium text-black no-underline transition-all duration-300 ease-in-out hover:opacity-90 hover:scale-105"
               style={{
                 background: "#D1A65C",
@@ -563,7 +563,7 @@ export default function ServiceIndividualPage() {
 
           {/* Button */}
           <a
-            href="#"
+            href="/somatic-astrology"
             className="font-inter font-medium text-black no-underline transition-opacity hover:opacity-90"
             style={{
               background: "#C8A76D",

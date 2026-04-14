@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import FadeIn from "@/components/animations/FadeIn";
 
@@ -63,12 +64,13 @@ export default function InitiationHero() {
 
           {/* CTA */}
           <FadeIn delay={0.45}>
-            <button
-              className="mt-8 px-6 py-3 rounded-full bg-[#C8A76D] text-black font-inter font-medium text-[15px]
+            <Link
+              href="/contact"
+              className="mt-8 inline-block px-6 py-3 rounded-full bg-[#C8A76D] text-black font-inter font-medium text-[15px]
                          transition-all duration-300 hover:scale-[1.04] hover:opacity-90"
             >
               Begin Your Journey with Severin
-            </button>
+            </Link>
           </FadeIn>
 
         </div>

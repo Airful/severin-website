@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const ease = "easeOut" as const;
@@ -155,19 +156,20 @@ export default function InitiationPricing() {
               </div>
 
               {/* Button */}
-              <button
-                className="w-full rounded-full py-3 transition-opacity hover:opacity-80"
+              <Link
+                href="/contact"
+                className="w-full rounded-full py-3 transition-opacity hover:opacity-80 text-center block"
                 style={{
                   fontFamily: "'Inter Tight', sans-serif",
                   fontSize: "14px",
                   fontWeight: 500,
                   backgroundColor: card.highlighted ? "#111111" : "#C8A76D",
                   color: card.highlighted ? "#C8A76D" : "#111111",
-                  border: "none",
+                  textDecoration: "none",
                 }}
               >
                 {card.buttonText}
-              </button>
+              </Link>
             </motion.div>
           ))}
         </div>

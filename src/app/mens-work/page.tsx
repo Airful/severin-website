@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -64,12 +65,12 @@ export default function MensWorkPage() {
                 responsibility and pressure.
               </p>
 
-              <a
-                href="#learn-more"
+              <Link
+                href="/contact"
                 className="inline-block mt-5 md:mt-8 px-8 py-3 md:py-4 bg-[#C8A76D] text-black font-medium text-sm rounded-full hover:bg-[#b8965c] transition-colors"
               >
                 Learn More
-              </a>
+              </Link>
 
             </div>
           </div>
@@ -224,13 +225,13 @@ export default function MensWorkPage() {
                   </p>
                 </div>
 
-                <a
+                <Link
                   href="/contact"
                   className="inline-block mt-5 md:mt-8 bg-[#C8A76D] text-black font-medium rounded-full hover:bg-[#b8965c] transition-colors"
                   style={{ fontSize: "14px", padding: "12px 24px" }}
                 >
                   Reach out
-                </a>
+                </Link>
 
               </div>
             </div>
@@ -300,13 +301,13 @@ export default function MensWorkPage() {
                     A private space to speak freely, regulate, and reflect.
                   </p>
                 </div>
-                <a
+                <Link
                   href="/contact"
                   className="inline-block text-center mt-8 bg-[#C8A76D] text-black font-medium rounded-full hover:bg-[#b8965c] transition-colors"
                   style={{ fontSize: "14px", padding: "12px 24px" }}
                 >
                   Start Now
-                </a>
+                </Link>
               </div>
 
               <div
@@ -327,13 +328,13 @@ export default function MensWorkPage() {
                     For men who want continuity, accountability, and depth.
                   </p>
                 </div>
-                <a
+                <Link
                   href="/contact"
                   className="inline-block text-center mt-8 bg-black text-white font-medium rounded-full hover:bg-black/80 transition-colors"
                   style={{ fontSize: "14px", padding: "12px 24px" }}
                 >
                   Start Now
-                </a>
+                </Link>
               </div>
 
             </div>
@@ -462,13 +463,13 @@ export default function MensWorkPage() {
                 Not to fix or perform, but to stand behind who you are and how you live.
               </p>
 
-              <a
+              <Link
                 href="/contact"
                 className="inline-block bg-[#C8A76D] text-black font-medium rounded-full hover:bg-[#b8965c] transition-colors"
                 style={{ fontSize: "14px", padding: "12px 28px" }}
               >
                 Reach out
-              </a>
+              </Link>
 
             </div>
           </div>

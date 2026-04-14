@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ParallaxImg from "@/components/animations/ParallaxImg";
@@ -136,16 +137,16 @@ export default function SelfPacedRetreatPage() {
 
             {/* Buttons */}
             <div className="flex flex-wrap items-center gap-4">
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="font-inter font-medium text-black bg-[#C8A76D] rounded-full no-underline transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(200,167,109,0.35)]"
                 style={{ fontSize: "15px", letterSpacing: "0.02em", padding: "14px 32px" }}
               >
                 Enroll in the Prep Course Now
-              </a>
+              </Link>
 
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="font-inter text-white rounded-full no-underline transition-all duration-300 hover:bg-white/[0.08] hover:border-white/80"
                 style={{
                   fontSize: "15px",
@@ -155,7 +156,7 @@ export default function SelfPacedRetreatPage() {
                 }}
               >
                 Watch the First Lesson Free
-              </a>
+              </Link>
             </div>
 
           </div>
@@ -250,13 +251,13 @@ export default function SelfPacedRetreatPage() {
               </div>
 
               {/* Button */}
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="font-inter font-medium text-black bg-[#C8A76D] rounded-full no-underline transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(200,167,109,0.35)] inline-block"
                 style={{ fontSize: "15px", letterSpacing: "0.02em", padding: "14px 36px", border: "1px solid #FAF8F5" }}
               >
                 Start Preparing Today
-              </a>
+              </Link>
 
             </div>
           </div>
@@ -417,12 +418,13 @@ export default function SelfPacedRetreatPage() {
             </div>
 
             {/* CTA */}
-            <button
-              className="font-inter font-medium text-black bg-[#CBA76D] rounded-full w-full transition-all duration-300 hover:opacity-90"
+            <Link
+              href="/contact"
+              className="font-inter font-medium text-black bg-[#CBA76D] rounded-full w-full transition-all duration-300 hover:opacity-90 text-center"
               style={{ marginTop: "24px", maxWidth: "200px", fontSize: "16px", padding: "16px 0", display: "block" }}
             >
               Get Instant Access
-            </button>
+            </Link>
 
           </div>
 
@@ -611,8 +613,8 @@ export default function SelfPacedRetreatPage() {
           </div>
 
           {/* CTA button */}
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="font-inter font-medium text-black no-underline inline-block rounded-full transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(200,167,109,0.35)]"
             style={{
               background: "#C9A96B",
@@ -622,7 +624,7 @@ export default function SelfPacedRetreatPage() {
             }}
           >
             Book a Session
-          </a>
+          </Link>
 
         </div>
       </section>

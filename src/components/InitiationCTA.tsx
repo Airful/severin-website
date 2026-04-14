@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const fadeUp = (delay: number) => ({
@@ -50,12 +51,14 @@ export default function InitiationCTA() {
           This is where integration begins.
         </motion.p>
 
-        <motion.button
-          {...fadeUp(0.6)}
-          className="bg-[#C8A76D] text-black px-8 py-3 rounded-full font-inter font-medium text-[15px] transition-all duration-300 hover:opacity-90 hover:scale-[1.03]"
-        >
-          Begin Your Journey with Severin
-        </motion.button>
+        <motion.div {...fadeUp(0.6)}>
+          <Link
+            href="/contact"
+            className="inline-block bg-[#C8A76D] text-black px-8 py-3 rounded-full font-inter font-medium text-[15px] transition-all duration-300 hover:opacity-90 hover:scale-[1.03]"
+          >
+            Begin Your Journey with Severin
+          </Link>
+        </motion.div>
 
       </div>
     </section>

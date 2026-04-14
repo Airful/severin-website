@@ -103,7 +103,7 @@ export default function AboutPage() {
 
               <FadeIn delay={0.45}>
                 <a
-                  href="#"
+                  href="/darkness-retreat"
                   className="mt-2 inline-flex items-center justify-center rounded-full bg-[#B59328] text-black font-inter font-medium transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03]"
                   style={{ fontSize: "15px", letterSpacing: "0.02em", padding: "14px 38px", width: "fit-content" }}
                 >

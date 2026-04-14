@@ -121,9 +121,15 @@ export default function DarknessRetreatPage() {
       <Navbar />
 
       <section className="relative flex min-h-[90vh] items-center overflow-hidden">
-        <ParallaxImg src="/dark/baner.jpg" alt="Darkness retreat" strength={10} />
-        <div className="absolute inset-0 z-10 bg-black/55" />
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black/85 via-black/55 to-transparent" />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="https://cdn.prod.website-files.com/66f4f75d1030b321fb817485%2F66fedbf5574756153b6170e5_file-transcode.mp4" type="video/mp4" />
+        </video>
 
         <div className="relative z-20 mx-auto flex w-full max-w-[1200px] px-6 py-24">
           <div className="max-w-[620px]">

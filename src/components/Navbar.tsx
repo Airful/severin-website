@@ -59,9 +59,10 @@ export default function Navbar() {
             <div className="absolute top-full left-0 pt-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-[opacity,visibility] duration-200 ease-in-out">
               <div className="bg-[#1a1a1a] border border-white/10 rounded-xl py-2 min-w-max shadow-2xl">
                 {[
-                  { label: "Self-Paced Darkness Retreat Prep Course", href: "/self-paced-retreat" },
-                  { label: "Somatic Astrology",                        href: "/somatic-astrology" },
-                  { label: "Facilitator Training",                     href: "/service-individual" },
+                  { label: "Somatic Embodiment", href: "/somatic-embodiment" },
+                  { label: "Dark Room",           href: "/darkness-retreat" },
+                  { label: "Astrology Sessions",  href: "/somatic-astrology" },
+                  { label: "Men's Work",          href: "/mens-work" },
                 ].map((s) => (
                   <Link
                     key={s.label}
@@ -145,9 +146,10 @@ export default function Navbar() {
             {mobileServicesOpen && (
               <div className="flex flex-col mt-2 pl-4 gap-3 border-l border-white/10">
                 {[
-                  { label: "Self-Paced Darkness Retreat Prep Course", href: "/self-paced-retreat" },
-                  { label: "Somatic Astrology",                        href: "/somatic-astrology" },
-                  { label: "Facilitator Training",                     href: "/service-individual" },
+                  { label: "Somatic Embodiment", href: "/somatic-embodiment" },
+                  { label: "Dark Room",           href: "/darkness-retreat" },
+                  { label: "Astrology Sessions",  href: "/somatic-astrology" },
+                  { label: "Men's Work",          href: "/mens-work" },
                 ].map((s) => (
                   <Link
                     key={s.label}
