@@ -33,7 +33,7 @@ export default function PreparationSection() {
             <div className="flex flex-col gap-4 font-inter text-white/70 text-[16px] leading-[150%]">
               <p>
                 A darkness retreat does not begin when you close the door.<br />
-                It begins weeks before — in how you slow down, what you clear, and how you prepare your nervous system.
+                It begins weeks before: in how you slow down, what you clear, and how you prepare your nervous system.
               </p>
               <p>
                 Without preparation, the dark can feel disorienting.<br />
@@ -41,7 +41,7 @@ export default function PreparationSection() {
               </p>
               <p>
                 Integration is equally important.<br />
-                What surfaces in darkness needs time, support, and structure to land — not just insight, but lived change.
+                What surfaces in darkness needs time, support, and structure to land, not just insight, but lived change.
               </p>
               <p>
                 This course guides you through both:<br />

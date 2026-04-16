@@ -21,8 +21,8 @@ export default function MensWorkPage() {
 
         {/* ── Hero section ── */}
         <section
-          className="relative w-full h-auto flex items-center bg-black bg-cover bg-center bg-no-repeat py-12 md:py-32"
-          style={{ backgroundImage: "url('/men/bnaer.png')" }}
+          className="relative w-full flex items-center bg-black bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/men/bnaer.png')", minHeight: "100vh" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
 
@@ -51,17 +51,17 @@ export default function MensWorkPage() {
                 style={{ fontSize: "18px", lineHeight: "160%" }}
               >
                 This work offers a grounded, confidential container for men to
-                bring everything — the anger, the shame, the confusion, the
-                numbness, the desire, the fear — and also the strength, care,
+                bring everything: the anger, the shame, the confusion, the
+                numbness, the desire, the fear, and also the strength, care,
                 clarity, and capacity that already live underneath.
               </p>
               <p
                 className="text-white/70 mt-3 md:mt-4 max-w-[520px]"
                 style={{ fontSize: "18px", lineHeight: "160%" }}
               >
-                This is not about becoming a «better man.» It's
+                This is not about becoming a "better man."<br></br> <br></br>It's
                 about becoming more honest, present, and embodied in the life you
-                already live — especially as a father, partner, or man navigating
+                already live, especially as a father, partner, or man navigating
                 responsibility and pressure.
               </p>
 
@@ -78,7 +78,7 @@ export default function MensWorkPage() {
 
         {/* ── Quote ── */}
         <section className="bg-black pt-12 pb-12 md:py-28">
-          <div className="max-w-[780px] mx-auto px-6 text-center">
+          <div className="max-w-[840px] mx-auto px-6 text-center">
             <p
               className="text-white mx-auto"
               style={{
@@ -90,11 +90,22 @@ export default function MensWorkPage() {
                 maxWidth: "90%",
               }}
             >
-              «Aging is an extraordinary process whereby you become the
-              person you always should have been»
+              "Aging is an extraordinary process whereby you become the
+              person you always should have been"
             </p>
-            <p className="mt-3 text-white/70" style={{ fontSize: "16px" }}>
-              — David Bowie
+            <br></br>
+           <p
+              className="text-white mx-auto"
+              style={{
+                ...serif,
+                fontSize: "clamp(22px, 2.4vw, 24px)",
+                lineHeight: "140%",
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                maxWidth: "90%",
+              }}
+            >
+              David Bowie
             </p>
           </div>
         </section>
@@ -130,8 +141,8 @@ export default function MensWorkPage() {
                   className="text-white/70 mt-3 md:mt-6"
                   style={{ fontSize: "18px", lineHeight: "160%" }}
                 >
-                  A confidential container for men to bring everything — the anger,
-                  the shame, the confusion, the numbness, the desire, the fear —
+                  A confidential container for men to bring everything: the anger,
+                  the shame, the confusion, the numbness, the desire, the fear,
                   and also the strength, care, clarity, and capacity that already
                   live underneath.
                 </p>
@@ -151,7 +162,7 @@ export default function MensWorkPage() {
                   className="text-white/70 mt-3 md:mt-6"
                   style={{ fontSize: "18px", lineHeight: "160%" }}
                 >
-                  This is not about becoming a «better man.» It's
+                  This is not about becoming a "better man." It's
                   about becoming more honest, present, and embodied in the life you
                   already live.
                 </p>

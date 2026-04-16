@@ -150,7 +150,7 @@ export default function ServiceIndividualPage() {
               style={{ lineHeight: "110%", letterSpacing: "-2px" }}
             >
               The Difference Between Guessing <br />
-              — and Guiding With Authority
+              and Guiding With Authority
             </h2>
 
             {/* Subtext */}
@@ -329,7 +329,7 @@ export default function ServiceIndividualPage() {
               style={{ lineHeight: "110%", letterSpacing: "-2px" }}
             >
               Train On Your<br />
-              Schedule — With<br />
+              Schedule, With<br />
               Support Along the Way
             </h2>
 
@@ -484,7 +484,7 @@ export default function ServiceIndividualPage() {
                 fontWeight: "400",
               }}
             >
-              Led by Severin Geser —
+              Led by Severin Geser,
               Founder of The Hermitage
             </h2>
 
@@ -503,7 +503,7 @@ export default function ServiceIndividualPage() {
               }}
             >
               <p>
-                Severin has guided over 1,000 darkness retreat participants and trained dozens of facilitators across four continents. A former monk, meditation teacher, and spiritual guide, Severin built The Hermitage into one of the most trusted spaces for darkness retreats worldwide. His approach is grounded, non-dogmatic, and deeply rooted in experience — not theory.
+                Severin has guided over 1,000 darkness retreat participants and trained dozens of facilitators across four continents. A former monk, meditation teacher, and spiritual guide, Severin built The Hermitage into one of the most trusted spaces for darkness retreats worldwide. His approach is grounded, non-dogmatic, and deeply rooted in experience, not theory.
               </p>
             </div>
 
@@ -542,7 +542,7 @@ export default function ServiceIndividualPage() {
             className="font-inter uppercase"
             style={{ fontSize: "12px", letterSpacing: "2px", color: "rgba(255,255,255,0.6)" }}
           >
-            This isn&apos;t just a training — it&apos;s a transmission
+            This isn&apos;t just a training, it&apos;s a transmission
           </p>
 
           {/* Heading */}

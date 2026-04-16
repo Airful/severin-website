@@ -104,14 +104,14 @@ export default function ContactPage() {
             className="font-caslon text-white mb-6"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: "110%", letterSpacing: "-0.02em" }}
           >
-            Start Your Journey into the Dark — and Come Out Transformed
+            Start Your Journey into the Dark and Come Out Transformed
           </h2>
 
           <p
             className="font-inter mx-auto mb-10"
             style={{ fontSize: "18px", lineHeight: "165%", color: "rgba(255,255,255,0.8)", maxWidth: "700px" }}
           >
-            Whether you&apos;re preparing for your own retreat, ready to guide others, or seeking clarity through astrology — Severin offers a path to support your next step.
+            Whether you&apos;re preparing for your own retreat, ready to guide others, or seeking clarity through astrology, Severin offers a path to support your next step.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-[30px]">

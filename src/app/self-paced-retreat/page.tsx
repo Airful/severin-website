@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import ParallaxImg from "@/components/animations/ParallaxImg";
 
 export const metadata = {
-  title: "Self-Paced Darkness Retreat Prep Course — Severin Geser",
+  title: "Self-Paced Darkness Retreat Prep Course: Severin Geser",
   description:
     "A structured self-paced course to prepare your body, mind, and nervous system for a darkness retreat.",
 };
@@ -117,7 +117,7 @@ export default function SelfPacedRetreatPage() {
               }}
             >
               Prepare for Your  Darkness<br />
-              Retreat —   Before You<br />
+              Retreat, Before You<br />
              Step Into the Dark
             </h1>
 
@@ -200,7 +200,7 @@ export default function SelfPacedRetreatPage() {
                   fontWeight: "400",
                 }}
               >
-                Most People Go In Unprepared — And Miss the Magic
+                Most People Go In Unprepared And Miss the Magic
               </h2>
 
               {/* Description */}
@@ -310,7 +310,7 @@ export default function SelfPacedRetreatPage() {
               maxWidth: "620px",
             }}
           >
-            Clear, concise, and grounded training — no fluff, no dogma.
+            Clear, concise, and grounded training, no fluff, no dogma.
           </p>
 
           {/* Cards grid — 6 columns: row 1 = 3×col-span-2, row 2 = 2×col-span-3 */}
@@ -318,14 +318,14 @@ export default function SelfPacedRetreatPage() {
             {/* Row 1: 3 equal cards at 33% each */}
             <div className="col-span-2" style={{textAlign: "left" }}><ModuleCard num="01" title="Introduction and Foundations" /></div>
 
-            <div className="col-span-2" style={{textAlign: "left" }}><ModuleCard num="02" title="Preparing the Body — Sleep, Detox, Movement" /></div>
+            <div className="col-span-2" style={{textAlign: "left" }}><ModuleCard num="02" title="Preparing the Body: Sleep, Detox, Movement" /></div>
 
             <div className="col-span-2" style={{textAlign: "left" }}><ModuleCard num="03" title="Emotional Preparation & Nervous System Safety" /></div>
 
             {/* Row 2: 2 equal cards at 50% each */}
-            <div className="col-span-2 sm:col-span-3" style={{textAlign: "left" }}><ModuleCard num="04" title="Inner Terrain — Ego, Shadow, Fear, and Light" /></div>
+            <div className="col-span-2 sm:col-span-3" style={{textAlign: "left" }}><ModuleCard num="04" title="Inner Terrain: Ego, Shadow, Fear, and Light" /></div>
 
-            <div className="col-span-2 sm:col-span-3" style={{textAlign: "left" }}><ModuleCard num="05" title="Integration — How to Return with Clarity and Grace" /></div>
+            <div className="col-span-2 sm:col-span-3" style={{textAlign: "left" }}><ModuleCard num="05" title="Integration: How to Return with Clarity and Grace" /></div>
           </div>
 
         </div>
@@ -361,7 +361,7 @@ export default function SelfPacedRetreatPage() {
               }}
             >
               You Want to Enter the<br />
-              Darkness Ready —<br />
+              Darkness Ready,<br />
               Not Rattled
             </h2>
 
@@ -518,7 +518,7 @@ export default function SelfPacedRetreatPage() {
                 fontWeight: "400",
               }}
             >
-              Led by Severin Geser —
+              Led by Severin Geser,
               Founder of The Hermitage
             </h2>
 
@@ -537,7 +537,7 @@ export default function SelfPacedRetreatPage() {
               }}
             >
               <p>
-              Severin has guided over 1,000 darkness retreat participants and trained dozens of facilitators across four continents. A former monk, meditation teacher, and spiritual guide, Severin built The Hermitage into one of the most trusted spaces for darkness retreats worldwide. His approach is grounded, non-dogmatic, and deeply rooted in experience — not theory.
+              Severin has guided over 1,000 darkness retreat participants and trained dozens of facilitators across four continents. A former monk, meditation teacher, and spiritual guide, Severin built The Hermitage into one of the most trusted spaces for darkness retreats worldwide. His approach is grounded, non-dogmatic, and deeply rooted in experience, not theory.
               </p>
             </div>
 

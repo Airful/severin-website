@@ -23,7 +23,7 @@ const abeeZee = ABeeZee({
 });
 
 export const metadata: Metadata = {
-  title: "Severin Geser — Holding the Fire of Initiation",
+  title: "Severin Geser: Holding the Fire of Initiation",
   description:
     "Over the last decade I've guided thousands through Darkness Retreats, built and sold The Hermitage retreat center at Lake Atitlán.",
 };
@@ -32,8 +32,9 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
+        suppressHydrationWarning
         className={`${interTight.variable} ${libreCaslon.variable} ${abeeZee.variable} font-inter antialiased`}
       >
         {children}

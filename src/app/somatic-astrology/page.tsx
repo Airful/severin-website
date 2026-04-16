@@ -238,7 +238,7 @@ function CtaBannerSection() {
               maxWidth: "600px",
             }}
           >
-            Step into a session with Severin and discover how your cosmic blueprint lives in your body — and how to move forward with clarity and trust.
+            Step into a session with Severin and discover how your cosmic blueprint lives in your body, and how to move forward with clarity and trust.
           </p>
         </FadeIn>
 

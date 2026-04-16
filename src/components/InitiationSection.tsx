@@ -16,7 +16,7 @@ export default function InitiationSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 items-center">
 
         {/* LEFT — full-bleed image with parallax */}
-        <div className="relative h-[460px] md:h-[750px] overflow-hidden">
+        <div className="relative h-[600px] md:h-[1040px] overflow-hidden mt-[30px] mb-[10px] md:mt-[80px] md:mb-[20px]">
           <ParallaxImg src="/dark/qw.png" alt="Initiation is Not a Choice" strength={10} />
           <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent via-transparent to-black/40" />
         </div>
@@ -27,7 +27,7 @@ export default function InitiationSection() {
 
             <FadeIn>
               <p className="uppercase text-white/50 text-[12px] tracking-[2px]">
-                WHEN LIFE CHANGES YOU — IF YOU ASKED FOR IT OR NOT
+                WHEN LIFE CHANGES YOU, IF YOU ASKED FOR IT OR NOT
               </p>
             </FadeIn>
 

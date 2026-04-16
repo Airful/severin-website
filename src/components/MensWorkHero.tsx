@@ -52,7 +52,7 @@ export default function MensWorkHero() {
               Most men were never taught how to feel deeply,
               <br className="hidden md:block" /> speak honestly, or be truly present.
               <br /><br />
-              Men&apos;s Work is a space to unlearn what no longer serves —
+              Men&apos;s Work is a space to unlearn what no longer serves,
               <br className="hidden md:block" /> and discover what it means to be a conscious man.
               <br /><br />
               Not softer. Not harder. Just more fully yourself.

@@ -28,7 +28,7 @@ const testimonials = [
   {
     stars: 5,
     quote:
-      '"For the first time in my life, I feel clearer than ever before—I now see that my gifts were right in front of me all along."',
+      '"For the first time in my life, I feel clearer than ever before, I now see that my gifts were right in front of me all along."',
     name: "Lauren Folan",
     image: "/Lauren.png",
   },

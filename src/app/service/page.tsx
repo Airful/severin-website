@@ -7,12 +7,12 @@ import Footer from "@/components/Footer";
 import ParallaxImg from "@/components/animations/ParallaxImg";
 
 export const metadata = {
-  title: "Services — Severin Geser",
+  title: "Services: Severin Geser",
   description:
     "Four ways of working, rooted in embodiment, awareness, and lived experience.",
 };
 
-const services: { id: string; image: string; label: string; heading: string; description: string | string[] }[] = [
+const services: { id: string; image: string; label: string; heading: string; description: string | string[]; href: string }[] = [
   {
     id: "somatic",
     image: "/services/service1.png",
@@ -20,6 +20,7 @@ const services: { id: string; image: string; label: string; heading: string; des
     heading: "Somatic Astrology",
     description:
       "Astrology becomes powerful when it speaks to your body, not just your mind.Together we explore your chart to understand your patterns, your purpose, and the deeper movements shaping your life right now.These sessions offer clarity, direction, and a renewed trust in your path.",
+    href: "/somatic-astrology",
   },
   {
     id: "dark-retreat",
@@ -28,6 +29,7 @@ const services: { id: string; image: string; label: string; heading: string; des
     heading: "Initiation & Integration",
     description:
       "Support for Dark Retreats, life transitions, and moments when identity no longer fits. This work is for times when clarity arrives faster than the system can hold it offering preparation, containment, and integration so transformation becomes lived rather than lost.",
+    href: "/somatic-embodiment",
   },
   {
     id: "somatic-embodiment",
@@ -36,6 +38,7 @@ const services: { id: string; image: string; label: string; heading: string; des
     heading: "Somatic Embodiment",
     description:
       "Somatic work helps you come back into your body; the place where truth, instinct, and resilience live.In these sessions we slow down, feel what's actually here, and build the capacity to stay present with emotion, shadow, and sensation.You leave more grounded, regulated, and connected to yourself.",
+    href: "/darkness-retreat",
   },
   {
     id: "mens-work",
@@ -45,8 +48,9 @@ const services: { id: string; image: string; label: string; heading: string; des
     description: [
       "For men who are tired of hustling, performing, and holding it together. This work is about coming back into alignment with what is true, not what is expected.",
       "Here, strength is not separated from vulnerability. Anger, grief, shame, fear, tenderness, and courage are all welcome.",
-      "This is a space where integrity grows from honesty, and where every part of you—from light to darkness—has a place.",
+      "This is a space where integrity grows from honesty, and where every part of you, from light to darkness, has a place.",
     ],
+    href: "/mens-work",
   },
 ];
 
@@ -60,6 +64,7 @@ export default function ServicePage() {
 
       {/* Explore My Offerings */}
       <section
+        id="sessions"
         className="w-full flex justify-center bg-black/80"
         style={{ padding: "100px 20px" }}
       >
@@ -101,7 +106,7 @@ export default function ServicePage() {
         <section
           key={service.heading}
           id={service.id}
-          style={{ position: "relative", width: "100%", height: "clamp(480px, 60vw, 650px)", overflow: "hidden", display: "flex", alignItems: "center", scrollMarginTop: "72px" }}
+          style={{ position: "relative", width: "100%", height: "850px", overflow: "hidden", display: "flex", alignItems: "center", scrollMarginTop: "72px" }}
         >
           {/* Background image with parallax */}
           <ParallaxImg src={service.image} alt={service.heading} strength={8} />
@@ -172,7 +177,7 @@ export default function ServicePage() {
             </div>
 
             <a
-              href="/contact"
+              href={service.href}
               className="font-inter inline-block bg-[#C8A76D] text-black text-sm font-medium tracking-[0.04em] rounded-[30px] py-3 px-7 no-underline transition-all duration-300 ease-in-out hover:bg-[#b8955f] hover:scale-105 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)]"
             >
               Book a Session

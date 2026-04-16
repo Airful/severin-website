@@ -11,15 +11,6 @@ export default function ServicesHero() {
       {/* Parallax background image */}
       <ParallaxImg src="/services/baner.png" alt="" strength={10} />
 
-      {/* Dark gradient overlay */}
-      <div
-        className="absolute inset-0 z-10"
-        style={{
-          background:
-            "linear-gradient(to right, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.50) 50%, rgba(0,0,0,0.25) 100%)",
-        }}
-      />
-
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center text-center px-5 md:px-10">
 
@@ -68,7 +59,7 @@ export default function ServicesHero() {
         {/* Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-4 mt-8 md:mt-10">
           <Link
-            href="#services"
+            href="#sessions"
             className="font-inter font-medium text-black bg-[#C8A76D] rounded-full transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(200,167,109,0.35)]"
             style={{ fontSize: "15px", letterSpacing: "0.02em", padding: "14px 38px" }}
           >
@@ -76,7 +67,7 @@ export default function ServicesHero() {
           </Link>
 
           <Link
-            href="#about"
+            href="/contact"
             className="font-inter text-white rounded-full transition-all duration-300 hover:bg-white/[0.08] hover:border-white/80"
             style={{
               fontSize: "15px",

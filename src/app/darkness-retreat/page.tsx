@@ -29,7 +29,7 @@ const sections = [
     imageLeft: false,
   },
   {
-    tag: "WHEN LIFE CHANGES YOU — IF YOU ASKED FOR IT OR NOT",
+    tag: "WHEN LIFE CHANGES YOU, IF YOU ASKED FOR IT OR NOT",
     heading: "Initiation is Not a Choice.\nIt's a Passage.",
     text: `Across cultures, initiation marked the moment when an old identity could no longer continue.\n\nNot through effort but through loss, disorientation, and truth.\n\nA Dark Retreat mirrors this ancient pattern.\nIn the absence of stimulation, roles dissolve.\nWhat remains is not who you think you are, but what is real.\n\nInitiation often begins long before the retreat:\n• a breakdown\n• a loss\n• a moment when life no longer fits\n• a sense that something has ended, even if you can't name it\n\nSometimes the darkness is literal.\nSometimes it is psychological, relational, or existential.\nEither way, initiation is a threshold you cannot rush.\nWhat changes you here cannot be undone.\nThere is no guarantee of comfort.\nOnly the possibility of truth, integration, and a deeper alignment with life.`,
     image: "/dark/qw.png",
@@ -120,7 +120,7 @@ export default function DarknessRetreatPage() {
     <main className="min-h-screen bg-black">
       <Navbar />
 
-      <section className="relative flex min-h-[90vh] items-center overflow-hidden">
+      <section className="relative min-h-[90vh] overflow-hidden">
         <video
           autoPlay
           muted
@@ -130,11 +130,16 @@ export default function DarknessRetreatPage() {
         >
           <source src="https://cdn.prod.website-files.com/66f4f75d1030b321fb817485%2F66fedbf5574756153b6170e5_file-transcode.mp4" type="video/mp4" />
         </video>
+      </section>
 
-        <div className="relative z-20 mx-auto flex w-full max-w-[1200px] px-6 py-24">
-          <div className="max-w-[620px]">
+      {/* ── Hero text ── */}
+      <section style={{ background: "rgb(108 90 59)", borderTop: "1px solid rgba(200, 167, 109, 0.15)" }}>
+        <div className="mx-auto px-6 py-16 md:py-24" style={{ maxWidth: "1100px" }}>
+
+          {/* Centered heading block */}
+          <div className="text-center mb-12 md:mb-16">
             <FadeIn>
-              <p className="mb-5 text-[12px] uppercase tracking-[0.2em] text-white/50">
+              <p className="mb-4 text-[12px] uppercase tracking-[0.2em] text-white/50">
                 Darkness
               </p>
             </FadeIn>
@@ -150,24 +155,59 @@ export default function DarknessRetreatPage() {
                 What is a Dark Retreat?
               </h1>
             </FadeIn>
-            <FadeIn delay={0.3}>
-              <div>
-                <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
+          </div>
+
+          {/* 2-column card grid */}
+          <FadeIn delay={0.3}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5" style={{ columnGap: "60px" }}>
+
+              {/* Card 1 */}
+              <div style={{ background: "rgba(0,0,0,0.12)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "14px", padding: "28px 32px" }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white/60 mb-5">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+                <p className="text-[16px] leading-[160%] text-white/80 md:text-[18px]">
                   This is not a place to fix yourself or<br /> heal something that is broken.
                 </p>
-                <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
+              </div>
+
+              {/* Card 2 */}
+              <div style={{ background: "rgba(0,0,0,0.12)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "14px", padding: "28px 32px" }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="text-white/60 mb-5">
+                  <path d="M2 12c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0"/>
+                  <path d="M2 17c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0"/>
+                </svg>
+                <p className="text-[16px] leading-[160%] text-white/80 md:text-[18px]">
                   It is a space where nothing is required of you.<br />
                   In darkness, the nervous system can finally slow down.
                 </p>
-                <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
+              </div>
+
+              {/* Card 3 */}
+              <div style={{ background: "rgba(0,0,0,0.12)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "14px", padding: "28px 32px" }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white/60 mb-5">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                </svg>
+                <p className="text-[16px] leading-[160%] text-white/80 md:text-[18px]">
                   Old emotions surface not because they are pushed,<br />but because there is enough safety for them to complete.
                 </p>
-                <p className="mt-6 max-w-[520px] text-[16px] leading-[160%] text-white/70 md:text-[18px]">
+              </div>
+
+              {/* Card 4 */}
+              <div style={{ background: "rgba(0,0,0,0.12)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "14px", padding: "28px 32px" }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white/60 mb-5">
+                  <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
+                  <line x1="16" y1="8" x2="2" y2="22"/>
+                  <line x1="17.5" y1="15" x2="9" y2="15"/>
+                </svg>
+                <p className="text-[16px] leading-[160%] text-white/80 md:text-[18px]">
                   From doing to being.<br />From effort to listening.
                 </p>
               </div>
-            </FadeIn>
-          </div>
+
+            </div>
+          </FadeIn>
+
         </div>
       </section>
 
@@ -184,9 +224,9 @@ export default function DarknessRetreatPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
 
           {/* LEFT — full-bleed image */}
-          <div className="relative h-[460px] md:h-[750px] overflow-hidden">
+          <div className="relative h-[600px] md:h-[1040px] overflow-hidden mt-[30px] mb-[10px] md:mt-[80px] md:mb-[20px]">
             <ParallaxImg src="/dark/The.jpg" alt="Preparation and Integration" strength={10} />
-            <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent via-transparent to-black/40" />
+            <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent via-transparent to-black/100" />
           </div>
 
           {/* RIGHT — content */}

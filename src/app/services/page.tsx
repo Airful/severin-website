@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import ServicesHero from "@/components/ServicesHero";
 
 export const metadata = {
-  title: "Services — Severin Geser",
+  title: "Services: Severin Geser",
   description:
     "Four ways of working, rooted in embodiment, awareness, and lived experience.",
 };

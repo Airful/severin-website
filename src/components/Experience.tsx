@@ -109,7 +109,7 @@ export default function Experience() {
                   className="text-white font-caslon margainbottom-20px"
                   style={{ fontSize: "40px", lineHeight: "1", letterSpacing: "-0.02em", marginBottom: "10px" }}
                 >
-                  100+
+                  1000+
                 </p>
                 <p className="text-white font-inter text-sm mt-1">
                   Astrology & Somatic Session Offered

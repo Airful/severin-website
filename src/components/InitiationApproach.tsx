@@ -8,7 +8,7 @@ const cards = [
     title: "Core Reading – Our First Session",
     body: {
       intro:
-        "We begin by mapping your natal chart through the lens of the body — locating where each placement is felt, not just known.",
+        "We begin by mapping your natal chart through the lens of the body, locating where each placement is felt, not just known.",
       description:
         "This is where we discover whether you are in alignment with yourself and with life. Together we'll explore:",
       points: [
@@ -18,7 +18,7 @@ const cards = [
         "Your life purpose, gifts, and direction",
       ],
       outro:
-        "This reading offers clarity about what makes you irreplaceable — and how you fit into the larger organism of life.",
+        "This reading offers clarity about what makes you irreplaceable, and how you fit into the larger organism of life.",
     },
   },
   {

@@ -28,7 +28,7 @@ export default function WhenToComeSection() {
                 That moment is an opening, not a problem.
               </p>
               <p>
-                The darkness retreat is for those who feel it — and who are willing to sit with what is underneath, without rushing toward an answer.
+                The darkness retreat is for those who feel it, and who are willing to sit with what is underneath, without rushing toward an answer.
               </p>
               <p>
                 Readiness is not the absence of fear.<br />

@@ -93,10 +93,10 @@ export default function AboutPage() {
               <FadeIn delay={0.3}>
                 <div className="flex flex-col gap-4 font-inter text-white text-[16px] leading-[150%]">
                   <p>
-                    Founded by Severin Geser, a former monk and meditation teacher, The Hermitage was never meant to be flashy or commercial. It was designed to disappear — so the seeker could finally face what&apos;s within.
+                    Founded by Severin Geser, a former monk and meditation teacher, The Hermitage was never meant to be flashy or commercial. It was designed to disappear, so the seeker could finally face what&apos;s within.
                   </p>
                   <p>
-                    In 2025, The Hermitage became something bigger than a place: A global platform for darkness retreat education, facilitator training, and center accreditation — so the sacred work could expand without dilution or compromise.
+                    In 2025, The Hermitage became something bigger than a place: A global platform for darkness retreat education, facilitator training, and center accreditation, so the sacred work could expand without dilution or compromise.
                   </p>
                 </div>
               </FadeIn>
@@ -126,7 +126,7 @@ export default function AboutPage() {
               Founder. Facilitator. Former Monk.
             </p>
             <h2 className="font-caslon text-[clamp(36px,5vw,64px)] leading-[110%] tracking-[-1px] text-black mb-6">
-              Severin Geser Has Lived the<br /> Darkness — and Returned <br />with a Map
+              Severin Geser Has Lived the<br /> Darkness and Returned <br />with a Map
             </h2>
             <p className="font-inter text-[16px] leading-[150%] text-black/80">
               With over 1,000 people guided through darkness, Severin is one of the world&apos;s most <br />trusted facilitators and teachers of this rare modality.
@@ -142,10 +142,10 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-[1340px] mx-auto px-5 md:px-[40px] py-[50px] md:py-[140px]">
           <div className="max-w-[700px] text-left text-white">
             <p className="font-caslon text-[32px] leading-[120%] text-white mb-4">
-              Born in Switzerland and called to the spiritual path early, Severin spent years in monasteries, silent retreats, and extended periods of darkness — not as an escape, but as a return to what is real.
+              Born in Switzerland and called to the spiritual path early, Severin spent years in monasteries, silent retreats, and extended periods of darkness, not as an escape, but as a return to what is real.
             </p>
             <p className="font-inter text-[18px] leading-[150%] text-white/80 mb-6">
-              His life&apos;s work has been holding space for others at the threshold — guiding more than 1,000 people through darkness retreats and deep initiatory processes across the world.
+              His life&apos;s work has been holding space for others at the threshold, guiding more than 1,000 people through darkness retreats and deep initiatory processes across the world.
             </p>
             <a
               href="/self-paced-retreat"
@@ -175,7 +175,7 @@ export default function AboutPage() {
               className="font-caslon text-white mb-5"
               style={{ fontSize: "clamp(28px, 4vw, 48px)", lineHeight: "120%" }}
             >
-              To Make the Sacred Accessible —Without Diluting the Depth
+              To Make the Sacred Accessible Without Diluting the Depth
             </h2>
             <p className="font-inter text-[16px] leading-[150%] max-w-[560px] mx-auto" style={{ color: "#fff" }}>
               We believe transformation doesn&apos;t need noise, medicine, or spectacle. It needs stillness, safety, and sacred space.
@@ -209,7 +209,7 @@ export default function AboutPage() {
               <img src="/about/exit3.png" alt="Trauma-Aware Guidance" className="w-full h-[180px] object-cover rounded-[12px] mb-5" />
               <p className="text-[12px] mb-3 text-[#aaa] group-hover:text-black/60">03</p>
               <h3 className="font-caslon text-white text-[32px] leading-[110%] mb-2 group-hover:text-black">Trauma-Aware<br /> Guidance</h3>
-              <p className="font-inter text-[14px] leading-[150%] text-[#aaa] group-hover:text-black/70">We train facilitators who protect — not project.</p>
+              <p className="font-inter text-[14px] leading-[150%] text-[#aaa] group-hover:text-black/70">We train facilitators who protect, not project.</p>
             </div>
 
             {/* Card 4 */}
@@ -244,7 +244,7 @@ export default function AboutPage() {
                 A Darkness Retreat in Every Region. A Trained Guide in Every Circle
               </h2>
               <p className="font-inter text-[18px] leading-[150%] mb-8" style={{ color: "#fff" }}>
-                We envision a future where deep inner work is trusted, accessible, and held with integrity — across cultures and continents. That&apos;s why The Hermitage offers more than insight. We offer:
+                We envision a future where deep inner work is trusted, accessible, and held with integrity, across cultures and continents. That&apos;s why The Hermitage offers more than insight. We offer:
               </p>
 
               {/* Features grid */}
@@ -308,7 +308,7 @@ export default function AboutPage() {
             className="font-caslon text-white mb-6"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: "110%", letterSpacing: "-0.02em" }}
           >
-            Start Your Journey into the Dark — and Come Out Transformed
+            Start Your Journey into the Dark and Come Out Transformed
           </h2>
 
           {/* Paragraph */}
@@ -316,7 +316,7 @@ export default function AboutPage() {
             className="font-inter mx-auto mb-10"
             style={{ fontSize: "18px", lineHeight: "165%", color: "rgba(255,255,255,0.8)", maxWidth: "700px" }}
           >
-            Whether you&apos;re preparing for your own retreat, ready to guide others, or seeking clarity through astrology — Severin offers a path to support your next step.
+            Whether you&apos;re preparing for your own retreat, ready to guide others, or seeking clarity through astrology, Severin offers a path to support your next step.
           </p>
 
           {/* Buttons */}

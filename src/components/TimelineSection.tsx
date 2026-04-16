@@ -7,14 +7,14 @@ const items = [
   {
     date: "2009",
     heading: "The First Darkness",
-    body: "Severin enters his first extended darkness retreat in a hermitage in the Swiss Alps — alone, without light, for seven days. What he encounters there changes everything.",
+    body: "Severin enters his first extended darkness retreat in a hermitage in the Swiss Alps, alone, without light, for seven days. What he encounters there changes everything.",
     image: "/about/TIMELINE1.png",
     imageLeft: true,
   },
   {
     date: "2014",
     heading: "The Hermitage, Guatemala",
-    body: "On the shores of Lake Atitlán, The Hermitage is born — a purpose-built darkness retreat center serving seekers from around the world.",
+    body: "On the shores of Lake Atitlán, The Hermitage is born: a purpose-built darkness retreat center serving seekers from around the world.",
     image: "/about/TIMELINE2.png",
     imageLeft: false,
   },
@@ -28,7 +28,7 @@ const items = [
   {
     date: "2025",
     heading: "A Global Platform",
-    body: "The Hermitage evolves into a global platform — offering facilitator certification, center accreditation, and a worldwide retreat directory.",
+    body: "The Hermitage evolves into a global platform, offering facilitator certification, center accreditation, and a worldwide retreat directory.",
     image: "/about/TIMELINE4.png",
     imageLeft: false,
   },

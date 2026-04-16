@@ -38,7 +38,7 @@ export default function InitiationSupport() {
               <p className="text-gray-300 text-base leading-relaxed mb-4">
                 My work is to support people before, during, and after
                 experiences of intensity, including Dark Retreats and major life
-                transitions — so what opens can be met, integrated, and lived
+                transitions, so what opens can be met, integrated, and lived
                 rather than overwhelming the system.
               </p>
             </FadeIn>
