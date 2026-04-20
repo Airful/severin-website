@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import FadeIn from "@/components/animations/FadeIn";
 
 export default function InitiationAdvisory() {
@@ -10,11 +9,10 @@ export default function InitiationAdvisory() {
 
         {/* ── LEFT — image ── */}
         <FadeIn>
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/Initiation/qwq.png"
             alt="Retreat"
-            width={500}
-            height={600}
             className="object-cover rounded-lg w-full"
           />
         </FadeIn>

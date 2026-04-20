@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -24,11 +23,11 @@ export default function Experience() {
     <section ref={sectionRef} className="relative overflow-hidden">
       {/* Background with parallax */}
       <motion.div className="absolute inset-0 will-change-transform" style={{ y: bgY }}>
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="/qw.png"
           alt="Background"
-          fill
-          className="object-cover object-center"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
       </motion.div>
 

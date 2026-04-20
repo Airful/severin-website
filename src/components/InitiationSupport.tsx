@@ -13,11 +13,11 @@ export default function InitiationSupport() {
           <FadeIn className="flex justify-center md:justify-start">
             <div className="relative w-full max-w-[400px] aspect-[3/4]">
               <Image
-                 src="/initiation/servin.png"
+                src="/initiation/servin.png"
                 alt="Severin Geser"
                 fill
+                sizes="(min-width: 768px) 400px, 100vw"
                 className="object-cover rounded-xl"
-                sizes="(max-width: 768px) 90vw, 400px"
               />
             </div>
           </FadeIn>

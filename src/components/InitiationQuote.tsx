@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import FadeIn from "@/components/animations/FadeIn";
 
 export default function InitiationQuote() {
@@ -31,11 +30,10 @@ export default function InitiationQuote() {
 
           {/* ── RIGHT — image ── */}
           <FadeIn delay={0.2} className="flex justify-center md:justify-end">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/self-praced/servin.png"
               alt="Severin Geser"
-              width={500}
-              height={600}
               className="object-cover rounded-lg w-full max-w-[500px]"
             />
           </FadeIn>

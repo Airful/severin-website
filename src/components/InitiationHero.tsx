@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import FadeIn from "@/components/animations/FadeIn";
 
 export default function InitiationHero() {
@@ -10,13 +9,11 @@ export default function InitiationHero() {
 
       {/* ── Background image — absolute, fills entire section ── */}
       <div className="absolute inset-0">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="/initiation/5.png"
           alt="Initiation & Integration"
-          fill
-          priority
-          className="object-cover object-center"
-          sizes="100vw"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
       </div>
 

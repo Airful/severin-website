@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import FadeIn from "@/components/animations/FadeIn";
 
 const cards = [
@@ -80,12 +79,11 @@ export default function InitiationRole() {
 
       {/* ── Background image ── */}
       <div className="absolute inset-0">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="/self-praced/5.png"
           alt="My Role background"
-          fill
-          className="object-cover"
-          sizes="100vw"
+          className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
 
