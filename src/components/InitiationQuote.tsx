@@ -32,7 +32,7 @@ export default function InitiationQuote() {
           <FadeIn delay={0.2} className="flex justify-center md:justify-end">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/self-praced/servin.png"
+              src="/initiation/servin.png"
               alt="Severin Geser"
               className="object-cover rounded-lg w-full max-w-[500px]"
             />

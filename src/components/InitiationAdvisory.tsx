@@ -11,7 +11,7 @@ export default function InitiationAdvisory() {
         <FadeIn>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/Initiation/qwq.png"
+            src="/initiation/qwq.png"
             alt="Retreat"
             className="object-cover rounded-lg w-full"
           />

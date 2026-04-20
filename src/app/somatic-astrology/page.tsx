@@ -464,7 +464,7 @@ export default function SomaticAstrologyPage() {
 
         {/* Left — Image: full-bleed, no padding, with parallax */}
         <div className="relative w-full md:w-1/2 flex-shrink-0 overflow-hidden" style={{ minHeight: "400px" }}>
-          <ParallaxImg src="/astrology/image.png" alt="We all arrive with a Backpack" strength={10} />
+          <ParallaxImg src="/astrology/Image.png" alt="We all arrive with a Backpack" strength={10} />
         </div>
 
         {/* Right — Content */}
