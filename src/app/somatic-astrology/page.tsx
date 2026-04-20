@@ -32,52 +32,6 @@ const pricingCards = [
   },
 ];
 
-function QuoteBannerSection() {
-  return (
-    <section
-      className="relative w-full overflow-hidden flex items-center"
-      style={{ minHeight: "375px" }}
-    >
-      {/* Background image — full cover */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/astrology/a5.jpg"
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover object-right"
-      />
-
-      {/* Gold gradient overlay — solid on left, slightly lighter on right */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#C2A46D] via-[#C2A46D]/90 to-[#C2A46D]/70" />
-
-      {/* Text content */}
-      <div className="relative z-10 w-full max-w-[1200px] mx-auto px-6 lg:px-20 py-16 md:py-20">
-        <div className="max-w-[700px]">
-          <FadeIn>
-            <blockquote
-              className="font-caslon text-black"
-              style={{
-                fontSize: "32px",
-                lineHeight: "130%",
-                letterSpacing: "-0.01em",
-                fontWeight: 400,
-              }}
-            >
-              &ldquo;Astrology is a means of understanding our personalities through an archetypal lens. Moreover, it provides us with a language to bring our unconscious thoughts and behaviours into conscious awareness. This process, often is referred to as the journey of life, and thus allows us to navigate our existence with greater clarity and purpose.&rdquo;
-            </blockquote>
-          </FadeIn>
-          <FadeIn delay={0.2}>
-            <p
-              className="font-caslon text-black mt-6"
-              style={{ fontSize: "20px", letterSpacing: "0.02em" }}
-            >
-              ~ Severin Geser
-            </p>
-          </FadeIn>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function PricingSection() {
   return (
@@ -723,9 +677,6 @@ export default function SomaticAstrologyPage() {
         </div>
 
       </section>
-
-      {/* QUOTE BANNER SECTION */}
-      <QuoteBannerSection />
 
       {/* PRICING SECTION */}
       <PricingSection />
