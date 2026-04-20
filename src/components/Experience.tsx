@@ -83,17 +83,17 @@ export default function Experience() {
           <div className="flex flex-col gap-4 w-full lg:w-auto lg:min-w-[380px]">
             <motion.div
               {...fadeUp(0.2)}
-              className="rounded-[16px] px-8 py-7 flex items-top gap-8 border border-white/20 backdrop-blur-sm bg-[linear-gradient(90deg,rgba(181,147,40,0.15),rgba(181,147,40,0.08))]"
+              className="rounded-[16px] px-8 py-7 flex items-start gap-8 border border-white/20 backdrop-blur-sm bg-[linear-gradient(90deg,rgba(181,147,40,0.15),rgba(181,147,40,0.08))]"
             >
               <img src="/om.svg" alt="" />
-              <div className="text-center min-w-[180px]">
+           <div className="flex flex-col items-center min-w-[180px] ml-[19px]">
                 <p
                   className="text-white font-caslon"
                   style={{ fontSize: "40px", lineHeight: "1", letterSpacing: "-0.02em", marginBottom: "10px" }}
                 >
                   1,000+
                 </p>
-                <p className="text-white font-inter text-sm mt-1">
+                <p className="text-white font-inter text-sm text-center">
                   Dark Retreats Guided
                 </p>
               </div>
@@ -101,18 +101,18 @@ export default function Experience() {
 
             <motion.div
               {...fadeUp(0.35)}
-              className="rounded-[16px] px-8 py-7 flex items-top gap-8 border border-white/20 backdrop-blur-sm bg-[linear-gradient(90deg,rgba(181,147,40,0.15),rgba(181,147,40,0.08))]"
+              className="rounded-[16px] px-8 py-7 flex items-start gap-8 border border-white/20 backdrop-blur-sm bg-[linear-gradient(90deg,rgba(181,147,40,0.15),rgba(181,147,40,0.08))]"
             >
               <img src="/om.svg" alt="" />
-              <div className="text-center min-w-[180px]">
+              <div className="flex flex-col items-center min-w-[180px]">
                 <p
-                  className="text-white font-caslon margainbottom-20px"
+                  className="text-white font-caslon"
                   style={{ fontSize: "40px", lineHeight: "1", letterSpacing: "-0.02em", marginBottom: "10px" }}
                 >
-                  1000+
+                  1,000+
                 </p>
-                <p className="text-white font-inter text-sm mt-1">
-                  Astrology & Somatic Session Offered
+                <p className="text-white font-inter text-sm text-center">
+                  Astrology &amp; Somatic Sessions Offered
                 </p>
               </div>
             </motion.div>

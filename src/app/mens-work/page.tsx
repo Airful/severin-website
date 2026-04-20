@@ -22,9 +22,9 @@ export default function MensWorkPage() {
         {/* ── Hero section ── */}
         <section
           className="relative w-full flex items-center bg-black bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/men/bnaer.png')", minHeight: "100vh" }}
+          style={{ backgroundImage: "url('/men/bnaer.jpg')", minHeight: "100vh" }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/80 to-transparent" />
 
           <div className="relative z-10 w-full">
             <div className="max-w-[1200px] mx-auto px-6 lg:px-20">
@@ -288,7 +288,7 @@ export default function MensWorkPage() {
               This work supports clarity, boundaries, and emotional capacity so growth happens beyond comfort without pushing the nervous system into survival.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-10 md:mt-[60px] text-left">
+            <div className="max-w-[800px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 md:mt-[60px] text-left">
 
               <div
                 className="flex flex-col justify-between rounded-2xl"
@@ -301,11 +301,12 @@ export default function MensWorkPage() {
                 <div>
                   <p
                     className="text-white"
-                    style={{ ...serif, fontSize: "48px", lineHeight: "1", fontWeight: 400 }}
+                    style={{ ...serif, fontSize: "48px", lineHeight: "1", fontWeight: 800 }}
                   >
                     $200 <span style={{ fontSize: "18px", opacity: 0.5 }}>/ USD</span>
                   </p>
-                  <p className="text-white mt-6" style={{ fontSize: "22px", fontWeight: 500 }}>
+                  <br></br>        <br></br>
+                  <p className="text-white mt-6" style={{ fontSize: "22px", fontWeight: 600 }}>
                     1:1 Men's Session
                   </p>
                   <p className="mt-2" style={{ fontSize: "14px", color: "rgba(255,255,255,0.6)", lineHeight: "160%" }}>
@@ -328,11 +329,12 @@ export default function MensWorkPage() {
                 <div>
                   <p
                     className="text-black"
-                    style={{ ...serif, fontSize: "48px", lineHeight: "1", fontWeight: 400 }}
+                    style={{ ...serif, fontSize: "48px", lineHeight: "1", fontWeight: 800 }}
                   >
                     $200 <span style={{ fontSize: "18px", opacity: 0.6 }}>/ USD</span>
                   </p>
-                  <p className="text-black mt-6" style={{ fontSize: "22px", fontWeight: 500 }}>
+                         <br></br>
+                  <p className="text-black mt-6" style={{ fontSize: "22px", fontWeight: 600 }}>
                     Ongoing Men's Container
                   </p>
                   <p className="mt-2 text-black/70" style={{ fontSize: "14px", lineHeight: "160%" }}>
@@ -425,7 +427,7 @@ export default function MensWorkPage() {
 
         {/* ── CTA Banner ── */}
         <section
-          className="relative w-full py-16 md:py-28 overflow-hidden"
+          className="relative w-full py-16 md:py-28 overflow-hidden h-[500px] md:h-[750px]" 
         >
           <img
             src="/men/cta.png"
@@ -434,8 +436,6 @@ export default function MensWorkPage() {
             style={{ zIndex: 0 }}
           />
           <div
-            className="absolute inset-0"
-            style={{ background: "rgba(0,0,0,0.55)", zIndex: 1 }}
           />
           <div
             className="relative h-full flex items-center justify-center text-center px-5"

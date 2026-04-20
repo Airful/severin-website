@@ -285,7 +285,7 @@ export default function DarknessRetreatPage() {
               <FadeIn delay={0.6}>
                 <div className="mt-6">
                   <Link
-                    href="/services"
+                    href="/initiation-integration"
                     className="bg-[#C8A46A] text-black font-inter font-medium text-[15px] rounded-full px-6 py-3 hover:opacity-90 transition-opacity cursor-pointer inline-block"
                   >
                     Work with me for Preparation & Integration

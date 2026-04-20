@@ -20,7 +20,7 @@ const services: { id: string; image: string; label: string; heading: string; des
     heading: "Somatic Astrology",
     description:
       "Astrology becomes powerful when it speaks to your body, not just your mind.Together we explore your chart to understand your patterns, your purpose, and the deeper movements shaping your life right now.These sessions offer clarity, direction, and a renewed trust in your path.",
-    href: "/somatic-astrology",
+    href: "/somatic-embodiment",
   },
   {
     id: "dark-retreat",
@@ -29,7 +29,7 @@ const services: { id: string; image: string; label: string; heading: string; des
     heading: "Initiation & Integration",
     description:
       "Support for Dark Retreats, life transitions, and moments when identity no longer fits. This work is for times when clarity arrives faster than the system can hold it offering preparation, containment, and integration so transformation becomes lived rather than lost.",
-    href: "/somatic-embodiment",
+    href: "/test",
   },
   {
     id: "somatic-embodiment",

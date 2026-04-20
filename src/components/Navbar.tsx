@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -59,10 +58,10 @@ export default function Navbar() {
             <div className="absolute top-full left-0 pt-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-[opacity,visibility] duration-200 ease-in-out">
               <div className="bg-[#1a1a1a] border border-white/10 rounded-xl py-2 min-w-max shadow-2xl">
                 {[
-                  { label: "Somatic Embodiment", href: "/somatic-embodiment" },
-                  { label: "Dark Room",           href: "/darkness-retreat" },
-                  { label: "Astrology Sessions",  href: "/somatic-astrology" },
-                  { label: "Men's Work",          href: "/mens-work" },
+                  { label: "Somatic Embodiment",       href: "/somatic-embodiment" },
+                  { label: "Somatic Astrology",        href: "/somatic-astrology" },
+                  { label: "Initiation & Integration", href: "/initiation-integration" },
+                  { label: "Men's Work",               href: "/mens-work" },
                 ].map((s) => (
                   <Link
                     key={s.label}
@@ -146,10 +145,10 @@ export default function Navbar() {
             {mobileServicesOpen && (
               <div className="flex flex-col mt-2 pl-4 gap-3 border-l border-white/10">
                 {[
-                  { label: "Somatic Embodiment", href: "/somatic-embodiment" },
-                  { label: "Dark Room",           href: "/darkness-retreat" },
-                  { label: "Astrology Sessions",  href: "/somatic-astrology" },
-                  { label: "Men's Work",          href: "/mens-work" },
+                  { label: "Somatic Embodiment",       href: "/somatic-embodiment" },
+                  { label: "Somatic Astrology",        href: "/somatic-astrology" },
+                  { label: "Initiation & Integration", href: "/initiation-integration" },
+                  { label: "Men's Work",               href: "/mens-work" },
                 ].map((s) => (
                   <Link
                     key={s.label}

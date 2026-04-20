@@ -16,7 +16,7 @@ const services = [
     id: "01",
     title: "Somatic Embodiment",
     image: "/Somatic.png",
-    href: "/somatic-embodiment",
+    href: "/test",
   },
   {
     id: "02",
@@ -28,7 +28,7 @@ const services = [
     id: "03",
     title: "Astrology Sessions",
     image: "/astrology.png",
-    href: "/somatic-astrology",
+    href: "/somatic-embodiment",
   },
   {
     id: "04",

@@ -11,17 +11,17 @@ export default function InitiationHero() {
       {/* ── Background image — absolute, fills entire section ── */}
       <div className="absolute inset-0">
         <Image
-          src="/Initiation/baner.jpg"
+          src="/initiation/5.png"
           alt="Initiation & Integration"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-center"
           sizes="100vw"
         />
       </div>
 
-      {/* ── Gradient overlay — left solid → transparent right ── */}
-      <div  />
+      {/* ── Dark overlay for text readability ── */}
+      <div className="absolute inset-0 bg-black/55" />
 
       {/* ── Content — relative z-10, left-aligned ── */}
       <div className="relative z-10 w-full py-13 lg:py-0">

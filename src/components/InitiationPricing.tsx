@@ -38,7 +38,7 @@ const cards = [
 export default function InitiationPricing() {
   return (
     <section className="w-full bg-[#0B0B0B] py-12 md:py-24 px-6">
-      <div className="max-w-[1340px] mx-auto flex flex-col items-center gap-14">
+      <div className="max-w-[900px] mx-auto flex flex-col items-center gap-14">
 
         {/* Header */}
         <div className="flex flex-col items-center gap-6 text-center">

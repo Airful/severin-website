@@ -563,7 +563,7 @@ export default function ServiceIndividualPage() {
 
           {/* Button */}
           <a
-            href="/somatic-astrology"
+            href="/somatic-embodiment"
             className="font-inter font-medium text-black no-underline transition-opacity hover:opacity-90"
             style={{
               background: "#C8A76D",

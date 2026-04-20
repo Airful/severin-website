@@ -135,7 +135,7 @@ export default function ContactPage() {
 
                  <br></br>     <br></br>
             <a
-              href="/somatic-astrology"
+              href="/somatic-embodiment"
               className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-black rounded-full transition-all duration-300 hover:brightness-110"
               style={{ background: "#C9A646", padding: "14px 28px" }}
             >

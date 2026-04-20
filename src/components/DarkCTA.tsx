@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import ParallaxImg from "@/components/animations/ParallaxImg";
 
 const ease = "easeOut" as const;
 const fadeUp = (delay: number) => ({
@@ -32,8 +31,11 @@ export default function DarkCTA({
 }: DarkCTAProps) {
   return (
     <section className="relative overflow-hidden px-5 py-20 sm:py-24 lg:py-28">
-      {/* Parallax background */}
-      <ParallaxImg src="/whys.png" alt="" strength={10} />
+      {/* Static background */}
+      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/whys.png" alt="" className="absolute inset-0 w-full h-full object-cover" />
+      </div>
 
       <div className="relative z-10 mx-auto flex min-h-[430px] max-w-[1340px] items-center justify-center">
         <div className="max-w-[668px] text-center">
