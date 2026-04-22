@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -8,12 +11,20 @@ const navItems = [
 ];
 
 const bottomLinks = [
-  { label: "POLICY", href: "#" },
-  { label: "FAQ", href: "#faq" },
+  { label: "FAQ", href: "/#faq" },
   { label: "CONTACT", href: "/contact" },
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  function handleFAQClick(e: React.MouseEvent, href: string) {
+    if (href === "/#faq" && pathname === "/") {
+      e.preventDefault();
+      document.getElementById("faq")?.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <footer className="bg-black px-5 pb-6 pt-8 text-white md:pt-16 lg:pt-20">
       <div className="mx-auto max-w-[1200px]">
@@ -152,6 +163,7 @@ export default function Footer() {
               <Link
                 key={item.label}
                 href={item.href}
+                onClick={(e) => handleFAQClick(e, item.href)}
                 className="transition-all duration-300 hover:text-[#C8A76D] hover:underline"
               >
                 {item.label}
