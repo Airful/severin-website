@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const ease = "easeOut" as const;
 
@@ -14,57 +13,25 @@ const fadeUp = (delay: number) => ({
 });
 
 export default function Hero() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end start"],
-  });
-  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
-
   return (
-    <section ref={sectionRef} className="relative w-full min-h-[calc(100vh-90px)] bg-[#111111] overflow-hidden">
+    <section
+      className="relative w-full min-h-[calc(100vh-0px)] overflow-hidden"
+      style={{
+        backgroundImage: "url('/BG.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Minimal overlay — just enough to keep white text legible */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{ background: "rgba(0, 0, 0, 0)" }}
+        aria-hidden="true"
+      />
 
-      {/* ── Right column: full-height image (desktop) ───────────────── */}
-      <div className="absolute right-0 top-0 bottom-0 w-[50%] hidden md:block overflow-hidden">
-        <motion.div
-          style={{ y: imageY }}
-          className="absolute inset-0 will-change-transform"
-          aria-hidden="true"
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/BG.png"
-            alt=""
-            aria-hidden="true"
-            style={{ position: "absolute", inset: 0, width: "100%", height: "110%", objectFit: "cover", objectPosition: "center" }}
-          />
-        </motion.div>
-        {/* Gradient: dark on the left edge so text stays readable */}
-        <div
-          className="absolute inset-0 z-10"
-          style={{
-            background:
-              "linear-gradient(to right, #111111 0%, rgba(17,17,17,0.55) 28%, rgba(17,17,17,0.1) 60%, transparent 100%)",
-          }}
-        />
-      </div>
-
-      {/* ── Mobile background image ──────────────────────────────────── */}
-      <div className="md:hidden absolute inset-0 overflow-hidden">
-        <motion.div style={{ y: imageY }} className="absolute inset-0 will-change-transform">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/BG.png"
-            alt=""
-            aria-hidden="true"
-            style={{ position: "absolute", inset: 0, width: "100%", height: "110%", objectFit: "cover", objectPosition: "center" }}
-          />
-        </motion.div>
-        <div className="absolute inset-0 z-10" style={{ background: "rgba(17,17,17,0.78)" }} />
-      </div>
-
-      {/* ── Left column: text content ────────────────────────────────── */}
-      <div className="relative z-10 max-w-[1340px] mx-auto px-5 md:px-[40px] min-h-[calc(100vh-90px)] flex items-center">
+      {/* Text content */}
+      <div className="relative z-10 max-w-[1340px] mx-auto px-5 sm:px-8 md:px-[40px] min-h-[calc(100vh-90px)] flex items-center py-16 md:py-0">
         <div className="w-full md:w-[52%]">
 
           {/* Label */}
@@ -75,7 +42,7 @@ export default function Hero() {
               fontSize: "13px",
               letterSpacing: "0.18em",
               fontWeight: "400",
-              color: "rgba(250,248,245,0.50)",
+              color: "rgba(250,248,245,0.65)",
             }}
           >
             Feel Again, Live Fully.
@@ -99,7 +66,7 @@ export default function Hero() {
           {/* Body copy */}
           <motion.div
             {...fadeUp(0.4)}
-            className="font-inter text-white/70 mb-10"
+            className="font-inter text-white/80 mb-10"
             style={{
               fontSize: "clamp(15px, 1.45vw, 18px)",
               lineHeight: "1.65",
@@ -138,7 +105,7 @@ export default function Hero() {
                 fontSize: "15px",
                 letterSpacing: "0.02em",
                 padding: "13px 37px",
-                border: "1px solid rgba(255,255,255,0.38)",
+                border: "1px solid rgba(255,255,255,0.50)",
               }}
             >
               Learn More
