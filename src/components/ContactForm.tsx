@@ -11,11 +11,70 @@ const inputStyle = {
   padding: "16px 20px",
 };
 
+const LEADS_ENDPOINT =
+  process.env.NEXT_PUBLIC_LEADS_API_URL ?? "https://app.severingeser.com/api/leads";
+
+type Status = "idle" | "submitting" | "success" | "error";
+
 export default function ContactForm() {
   const [phone, setPhone] = useState("");
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("submitting");
+    setErrorMsg(null);
+
+    const form = new FormData(e.currentTarget);
+    const payload = {
+      first_name: (form.get("first_name") as string)?.trim() || null,
+      last_name: (form.get("last_name") as string)?.trim() || null,
+      email: (form.get("email") as string)?.trim() || "",
+      phone: phone || null,
+      message: (form.get("message") as string)?.trim() || null,
+      source_page: typeof window !== "undefined" ? window.location.pathname : null,
+    };
+
+    try {
+      const res = await fetch(LEADS_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body?.error || `Request failed (${res.status})`);
+      }
+      setStatus("success");
+      e.currentTarget.reset();
+      setPhone("");
+    } catch (err) {
+      setStatus("error");
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong");
+    }
+  }
+
+  if (status === "success") {
+    return (
+      <div className="w-full max-w-[580px] flex flex-col items-center text-center gap-4 py-12">
+        <p
+          className="text-white text-[28px] sm:text-[36px]"
+          style={{ fontFamily: "var(--font-libre-caslon, Georgia, serif)", letterSpacing: "-0.02em" }}
+        >
+          Thank you.
+        </p>
+        <p className="font-inter text-white/60 text-[15px] max-w-[420px]">
+          Your message has reached us. Severin will be in touch shortly.
+        </p>
+      </div>
+    );
+  }
+
+  const submitting = status === "submitting";
 
   return (
-    <form className="w-full max-w-[580px]">
+    <form className="w-full max-w-[580px]" onSubmit={handleSubmit}>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
 
         {/* First Name */}
@@ -25,6 +84,7 @@ export default function ContactForm() {
           </label>
           <input
             id="first-name"
+            name="first_name"
             type="text"
             placeholder="First name"
             className="font-inter text-white text-[14px] placeholder:text-white/30 outline-none transition-colors duration-300"
@@ -39,6 +99,7 @@ export default function ContactForm() {
           </label>
           <input
             id="last-name"
+            name="last_name"
             type="text"
             placeholder="Last name"
             className="font-inter text-white text-[14px] placeholder:text-white/30 outline-none transition-colors duration-300"
@@ -66,7 +127,9 @@ export default function ContactForm() {
             </svg>
             <input
               id="email"
+              name="email"
               type="email"
+              required
               placeholder="example@gmail.com"
               className="font-inter text-white text-[14px] placeholder:text-white/30 outline-none bg-transparent flex-1 py-[16px]"
             />
@@ -103,6 +166,7 @@ export default function ContactForm() {
           </label>
           <textarea
             id="message"
+            name="message"
             placeholder="How can we help?"
             className="font-inter text-white text-[14px] placeholder:text-white/30 outline-none resize-none transition-colors duration-300"
             style={{
@@ -115,11 +179,21 @@ export default function ContactForm() {
           />
         </div>
 
+        {/* Error message */}
+        {status === "error" && errorMsg && (
+          <div className="sm:col-span-2 -mb-1">
+            <p className="font-inter text-[13px]" style={{ color: "#ff8888" }}>
+              {errorMsg}
+            </p>
+          </div>
+        )}
+
         {/* Submit — full width */}
         <div className="sm:col-span-2 mt-1">
           <button
             type="submit"
-            className="w-full font-inter font-medium text-black transition-all duration-300 hover:brightness-110 hover:scale-[1.01]"
+            disabled={submitting}
+            className="w-full font-inter font-medium text-black transition-all duration-300 hover:brightness-110 hover:scale-[1.01] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
             style={{
               background: "#C6A34A",
               borderRadius: "40px",
@@ -128,7 +202,7 @@ export default function ContactForm() {
               border: "none",
             }}
           >
-            Send Message
+            {submitting ? "Sending..." : "Send Message"}
           </button>
         </div>
 
