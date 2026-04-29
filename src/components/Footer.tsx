@@ -90,7 +90,7 @@ export default function Footer() {
               </p>
               <div className="mt-4 flex items-center gap-3">
                 <span className="font-inter text-[16px] leading-[150%]">
-                  thehermitagegt@gmail.com
+                  severin@severingeser.com
                 </span>
               </div>
             </div>
