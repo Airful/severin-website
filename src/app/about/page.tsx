@@ -26,7 +26,7 @@ export default function AboutPage() {
                 fontSize: "13px",
                 letterSpacing: "0.18em",
                 fontWeight: "400",
-                color: "rgba(250,248,245,0.50)",
+                color: "#928e8b",
               }}
             >
               Meet The Movement Behind The Darkness
@@ -47,7 +47,7 @@ export default function AboutPage() {
 
             {/* Subtext */}
             <p
-              className="font-inter text-white/70"
+              className="font-inter text-[#cccccc]"
               style={{
                 fontSize: "clamp(15px, 1.45vw, 18px)",
                 lineHeight: "1.65",
@@ -68,7 +68,7 @@ export default function AboutPage() {
           {/* LEFT — full-bleed image with parallax */}
           <div className="relative h-[280px] md:h-[650px] overflow-hidden">
             <ParallaxImg src="/self-praced/most.jpg" alt="The Hermitage" strength={10} objectPosition="bottom" />
-            <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent via-transparent to-black/40" />
+            <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent via-transparent to-[#111111]" />
           </div>
 
           {/* RIGHT — text content */}
@@ -76,7 +76,7 @@ export default function AboutPage() {
             <div className="flex flex-col gap-6" style={{ maxWidth: "500px" }}>
 
               <FadeIn>
-                <p className="uppercase text-white/50 text-[12px] tracking-[2px]">
+                <p className="uppercase text-[#888888] text-[12px] tracking-[2px]">
                   NO LIGHT. NO DISTRACTION. JUST YOU AND THE TRUTH
                 </p>
               </FadeIn>
@@ -101,16 +101,6 @@ export default function AboutPage() {
                 </div>
               </FadeIn>
 
-              <FadeIn delay={0.45}>
-                <a
-                  href="/darkness-retreat"
-                  className="mt-2 inline-flex items-center justify-center rounded-full bg-[#B59328] text-black font-inter font-medium transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03]"
-                  style={{ fontSize: "15px", letterSpacing: "0.02em", padding: "14px 38px", width: "fit-content" }}
-                >
-                  Explore Retreat Directory
-                </a>
-              </FadeIn>
-
             </div>
           </div>
 
@@ -122,13 +112,13 @@ export default function AboutPage() {
       <section className="relative w-full bg-[url('/about/62.jpg')] bg-cover bg-center bg-no-repeat py-[50px] md:py-[120px]">
         <div className="relative z-10 max-w-[1340px] mx-auto px-5 md:px-[40px]">
           <div className="max-w-[868px] mx-auto text-center">
-            <p className="text-[12px] tracking-[0.2em] uppercase text-black/60 mb-4">
+            <p className="text-[12px] tracking-[0.2em] uppercase text-[#666666] mb-4">
               Founder. Facilitator. Former Monk.
             </p>
             <h2 className="font-caslon text-[clamp(36px,5vw,64px)] leading-[110%] tracking-[-1px] text-black mb-6">
               Severin Geser Has Lived the<br /> Darkness and Returned <br />with a Map
             </h2>
-            <p className="font-inter text-[16px] leading-[150%] text-black/80">
+            <p className="font-inter text-[16px] leading-[150%] text-[#333333]">
               With over 1,000 people guided through darkness, Severin is one of the world&apos;s most <br />trusted facilitators and teachers of this rare modality.
             </p>
           </div>
@@ -144,7 +134,7 @@ export default function AboutPage() {
             <p className="font-caslon text-[32px] leading-[120%] text-white mb-4">
               Born in Switzerland and called to the spiritual path early, Severin spent years in monasteries, silent retreats, and extended periods of darkness, not as an escape, but as a return to what is real.
             </p>
-            <p className="font-inter text-[18px] leading-[150%] text-white/80 mb-6">
+            <p className="font-inter text-[18px] leading-[150%] text-white mb-6">
               His life&apos;s work has been holding space for others at the threshold, guiding more than 1,000 people through darkness retreats and deep initiatory processes across the world.
             </p>
             <a
@@ -258,10 +248,10 @@ export default function AboutPage() {
                   <div
                     key={item}
                     className="flex items-start gap-3 rounded-[12px] p-4"
-                    style={{ border: "1px solid rgba(255,255,255,0.08)" }}
+                    style={{ border: "1px solid #2a2a2a" }}
                   >
                     <span className="mt-[10px] w-[10px] h-[6px] rounded-[2px] flex-shrink-0" style={{ background: "#C8A76D" }} />
-                    <p className="font-inter text-[15px] leading-[150%] text-white/80">{item}</p>
+                    <p className="font-inter text-[15px] leading-[150%] text-white">{item}</p>
                   </div>
                 ))}
               </div>
@@ -295,11 +285,10 @@ export default function AboutPage() {
       {/* CTA section — parallax background, center aligned */}
       <section className="relative w-full overflow-hidden py-[60px] md:py-[120px] px-5">
         <ParallaxImg src="/astrology/Background.jpg" alt="" strength={10} />
-        <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.6)" }} />
         <div className="relative z-10 max-w-[760px] mx-auto text-center">
 
           {/* Label */}
-          <p className="font-inter text-[12px] tracking-[0.22em] uppercase text-white/60 mb-6">
+          <p className="font-inter text-[12px] tracking-[0.22em] uppercase text-[#aaaaaa] mb-6">
             READY TO HOLD SPACE FOR OTHERS?
           </p>
 
@@ -314,7 +303,7 @@ export default function AboutPage() {
           {/* Paragraph */}
           <p
             className="font-inter mx-auto mb-10"
-            style={{ fontSize: "18px", lineHeight: "165%", color: "rgba(255,255,255,0.8)", maxWidth: "700px" }}
+            style={{ fontSize: "18px", lineHeight: "165%", color: "#cccccc", maxWidth: "700px" }}
           >
             Whether you&apos;re preparing for your own retreat, ready to guide others, or seeking clarity through astrology, Severin offers a path to support your next step.
           </p>
@@ -323,15 +312,15 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-[30px]">
             <a
               href="/self-paced-retreat"
-              className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-white rounded-full transition-all duration-300 hover:bg-white/10"
-              style={{ border: "1px solid rgba(255,255,255,0.4)", padding: "12px 24px" }}
+              className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-white rounded-full transition-all duration-300"
+              style={{ border: "1px solid #666666", padding: "12px 24px" }}
             >
               Explore Prep Courses
             </a>
             <a
               href="/service-individual"
-              className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-white rounded-full transition-all duration-300 hover:bg-white/10"
-              style={{ border: "1px solid rgba(255,255,255,0.4)", padding: "12px 24px" }}
+              className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-white rounded-full transition-all duration-300"
+              style={{ border: "1px solid #666666", padding: "12px 24px" }}
             >
               Apply for Facilitator Training
             </a>

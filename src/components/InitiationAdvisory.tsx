@@ -23,28 +23,28 @@ export default function InitiationAdvisory() {
             Advisory Work for <br /> Retreat Centers
           </h2>
 
-          <p className="text-white/90 mt-6 text-[16px] leading-relaxed">
+          <p className="text-white mt-6 text-[16px] leading-relaxed">
             Alongside individual work, I act as an advisor for retreat centers
             and facilitators.
           </p>
 
-          <p className="text-white/90 mt-4 text-[16px] leading-relaxed">
+          <p className="text-white mt-4 text-[16px] leading-relaxed">
             This includes:
           </p>
 
-          <ul className="mt-3 space-y-2 text-white/90 list-disc pl-5 text-[16px] leading-relaxed">
+          <ul className="mt-3 space-y-2 text-white list-disc pl-5 text-[16px] leading-relaxed">
             <li>guidance on building and holding Dark Retreat containers</li>
             <li>preparation and integration frameworks</li>
             <li>discernment around safety, readiness, and responsibility</li>
           </ul>
 
-          <p className="text-white/70 mt-4 text-[16px] leading-relaxed">
+          <p className="text-[#cccccc] mt-4 text-[16px] leading-relaxed">
             My advisory role draws on over a decade of building, managing, and
             ultimately letting go of my own retreat center, as well as current
             collaborations with Acraya.
           </p>
 
-          <p className="text-white/70 mt-4 text-[16px] leading-relaxed">
+          <p className="text-[#cccccc] mt-4 text-[16px] leading-relaxed">
             Advisory work is offered by conversation.
           </p>
         </FadeIn>

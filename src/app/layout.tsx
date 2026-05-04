@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter_Tight, Libre_Caslon_Text, ABeeZee } from "next/font/google";
+import { Inter_Tight, Libre_Caslon_Text } from "next/font/google";
 import "./globals.css";
 
 const interTight = Inter_Tight({
@@ -12,13 +12,6 @@ const libreCaslon = Libre_Caslon_Text({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-libre-caslon",
-  display: "swap",
-});
-
-const abeeZee = ABeeZee({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-abeezee",
   display: "swap",
 });
 
@@ -35,7 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         suppressHydrationWarning
-        className={`${interTight.variable} ${libreCaslon.variable} ${abeeZee.variable} font-inter antialiased`}
+        className={`${interTight.variable} ${libreCaslon.variable} font-inter antialiased`}
       >
         {children}
       </body>

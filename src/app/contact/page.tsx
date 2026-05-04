@@ -26,7 +26,7 @@ export default function ContactPage() {
                 fontSize: "12px",
                 letterSpacing: "0.18em",
                 fontWeight: "400",
-                color: "rgba(250,248,245,0.50)",
+                color: "#928e8b",
               }}
             >
               When You Are Ready
@@ -49,7 +49,7 @@ export default function ContactPage() {
 
           <FadeIn delay={0.3}>
             <p
-              className="font-inter text-white/90"
+              className="font-inter text-white"
               style={{
                 fontSize: "clamp(15px, 1.45vw, 18px)",
                 lineHeight: "1.65",
@@ -93,10 +93,9 @@ export default function ContactPage() {
       {/* CTA section — identical to About page */}
       <section className="relative w-full overflow-hidden py-[60px] md:py-[120px] px-5">
         <ParallaxImg src="/astrology/Background.jpg" alt="" strength={10} />
-        <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.6)" }} />
         <div className="relative z-10 max-w-[760px] mx-auto text-center">
 
-          <p className="font-inter text-[12px] tracking-[0.22em] uppercase text-white/60 mb-6">
+          <p className="font-inter text-[12px] tracking-[0.22em] uppercase text-[#aaaaaa] mb-6">
             READY TO HOLD SPACE FOR OTHERS?
           </p>
 
@@ -109,7 +108,7 @@ export default function ContactPage() {
 
           <p
             className="font-inter mx-auto mb-10"
-            style={{ fontSize: "18px", lineHeight: "165%", color: "rgba(255,255,255,0.8)", maxWidth: "700px" }}
+            style={{ fontSize: "18px", lineHeight: "165%", color: "#cccccc", maxWidth: "700px" }}
           >
             Whether you&apos;re preparing for your own retreat, ready to guide others, or seeking clarity through astrology, Severin offers a path to support your next step.
           </p>
@@ -117,15 +116,15 @@ export default function ContactPage() {
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-[30px]">
             <a
               href="/self-paced-retreat"
-              className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-white rounded-full transition-all duration-300 hover:bg-white/10"
-              style={{ border: "1px solid rgba(255,255,255,0.4)", padding: "12px 24px" }}
+              className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-white rounded-full transition-all duration-300"
+              style={{ border: "1px solid #666666", padding: "12px 24px" }}
             >
               Explore Prep Courses
             </a>
             <a
               href="/service-individual"
-              className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-white rounded-full transition-all duration-300 hover:bg-white/10"
-              style={{ border: "1px solid rgba(255,255,255,0.4)", padding: "12px 24px" }}
+              className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-white rounded-full transition-all duration-300"
+              style={{ border: "1px solid #666666", padding: "12px 24px" }}
             >
               Apply for Facilitator Training
             </a>

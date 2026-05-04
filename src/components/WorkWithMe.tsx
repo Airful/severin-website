@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const ease = "easeOut" as const;
 const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 40 },
-  whileInView: { opacity: 1, y: 0 },
+  initial: { y: 40 },
+  whileInView: { y: 0 },
   viewport: { once: true },
   transition: { duration: 0.6, ease, delay },
 });
@@ -63,7 +63,7 @@ export default function WorkWithMe() {
                             px-8 sm:px-12 lg:px-16 pt-10 pb-6 lg:py-16">
               <motion.p
                 {...fadeUp(0)}
-                className="mb-4 font-inter uppercase text-white/60"
+                className="mb-4 font-inter uppercase text-[#aaaaaa]"
                 style={{ fontSize: "12px", letterSpacing: "0.2em" }}
               >
                 Get Started Today

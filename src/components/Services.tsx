@@ -5,8 +5,8 @@ import ServiceCard from "@/components/ServiceCard";
 
 const ease = "easeOut" as const;
 const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 40 },
-  whileInView: { opacity: 1, y: 0 },
+  initial: { y: 40 },
+  whileInView: { y: 0 },
   viewport: { once: true },
   transition: { duration: 0.6, ease, delay },
 });
@@ -22,7 +22,6 @@ const services = [
     id: "02",
     title: "Dark Room",
     image: "/Dark.png",
-    href: "/darkness-retreat",
   },
   {
     id: "03",
@@ -47,7 +46,7 @@ export default function Services() {
           <motion.p
             {...fadeUp(0)}
             className="uppercase tracking-widest font-inter text-[12px] mb-4"
-            style={{ color: "rgba(250,248,245,0.5)" }}
+            style={{ color: "#928e8b" }}
           >
             Current Focus
           </motion.p>
@@ -65,7 +64,7 @@ export default function Services() {
           <motion.p
             {...fadeUp(0.3)}
             className="font-inter text-[16px] leading-relaxed mx-auto"
-            style={{ maxWidth: "620px", color: "rgba(255,255,255,0.45)" }}
+            style={{ maxWidth: "620px", color: "#888888" }}
           >
             These are the four areas I work with most. Each one is evolving. If
             you feel resonance, start with a conversation.

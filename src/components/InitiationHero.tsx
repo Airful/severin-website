@@ -17,8 +17,6 @@ export default function InitiationHero() {
         />
       </div>
 
-      {/* ── Dark overlay for text readability ── */}
-      <div className="absolute inset-0 bg-black/55" />
 
       {/* ── Content — relative z-10, left-aligned ── */}
       <div className="relative z-10 w-full py-13 lg:py-0">
@@ -64,7 +62,7 @@ export default function InitiationHero() {
             <Link
               href="/contact"
               className="mt-8 inline-block px-6 py-3 rounded-full bg-[#C8A76D] text-black font-inter font-medium text-[15px]
-                         transition-all duration-300 hover:scale-[1.04] hover:opacity-90"
+                         transition-all duration-300 hover:scale-[1.04]"
             >
               Begin Your Journey with Severin
             </Link>

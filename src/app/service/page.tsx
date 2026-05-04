@@ -29,7 +29,7 @@ const services: { id: string; image: string; label: string; heading: string; des
     heading: "Initiation & Integration",
     description:
       "Support for Dark Retreats, life transitions, and moments when identity no longer fits. This work is for times when clarity arrives faster than the system can hold it offering preparation, containment, and integration so transformation becomes lived rather than lost.",
-    href: "/test",
+    href: "/initiation-integration",
   },
   {
     id: "somatic-embodiment",
@@ -38,7 +38,7 @@ const services: { id: string; image: string; label: string; heading: string; des
     heading: "Somatic Embodiment",
     description:
       "Somatic work helps you come back into your body; the place where truth, instinct, and resilience live.In these sessions we slow down, feel what's actually here, and build the capacity to stay present with emotion, shadow, and sensation.You leave more grounded, regulated, and connected to yourself.",
-    href: "/darkness-retreat",
+    href: "/somatic-embodiment",
   },
   {
     id: "mens-work",

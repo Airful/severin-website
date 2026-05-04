@@ -7,15 +7,15 @@ const cards = [
     title: "Preparation & Integration",
     content: (
       <>
-        <p className="text-white/80 font-medium text-[15px] mb-2">
+        <p className="text-white font-medium text-[15px] mb-2">
           Preparation Sessions
         </p>
-        <p className="text-white/60 text-[15px] leading-relaxed mb-4">
+        <p className="text-[#aaaaaa] text-[15px] leading-relaxed mb-4">
           For those approaching a Dark Retreat or entering a major life
           transition. We work with nervous system readiness, expectations,
           orientation, and pacing.
         </p>
-        <p className="text-white/80 font-medium text-[15px] mb-2">
+        <p className="text-white font-medium text-[15px] mb-2">
           Integration Sessions
         </p>
         <p className="text-white/60 text-[15px] leading-relaxed">
@@ -31,18 +31,18 @@ const cards = [
     title: "Ongoing Containers",
     content: (
       <>
-        <p className="text-white/60 text-[15px] leading-relaxed mb-4">
+        <p className="text-[#aaaaaa] text-[15px] leading-relaxed mb-4">
           Unlikely do initiations resolve in a single session.
         </p>
-        <p className="text-white/60 text-[15px] leading-relaxed mb-3">
+        <p className="text-[#aaaaaa] text-[15px] leading-relaxed mb-3">
           For longer passages, I offer ongoing containers that provide:
         </p>
-        <ul className="list-disc pl-5 space-y-1 text-white/60 text-[15px]">
+        <ul className="list-disc pl-5 space-y-1 text-[#aaaaaa] text-[15px]">
           <li>continuity and pacing</li>
           <li>relational stability during change</li>
           <li>space for truth to unfold over time</li>
         </ul>
-        <p className="text-white/60 text-[15px] leading-relaxed mt-4">
+        <p className="text-[#aaaaaa] text-[15px] leading-relaxed mt-4">
           These containers are shaped together, based on your needs and
           capacity.
         </p>
@@ -53,18 +53,18 @@ const cards = [
     title: "Advisory Work",
     content: (
       <>
-        <p className="text-white/60 text-[15px] leading-relaxed mb-4">
+        <p className="text-[#aaaaaa] text-[15px] leading-relaxed mb-4">
           Unlikely do initiations resolve in a single session.
         </p>
-        <p className="text-white/60 text-[15px] leading-relaxed mb-3">
+        <p className="text-[#aaaaaa] text-[15px] leading-relaxed mb-3">
           For longer passages, I offer ongoing containers that provide:
         </p>
-        <ul className="list-disc pl-5 space-y-1 text-white/60 text-[15px]">
+        <ul className="list-disc pl-5 space-y-1 text-[#aaaaaa] text-[15px]">
           <li>continuity and pacing</li>
           <li>relational stability during change</li>
           <li>space for truth to unfold over time</li>
         </ul>
-        <p className="text-white/60 text-[15px] leading-relaxed mt-4">
+        <p className="text-[#aaaaaa] text-[15px] leading-relaxed mt-4">
           These containers are shaped together, based on your needs and
           capacity.
         </p>
@@ -87,8 +87,6 @@ export default function InitiationRole() {
         />
       </div>
 
-      {/* ── Overlay: dark base + left-to-right gradient ── */}
-      <div className="absolute inset-0 bg-black/60" />
 
       {/* ── Content ── */}
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 lg:px-20">
@@ -96,7 +94,7 @@ export default function InitiationRole() {
         {/* Top content */}
         <div className="max-w-[620px]">
           <FadeIn>
-            <p className="text-xs tracking-widest text-white/40 mb-4">
+            <p className="text-xs tracking-widest text-[#888888] mb-4">
               WHAT TO EXPECT
             </p>
           </FadeIn>
@@ -108,7 +106,7 @@ export default function InitiationRole() {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <div className="flex flex-col gap-3 text-white/70 text-[16px] leading-relaxed">
+            <div className="flex flex-col gap-3 text-[#cccccc] text-[16px] leading-relaxed">
               <p>
                 I don&apos;t act as a teacher, healer, or authority over your
                 experience.
@@ -139,7 +137,7 @@ export default function InitiationRole() {
             <a
               href="/contact"
               className="mt-6 inline-block px-6 py-3 rounded-full bg-[#C8A76D] text-black font-inter font-medium text-[15px]
-                         transition-all duration-300 hover:scale-[1.04] hover:opacity-90"
+                         transition-all duration-300 hover:scale-[1.04]"
             >
               Get Started
             </a>
@@ -150,12 +148,12 @@ export default function InitiationRole() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {cards.map((card, i) => (
             <FadeIn key={card.title} delay={i * 0.12}>
-              <div className="rounded-xl border border-white/20 bg-white/5 backdrop-blur-md p-6 h-full flex flex-col gap-4">
+              <div className="rounded-xl border border-[#444444] bg-[#1e1e1e] p-6 h-full flex flex-col gap-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/self-praced/Logo.svg"
                   alt="icon"
-                  className="w-[40px] h-[40px] object-contain opacity-80 mb-3"
+                  className="w-[40px] h-[40px] object-contain mb-3"
                 />
                 <h3
                   className="text-white font-caslon"

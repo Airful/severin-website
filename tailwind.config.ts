@@ -20,7 +20,6 @@ const config: Config = {
       fontFamily: {
         inter: ["var(--font-inter-tight)", "sans-serif"],
         caslon: ["var(--font-libre-caslon)", "serif"],
-        abeezee: ["var(--font-abeezee)", "sans-serif"],
       },
       fontSize: {
         h1: ["72px", { lineHeight: "110%", letterSpacing: "-0.04em", fontWeight: "500" }],

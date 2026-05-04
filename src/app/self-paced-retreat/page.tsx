@@ -21,10 +21,10 @@ function ModuleCard({ num, title }: { num: string; title: string }) {
         gap: "10px",
         minHeight: "200px",
         background: "rgb(17 17 17 / 21%)",
-        border: "1px solid rgba(255,255,255,0.10)",
+        border: "1px solid #333333",
         borderRadius: "12px",
         padding: "24px",
-        backdropFilter: "blur(12px)",
+        
       }}
     >
       {/* Logo image */}
@@ -33,7 +33,7 @@ function ModuleCard({ num, title }: { num: string; title: string }) {
         src="/self-praced/Logo.svg"
         alt=""
         aria-hidden="true"
-        style={{ width: "50px", height: "50px", opacity: 0.8, marginBottom: "4px" }}
+        style={{ width: "50px", height: "50px", marginBottom: "4px" }}
       />
       {/* Module label */}
       <p
@@ -43,7 +43,7 @@ function ModuleCard({ num, title }: { num: string; title: string }) {
           letterSpacing: "0.18em",
           fontWeight: "400",
           color: "#C6A76E",
-          opacity: 0.85,
+          
         }}
       >
         /MODULE {num}
@@ -82,7 +82,7 @@ export default function SelfPacedRetreatPage() {
           className="absolute inset-0 z-10"
           style={{
             background:
-              "linear-gradient(to right, #111111 0%, rgba(17,17,17,0.88) 35%, rgba(17,17,17,0.55) 60%, rgba(17,17,17,0.15) 85%, transparent 100%)",
+              "#111111",
           }}
         />
 
@@ -100,7 +100,7 @@ export default function SelfPacedRetreatPage() {
                 fontSize: "11px",
                 letterSpacing: "0.20em",
                 fontWeight: "400",
-                color: "rgba(250,248,245,0.45)",
+                color: "#888888",
               }}
             >
               CREATED BY THE WORLD&apos;S LEADING DARKNESS RETREAT FACILITATORS
@@ -123,7 +123,7 @@ export default function SelfPacedRetreatPage() {
 
             {/* Paragraph */}
             <p
-              className="font-inter text-white/90 mb-10"
+              className="font-inter text-white mb-10"
               style={{
                 fontSize: "clamp(15px, 1.45vw, 18px)",
                 lineHeight: "1.65",
@@ -139,7 +139,7 @@ export default function SelfPacedRetreatPage() {
             <div className="flex flex-wrap items-center gap-4">
               <Link
                 href="/contact"
-                className="font-inter font-medium text-black bg-[#C8A76D] rounded-full no-underline transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(200,167,109,0.35)]"
+                className="font-inter font-medium text-black bg-[#C8A76D] rounded-full no-underline transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_#C8A76D]"
                 style={{ fontSize: "15px", letterSpacing: "0.02em", padding: "14px 32px" }}
               >
                 Enroll in the Prep Course Now
@@ -147,12 +147,12 @@ export default function SelfPacedRetreatPage() {
 
               <Link
                 href="/contact"
-                className="font-inter text-white rounded-full no-underline transition-all duration-300 hover:bg-white/[0.08] hover:border-white/80"
+                className="font-inter text-white rounded-full no-underline transition-all duration-300 hover:border-white"
                 style={{
                   fontSize: "15px",
                   letterSpacing: "0.02em",
                   padding: "13px 31px",
-                  border: "1px solid rgba(255,255,255,0.38)",
+                  border: "1px solid #666666",
                 }}
               >
                 Watch the First Lesson Free
@@ -184,7 +184,7 @@ export default function SelfPacedRetreatPage() {
                   fontSize: "11px",
                   letterSpacing: "0.20em",
                   fontWeight: "400",
-                  color: "rgba(250,248,245,0.45)",
+                  color: "#888888",
                 }}
               >
                 NO LIGHT. NO DISTRACTION. JUST YOU AND THE TRUTH
@@ -205,7 +205,7 @@ export default function SelfPacedRetreatPage() {
 
               {/* Description */}
               <p
-                className="font-inter text-white/100 mb-8"
+                className="font-inter text-white mb-8"
                 style={{
                   fontSize: "clamp(15px, 1.4vw, 18px)",
                   lineHeight: "1.65",
@@ -227,7 +227,7 @@ export default function SelfPacedRetreatPage() {
                 ].map((item) => (
                   <div
                     key={item}
-                    className="flex items-start gap-3 bg-[#1a1a1a] border border-white/10 rounded-xl p-4"
+                    className="flex items-start gap-3 bg-[#1a1a1a] border border-[#333333] rounded-xl p-4"
                   >
                     {/* Gold square icon */}
                     <span
@@ -241,7 +241,7 @@ export default function SelfPacedRetreatPage() {
                       }}
                     />
                     <p
-                      className="font-inter text-white/80"
+                      className="font-inter text-white"
                       style={{ fontSize: "16px", lineHeight: "1.55", fontWeight: "400", margin: 0 }}
                     >
                       {item}
@@ -253,7 +253,7 @@ export default function SelfPacedRetreatPage() {
               {/* Button */}
               <Link
                 href="/contact"
-                className="font-inter font-medium text-black bg-[#C8A76D] rounded-full no-underline transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(200,167,109,0.35)] inline-block"
+                className="font-inter font-medium text-black bg-[#C8A76D] rounded-full no-underline transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_#C8A76D] inline-block"
                 style={{ fontSize: "15px", letterSpacing: "0.02em", padding: "14px 36px", border: "1px solid #FAF8F5" }}
               >
                 Start Preparing Today
@@ -279,7 +279,7 @@ export default function SelfPacedRetreatPage() {
               letterSpacing: "0.22em",
               fontWeight: "400",
               color: "#C6A76E",
-              opacity: 0.85,
+              
             }}
           >
             // COURSE CONTENT BREAKDOWN
@@ -344,7 +344,7 @@ export default function SelfPacedRetreatPage() {
                 fontSize: "11px",
                 letterSpacing: "0.20em",
                 fontWeight: "400",
-                color: "rgba(250,248,245,0.45)",
+                color: "#888888",
               }}
             >
               THIS COURSE IS FOR YOU IF...
@@ -392,7 +392,7 @@ export default function SelfPacedRetreatPage() {
                   className={`flex items-start gap-3${full ? " sm:col-span-2" : ""}`}
                   style={{
                     background: "#1a1a1a",
-                    border: "1px solid rgba(255,255,255,0.10)",
+                    border: "1px solid #333333",
                     borderRadius: "10px",
                     padding: "16px",
                   }}
@@ -408,7 +408,7 @@ export default function SelfPacedRetreatPage() {
                     }}
                   />
                   <p
-                    className="font-inter text-white/80"
+                    className="font-inter text-white"
                     style={{ fontSize: "14px", lineHeight: "1.55", fontWeight: "400", margin: 0 }}
                   >
                     {text}
@@ -420,7 +420,7 @@ export default function SelfPacedRetreatPage() {
             {/* CTA */}
             <Link
               href="/contact"
-              className="font-inter font-medium text-black bg-[#CBA76D] rounded-full w-full transition-all duration-300 hover:opacity-90 text-center"
+              className="font-inter font-medium text-black bg-[#CBA76D] rounded-full w-full transition-all duration-300 text-center"
               style={{ marginTop: "24px", maxWidth: "200px", fontSize: "16px", padding: "16px 0", display: "block" }}
             >
               Get Instant Access
@@ -450,7 +450,7 @@ export default function SelfPacedRetreatPage() {
             right: "-40px",
             width: "320px",
             height: "320px",
-            opacity: 0.05,
+            background: "#1e1e1e",
             pointerEvents: "none",
           }}
         />
@@ -471,8 +471,8 @@ export default function SelfPacedRetreatPage() {
                 bottom: "24px",
                 maxWidth: "320px",
                 background: "rgb(45 35 35 / 30%)",
-                backdropFilter: "blur(12px)",
-                border: "1px solid rgba(255,255,255,0.10)",
+                
+                border: "1px solid #333333",
                 borderRadius: "12px",
                 padding: "20px", right: "52px"
               }}
@@ -553,8 +553,6 @@ export default function SelfPacedRetreatPage() {
       >
         {/* Background image with parallax */}
         <ParallaxImg src="/self-praced/Background.jpg" alt="" strength={10} />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 z-10 bg-black/60" />
 
         {/* Content */}
         <div className="relative z-20 max-w-[900px] mx-auto flex flex-col items-center text-center">
@@ -615,7 +613,7 @@ export default function SelfPacedRetreatPage() {
           {/* CTA button */}
           <Link
             href="/contact"
-            className="font-inter font-medium text-black no-underline inline-block rounded-full transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(200,167,109,0.35)]"
+            className="font-inter font-medium text-black no-underline inline-block rounded-full transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_#C8A76D]"
             style={{
               background: "#C9A96B",
               fontSize: "15px",

@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const ease = "easeOut" as const;
 const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 40 },
-  whileInView: { opacity: 1, y: 0 },
+  initial: { y: 40 },
+  whileInView: { y: 0 },
   viewport: { once: true },
   transition: { duration: 0.6, ease, delay },
 });
@@ -47,7 +47,7 @@ export default function FAQ() {
             <motion.p
               {...fadeUp(0)}
               className="uppercase tracking-widest font-inter text-[12px] mb-4"
-              style={{ color: "rgba(250,248,245,0.5)" }}
+              style={{ color: "#928e8b" }}
             >
               Let&apos;s Start Here
             </motion.p>
@@ -65,11 +65,11 @@ export default function FAQ() {
           </div>
 
           {/* Right: Accordion */}
-          <motion.div {...fadeUp(0.2)} className="border-t border-white/10">
+          <motion.div {...fadeUp(0.2)} className="border-t border-[#333333]">
             {faqs.map((faq, i) => {
               const isOpen = openIndex === i;
               return (
-                <div key={i} className="border-b border-white/10">
+                <div key={i} className="border-b border-[#333333]">
                   <button
                     onClick={() => setOpenIndex(isOpen ? -1 : i)}
                     className="w-full flex items-center justify-between py-6 text-left gap-6 group"
@@ -79,7 +79,7 @@ export default function FAQ() {
                     >
                       {faq.q}
                     </span>
-                    <span className="shrink-0 w-6 h-6 flex items-center justify-center rounded-full border border-white/20 text-[#C8A76D] transition-colors duration-200 group-hover:border-[#C8A76D]">
+                    <span className="shrink-0 w-6 h-6 flex items-center justify-center rounded-full border border-[#444444] text-[#C8A76D] transition-colors duration-200 group-hover:border-[#C8A76D]">
                       {isOpen ? (
                         <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
                           <path d="M1 6h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -98,7 +98,7 @@ export default function FAQ() {
                   >
                     <p
                       className="font-inter text-[15px] leading-relaxed pb-6"
-                      style={{ color: "rgba(255,255,255,0.5)" }}
+                      style={{ color: "#888888" }}
                     >
                       {faq.a}
                     </p>

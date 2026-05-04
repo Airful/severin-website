@@ -11,14 +11,14 @@ export default function PreparationSection() {
             alt="Preparation and Integration"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#111111]" />
         </div>
 
         {/* RIGHT — text content */}
         <div className="flex items-center py-[60px] md:py-[120px] px-6 md:pl-[80px] md:pr-10">
           <div className="flex flex-col gap-6" style={{ maxWidth: "500px" }}>
 
-            <p className="uppercase text-white/50 text-[12px] tracking-[2px]">
+            <p className="uppercase text-[#888888] text-[12px] tracking-[2px]">
               PREPARATION & INTEGRATION
             </p>
 
@@ -30,7 +30,7 @@ export default function PreparationSection() {
               What You Meet
             </h2>
 
-            <div className="flex flex-col gap-4 font-inter text-white/70 text-[16px] leading-[150%]">
+            <div className="flex flex-col gap-4 font-inter text-[#cccccc] text-[16px] leading-[150%]">
               <p>
                 A darkness retreat does not begin when you close the door.<br />
                 It begins weeks before: in how you slow down, what you clear, and how you prepare your nervous system.
@@ -52,7 +52,7 @@ export default function PreparationSection() {
             <div>
               <a
                 href="/self-paced-retreat"
-                className="inline-block bg-[#C8A76D] text-black font-inter font-medium text-[15px] rounded-full px-8 py-4 hover:opacity-90 transition-opacity"
+                className="inline-block bg-[#C8A76D] text-black font-inter font-medium text-[15px] rounded-full px-8 py-4 transition-colors"
               >
                 Start the Prep Course
               </a>

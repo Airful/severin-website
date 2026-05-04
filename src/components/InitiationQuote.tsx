@@ -20,7 +20,7 @@ export default function InitiationQuote() {
                 It&apos;s something that happens to us.&rdquo;
               </blockquote>
               <p
-                className="font-caslon text-black/70"
+                className="font-caslon text-[#555555]"
                 style={{ fontSize: "18px", letterSpacing: "0.02em" }}
               >
                 ~ Francis Weller

@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Darkness Retreat", href: "/darkness-retreat" },
   { label: "Services", href: "/#services" },
 ];
 
@@ -30,7 +29,7 @@ export default function Footer() {
       <div className="mx-auto max-w-[1200px]">
 
         {/* TOP CTA */}
-        <div className="flex flex-col items-center justify-between gap-6 border-b border-white/10 pb-12 text-center md:flex-row md:text-left">
+        <div className="flex flex-col items-center justify-between gap-6 border-b border-[#333333] pb-12 text-center md:flex-row md:text-left">
           <h2
             className="max-w-[680px] font-caslon text-white"
             style={{
@@ -46,16 +45,16 @@ export default function Footer() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="h-12 w-full rounded-full border border-white/20 bg-transparent px-5 font-inter text-[15px] text-white placeholder:text-white/60 
+              className="h-12 w-full rounded-full border border-[#444444] bg-transparent px-5 font-inter text-[15px] text-white placeholder:text-[#aaaaaa]
               focus:outline-none focus:ring-1 focus:ring-[#C8A76D]
-              transition-all duration-300 hover:border-white/40"
+              transition-all duration-300 hover:border-white"
             />
 
             <button
               type="submit"
               className="h-12 w-full md:w-[180px] rounded-full bg-[#C8A76D] px-6 font-inter text-[15px] font-medium text-black
               transition-all duration-300
-              hover:bg-[#d4b57f] hover:scale-[1.05] hover:shadow-[0_0_20px_rgba(200,167,109,0.4)]"
+              hover:bg-[#d4b57f] hover:scale-[1.05] hover:shadow-[0_0_20px_#C8A76D]"
             >
               Sign Up
             </button>
@@ -84,7 +83,7 @@ export default function Footer() {
 
             {/* CARD 1 */}
             <div className="rounded-[10px] bg-[#C8A76D] px-6 py-5 text-left text-black 
-            transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_30px_rgba(200,167,109,0.3)]">
+            transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_30px_#C8A76D]">
               <p className="font-caslon text-[18px] uppercase tracking-[1px]">
                 GET IN TOUCH.
               </p>
@@ -97,7 +96,7 @@ export default function Footer() {
 
             {/* CARD 2 */}
             <div className="rounded-[10px] bg-[#C8A76D] px-6 py-5 text-left text-black 
-            transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_30px_rgba(200,167,109,0.3)]">
+            transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_30px_#C8A76D]">
               <p className="font-caslon text-[18px] uppercase tracking-[1px]">
                 WHERE TO FIND ME
               </p>
@@ -110,21 +109,21 @@ export default function Footer() {
 
             {/* CARD 3 */}
             <div className="rounded-[10px] bg-[#C8A76D] px-6 py-5 text-left text-black 
-            transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_30px_rgba(200,167,109,0.3)]">
+            transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_30px_#C8A76D]">
               <p className="font-caslon text-[18px] uppercase tracking-[1px]">
                 FOLLOW US
               </p>
              <div className="mt-4 flex items-center gap-4">
 
   {/* Facebook */}
-  <a href="#" className="transition-all duration-300 hover:opacity-70 hover:scale-110">
+  <a href="#" className="transition-all duration-300 hover:scale-110">
     <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
       <path d="M13.5 21v-7h2.4l.4-3h-2.8V9.2c0-.9.3-1.5 1.6-1.5H16.5V5.1c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 4V11H8v3h2.4v7h3.1Z" />
     </svg>
   </a>
 
   {/* Instagram */}
-  <a href="#" className="transition-all duration-300 hover:opacity-70 hover:scale-110">
+  <a href="#" className="transition-all duration-300 hover:scale-110">
     <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
       <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
       <circle cx="12" cy="12" r="3.8" />
@@ -133,14 +132,14 @@ export default function Footer() {
   </a>
 
   {/* LinkedIn */}
-  <a href="#" className="transition-all duration-300 hover:opacity-70 hover:scale-110">
+  <a href="#" className="transition-all duration-300 hover:scale-110">
     <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
       <path d="M6.4 8.8H3.5V20h2.9V8.8Zm.2-3.5A1.7 1.7 0 0 0 4.8 3.6 1.7 1.7 0 0 0 3 5.3C3 6.2 3.8 7 4.8 7a1.7 1.7 0 0 0 1.8-1.7ZM21 13.1c0-3.4-1.8-5-4.3-5-2 0-2.9 1.1-3.4 1.9V8.8h-2.9V20h2.9v-6.3c0-1.7.3-3.3 2.4-3.3 2 0 2 1.9 2 3.4V20H21v-6.9Z" />
     </svg>
   </a>
 
   {/* YouTube */}
-  <a href="#" className="transition-all duration-300 hover:opacity-70 hover:scale-110">
+  <a href="#" className="transition-all duration-300 hover:scale-110">
     <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
       <path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30.5 30.5 0 0 0 2 12a30.5 30.5 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30.5 30.5 0 0 0 22 12a30.5 30.5 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z" />
     </svg>
@@ -152,7 +151,7 @@ export default function Footer() {
         </div>
 
         {/* BOTTOM */}
-        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-5 text-center md:flex-row md:text-left">
+        <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-[#333333] pt-5 text-center md:flex-row md:text-left">
           <p className="font-inter text-[15px] text-white">Severin Geser</p>
           <p className="font-inter text-[15px] text-white">
             All Right Reserved © 2026

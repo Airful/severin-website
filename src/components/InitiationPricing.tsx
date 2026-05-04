@@ -5,33 +5,33 @@ import { motion } from "framer-motion";
 
 const ease = "easeOut" as const;
 const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 40 },
-  whileInView: { opacity: 1, y: 0 },
+  initial: { y: 40 },
+  whileInView: { y: 0 },
   viewport: { once: true },
   transition: { duration: 0.6, ease, delay },
 });
 
 const cards = [
   {
-    price: "$250",
+    price: "250",
     title: "Preparation & Integration",
     subtitle: "For what has already opened",
     highlighted: false,
-    buttonText: "Enroll for $147 Now",
+    buttonText: "Enroll for CHF 147 Now",
   },
   {
-    price: "$250",
+    price: "250",
     title: "Ongoing Session",
     subtitle: "For longer passages where one session is not enough.",
     highlighted: true,
-    buttonText: "Enroll for $147 Now",
+    buttonText: "Enroll for CHF 147 Now",
   },
   {
-    price: "$250",
+    price: "250",
     title: "Advisory Retreat Centers",
     subtitle: "For professionals & centers Advisory Work",
     highlighted: false,
-    buttonText: "Enroll for $147 Now",
+    buttonText: "Enroll for CHF 147 Now",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function InitiationPricing() {
                 backgroundColor: card.highlighted ? "#C8A76D" : "#1A1A1A",
                 border: card.highlighted
                   ? "none"
-                  : "1px solid rgba(255,255,255,0.08)",
+                  : "1px solid #2a2a2a",
               }}
             >
               <div className="flex flex-col">
@@ -124,7 +124,7 @@ export default function InitiationPricing() {
                       color: card.highlighted ? "#111111" : "#FFFFFF",
                     }}
                   >
-                    / USD
+                    CHF
                   </span>
                 </div>
 
@@ -158,7 +158,7 @@ export default function InitiationPricing() {
               {/* Button */}
               <Link
                 href="/contact"
-                className="w-full rounded-full py-3 transition-opacity hover:opacity-80 text-center block"
+                className="w-full rounded-full py-3 text-center block"
                 style={{
                   fontFamily: "'Inter Tight', sans-serif",
                   fontSize: "14px",

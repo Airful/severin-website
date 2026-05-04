@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const ease = "easeOut" as const;
 const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 30 },
-  whileInView: { opacity: 1, y: 0 },
+  initial: { y: 30 },
+  whileInView: { y: 0 },
   viewport: { once: true },
   transition: { duration: 0.5, ease, delay },
 });
@@ -36,7 +36,7 @@ export default function TrustedBy() {
             <motion.div
               key={src}
               {...fadeUp(0.1 + i * 0.1)}
-              className="flex items-center justify-center opacity-50"
+              className="flex items-center justify-center"
               style={{ width: "120px", height: "48px", flexShrink: 0 }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}

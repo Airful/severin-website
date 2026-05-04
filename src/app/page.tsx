@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import TrustedBy from "@/components/TrustedBy";
 import Testimonials from "@/components/Testimonials";
 import Experience from "@/components/Experience";
 import Services from "@/components/Services";
@@ -15,11 +14,6 @@ export default function Home() {
     <main className="min-h-screen bg-black pt-[90px]">
       <Navbar />
       <Hero />
-
-      {/* Trusted bar — full width, no container (has its own internal max-w) */}
-      <TrustedBy />
-
-      {/* Remaining sections */}
       <Testimonials />
       <Experience />
       <Services />

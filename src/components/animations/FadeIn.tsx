@@ -24,8 +24,8 @@ export default function FadeIn({
 }: FadeInProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ y }}
+      whileInView={{ y: 0 }}
       viewport={{ once, margin: "-60px" }}
       transition={{ duration, ease: "easeOut", delay }}
       className={className}

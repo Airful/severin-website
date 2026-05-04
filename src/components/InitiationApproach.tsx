@@ -42,7 +42,6 @@ export default function InitiationApproach() {
     <section className="relative w-full overflow-hidden py-12 md:py-24">
       {/* Background — same image + overlay as somatic-astrology */}
       <ParallaxImg src="/self-praced/5.png" alt="" strength={10} />
-      <div className="absolute inset-0 z-10 bg-black/70" />
 
       <div className="relative z-20 max-w-[1200px] mx-auto px-6 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -50,7 +49,7 @@ export default function InitiationApproach() {
           {/* ── LEFT ── */}
           <div className="flex flex-col gap-6">
             <FadeIn>
-              <p className="text-xs tracking-widest text-white/40">
+              <p className="text-xs tracking-widest text-[#888888]">
                 WHAT TO EXPECT
               </p>
             </FadeIn>
@@ -62,7 +61,7 @@ export default function InitiationApproach() {
             </FadeIn>
 
             <FadeIn delay={0.3}>
-              <div className="flex flex-col gap-3 max-w-[520px] text-white/70">
+              <div className="flex flex-col gap-3 max-w-[520px] text-[#cccccc]">
                 <p>
                   I don&apos;t use astrology to define you. <br />
                   I use it to listen more accurately.
@@ -101,7 +100,7 @@ export default function InitiationApproach() {
           <div className="flex flex-col gap-6">
             {cards.map((card, i) => (
               <FadeIn key={card.title} delay={i * 0.15}>
-                <div className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                <div className="rounded-xl border border-[#333333] bg-[#1e1e1e] p-6">
                   <p className="text-xs tracking-widest text-[#C6A76E] mb-2" />
 
                   <h3
@@ -111,7 +110,7 @@ export default function InitiationApproach() {
                     {card.title}
                   </h3>
 
-                  <div className="flex flex-col gap-3 text-white/70">
+                  <div className="flex flex-col gap-3 text-[#cccccc]">
                     {card.body.intro && <p>{card.body.intro}</p>}
                     {card.body.description && <p>{card.body.description}</p>}
                     {card.body.points && (

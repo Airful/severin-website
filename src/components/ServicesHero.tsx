@@ -21,7 +21,7 @@ export default function ServicesHero() {
             fontSize: "13px",
             letterSpacing: "0.18em",
             fontWeight: "400",
-            color: "rgba(250,248,245,0.50)",
+            color: "#928e8b",
           }}
         >
           FIND YOUR PATH
@@ -44,7 +44,7 @@ export default function ServicesHero() {
 
         {/* Subtext */}
         <p
-          className="font-inter text-white/70 mt-6 md:mt-8"
+          className="font-inter text-[#cccccc] mt-6 md:mt-8"
           style={{
             fontSize: "clamp(15px, 1.45vw, 18px)",
             lineHeight: "1.65",
@@ -60,7 +60,7 @@ export default function ServicesHero() {
         <div className="flex flex-wrap items-center justify-center gap-4 mt-8 md:mt-10">
           <Link
             href="#sessions"
-            className="font-inter font-medium text-black bg-[#C8A76D] rounded-full transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(200,167,109,0.35)]"
+            className="font-inter font-medium text-black bg-[#C8A76D] rounded-full transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_#C8A76D]"
             style={{ fontSize: "15px", letterSpacing: "0.02em", padding: "14px 38px" }}
           >
             Explore Services
@@ -68,12 +68,12 @@ export default function ServicesHero() {
 
           <Link
             href="/contact"
-            className="font-inter text-white rounded-full transition-all duration-300 hover:bg-white/[0.08] hover:border-white/80"
+            className="font-inter text-white rounded-full transition-all duration-300 hover:border-white"
             style={{
               fontSize: "15px",
               letterSpacing: "0.02em",
               padding: "13px 37px",
-              border: "1px solid rgba(255,255,255,0.38)",
+              border: "1px solid #666666",
             }}
           >
             Learn More

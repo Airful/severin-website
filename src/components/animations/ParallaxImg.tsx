@@ -59,9 +59,6 @@ export default function ParallaxImg({
           objectPosition,
           ...style,
         }}
-        // Fade in as it enters the viewport (once)
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.9, ease: "easeOut" }}
       />

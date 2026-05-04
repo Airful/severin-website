@@ -18,7 +18,7 @@ export default function InitiationSection() {
         {/* LEFT — full-bleed image with parallax */}
         <div className="relative h-[600px] md:h-[1040px] overflow-hidden mt-[30px] mb-[10px] md:mt-[80px] md:mb-[20px]">
           <ParallaxImg src="/dark/qw.png" alt="Initiation is Not a Choice" strength={10} />
-          <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent via-transparent to-black/40" />
+          <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent via-transparent to-[#111111]" />
         </div>
 
         {/* RIGHT — text content */}
@@ -26,7 +26,7 @@ export default function InitiationSection() {
           <div className="flex flex-col gap-6" style={{ maxWidth: "500px" }}>
 
             <FadeIn>
-              <p className="uppercase text-white/50 text-[12px] tracking-[2px]">
+              <p className="uppercase text-[#888888] text-[12px] tracking-[2px]">
                 WHEN LIFE CHANGES YOU, IF YOU ASKED FOR IT OR NOT
               </p>
             </FadeIn>
@@ -42,7 +42,7 @@ export default function InitiationSection() {
             </FadeIn>
 
             <FadeIn delay={0.3}>
-              <div className="flex flex-col gap-4 font-inter text-white/70 text-[16px] leading-[150%]">
+              <div className="flex flex-col gap-4 font-inter text-[#cccccc] text-[16px] leading-[150%]">
                 <p>
                   Across cultures, initiation marked the moment when an old identity could no longer continue.
                 </p>
@@ -58,7 +58,7 @@ export default function InitiationSection() {
                 <ul className="flex flex-col gap-2 pl-1">
                   {bullets.map((item) => (
                     <li key={item} className="flex items-start gap-3">
-                      <span className="mt-[9px] w-[4px] h-[4px] rounded-full bg-white/40 flex-shrink-0" />
+                      <span className="mt-[9px] w-[4px] h-[4px] rounded-full bg-[#666666] flex-shrink-0" />
                       <span>{item}</span>
                     </li>
                   ))}

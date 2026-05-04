@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const ease = "easeOut" as const;
 
 const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 40 },
-  whileInView: { opacity: 1, y: 0 },
+  initial: { y: 40 },
+  whileInView: { y: 0 },
   viewport: { once: true },
   transition: { duration: 0.7, ease, delay },
 });
@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Minimal overlay — just enough to keep white text legible */}
       <div
         className="absolute inset-0 z-0"
-        style={{ background: "rgba(0, 0, 0, 0)" }}
+        style={{ background: "transparent" }}
         aria-hidden="true"
       />
 
@@ -42,7 +42,7 @@ export default function Hero() {
               fontSize: "13px",
               letterSpacing: "0.18em",
               fontWeight: "400",
-              color: "rgba(250,248,245,0.65)",
+              color: "#aba8a5",
             }}
           >
             Feel Again, Live Fully.
@@ -66,7 +66,7 @@ export default function Hero() {
           {/* Body copy */}
           <motion.div
             {...fadeUp(0.4)}
-            className="font-inter text-white/80 mb-10"
+            className="font-inter text-white mb-10"
             style={{
               fontSize: "clamp(15px, 1.45vw, 18px)",
               lineHeight: "1.65",
@@ -92,7 +92,7 @@ export default function Hero() {
           <motion.div {...fadeUp(0.55)} className="flex flex-wrap items-center gap-4">
             <Link
               href="#services"
-              className="font-inter font-medium text-black bg-[#C8A76D] rounded-full transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_rgba(200,167,109,0.35)]"
+              className="font-inter font-medium text-black bg-[#C8A76D] rounded-full transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03] hover:shadow-[0_8px_24px_#C8A76D]"
               style={{ fontSize: "15px", letterSpacing: "0.02em", padding: "14px 38px" }}
             >
               Work With Me
@@ -100,12 +100,12 @@ export default function Hero() {
 
             <Link
               href="#about"
-              className="font-inter text-white rounded-full transition-all duration-300 hover:bg-white/8 hover:border-white/80"
+              className="font-inter text-white rounded-full transition-all duration-300 hover:border-white"
               style={{
                 fontSize: "15px",
                 letterSpacing: "0.02em",
                 padding: "13px 37px",
-                border: "1px solid rgba(255,255,255,0.50)",
+                border: "1px solid #777777",
               }}
             >
               Learn More

@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const ease = "easeOut" as const;
 const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 40 },
-  whileInView: { opacity: 1, y: 0 },
+  initial: { y: 40 },
+  whileInView: { y: 0 },
   viewport: { once: true },
   transition: { duration: 0.6, ease, delay },
 });
@@ -77,7 +77,7 @@ export default function DarkCTA({
           <motion.div {...fadeUp(0.6)} className="mt-10 sm:mt-12">
             <Link
               href={buttonHref}
-              className="inline-flex min-h-[56px] items-center justify-center rounded-full border border-white/45 bg-transparent px-8 font-inter text-[14px] font-medium text-white transition-all duration-300 hover:border-white hover:bg-white/8"
+              className="inline-flex min-h-[56px] items-center justify-center rounded-full border border-[#777777] bg-transparent px-8 font-inter text-[14px] font-medium text-white transition-all duration-300 hover:border-white"
             >
               {buttonText}
             </Link>

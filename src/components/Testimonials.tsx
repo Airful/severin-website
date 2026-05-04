@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const ease = "easeOut" as const;
 const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 40 },
-  whileInView: { opacity: 1, y: 0 },
+  initial: { y: 40 },
+  whileInView: { y: 0 },
   viewport: { once: true },
   transition: { duration: 0.6, ease, delay },
 });
@@ -62,14 +62,14 @@ function TestimonialCard({
   return (
     <motion.div
       {...fadeUp(index * 0.15)}
-      className="bg-white/[0.04] rounded-2xl p-6 flex flex-col justify-between gap-6 border border-white/[0.08] shadow-lg transition-all duration-300 hover:border-white/20 hover:bg-white/[0.07]"
+      className="bg-[#1c1c1c] rounded-2xl p-6 flex flex-col justify-between gap-6 border border-[#2a2a2a] shadow-lg transition-all duration-300 hover:border-[#555555] hover:bg-[#1f1f1f]"
     >
       {/* Top: stars + quote */}
       <div>
         <StarRating count={stars} />
         <p
           className="font-inter text-[16px] sm:text-[18px] leading-relaxed"
-          style={{ color: "rgba(255, 255, 255, 0.55)" }}
+          style={{ color: "#8f8f8f" }}
         >
           {quote}
         </p>
@@ -80,7 +80,7 @@ function TestimonialCard({
         <img
           src={image}
           alt={name}
-          className="w-11 h-11 rounded-full object-cover shrink-0 ring-1 ring-white/10"
+          className="w-11 h-11 rounded-full object-cover shrink-0 ring-1 ring-[#333333]"
         />
         <span className="text-white font-inter font-semibold text-[15px] leading-tight">
           {name}
@@ -98,7 +98,7 @@ export default function Testimonials() {
           <motion.p
             {...fadeUp(0)}
             className="uppercase tracking-widest font-inter text-[12px] mb-4"
-            style={{ color: "rgba(250,248,245,0.56)" }}
+            style={{ color: "#8f8f8f" }}
           >
             Real Transformations, Real People
           </motion.p>

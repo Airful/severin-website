@@ -12,8 +12,8 @@ interface ServiceCardProps {
 }
 
 const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 40 },
-  whileInView: { opacity: 1, y: 0 },
+  initial: { y: 40 },
+  whileInView: { y: 0 },
   viewport: { once: true },
   transition: { duration: 0.6, ease: "easeOut" as const, delay },
 });
@@ -29,7 +29,7 @@ function CardInner({ id, title, image, linked }: { id: string; title: string; im
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <span className="absolute bottom-3 left-4 text-white/70 font-inter text-[13px] tracking-widest drop-shadow-sm">
+        <span className="absolute bottom-3 left-4 text-[#cccccc] font-inter text-[13px] tracking-widest drop-shadow-sm">
           {id}
         </span>
       </div>
@@ -48,7 +48,7 @@ function CardInner({ id, title, image, linked }: { id: string; title: string; im
         </h3>
         <span
           className={`inline-flex items-center gap-1 text-[13px] font-inter w-fit underline underline-offset-4 ${
-            linked ? "text-black" : "text-black/50"
+            linked ? "text-black" : "text-[#888888]"
           }`}
         >
           Learn more →

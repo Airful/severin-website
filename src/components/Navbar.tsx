@@ -24,23 +24,15 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           <Link
             href="/about"
-            className="text-white/80 hover:text-white font-inter text-[16px] transition-colors"
+            className="text-white hover:text-white font-inter text-[16px] transition-colors"
           >
             About
           </Link>
-          <Link
-            href="/darkness-retreat"
-            className="text-white/80 hover:text-white font-inter text-[16px] transition-colors"
-          >
-            
-            Darkness Retreat
-          </Link>
-
           {/* Services dropdown — opens on hover */}
           <div className="group relative">
             <Link
               href="/service"
-              className="text-white/80 hover:text-white font-inter text-[16px] transition-colors flex items-center gap-1.5"
+              className="text-white hover:text-white font-inter text-[16px] transition-colors flex items-center gap-1.5"
             >
               Services
               <svg
@@ -55,8 +47,8 @@ export default function Navbar() {
             {/* Invisible bridge prevents flicker when moving cursor to dropdown */}
             <div className="absolute top-full left-0 pt-2 w-full invisible group-hover:visible" />
 
-            <div className="absolute top-full left-0 pt-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-[opacity,visibility] duration-200 ease-in-out">
-              <div className="bg-[#1a1a1a] border border-white/10 rounded-xl py-2 min-w-max shadow-2xl">
+            <div className="absolute top-full left-0 pt-2 hidden group-hover:block">
+              <div className="bg-[#1a1a1a] border border-[#333333] rounded-xl py-2 min-w-max shadow-2xl">
                 {[
                   { label: "Somatic Embodiment",       href: "/somatic-embodiment" },
                   { label: "Somatic Astrology",        href: "/somatic-astrology" },
@@ -66,7 +58,7 @@ export default function Navbar() {
                   <Link
                     key={s.label}
                     href={s.href}
-                    className="block px-4 py-2.5 text-white/70 hover:text-[#C8A76D] text-[14px] font-inter transition-colors whitespace-nowrap"
+                    className="block px-4 py-2.5 text-[#cccccc] hover:text-[#C8A76D] text-[14px] font-inter transition-colors whitespace-nowrap"
                   >
                     {s.label}
                   </Link>
@@ -101,35 +93,27 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden max-w-[1200px] mx-auto px-6 lg:px-20 pb-4 flex flex-col gap-4 border-t border-white/10">
+        <div className="md:hidden max-w-[1200px] mx-auto px-6 lg:px-20 pb-4 flex flex-col gap-4 border-t border-[#333333]">
           <Link
             href="/about"
-            className="text-white/80 hover:text-white font-inter text-[14px] transition-colors pt-3"
+            className="text-white hover:text-white font-inter text-[14px] transition-colors pt-3"
             onClick={() => setMobileOpen(false)}
           >
             About
           </Link>
-          <Link
-            href="/darkness-retreat"
-            className="text-white/80 hover:text-white font-inter text-[14px] transition-colors"
-            onClick={() => setMobileOpen(false)}
-          >
-            Darkness Retreat
-          </Link>
-
           {/* Services row — text navigates, arrow toggles dropdown */}
           <div className="flex flex-col">
             <div className="flex items-center justify-between">
               <Link
                 href="/service"
-                className="text-white/80 hover:text-white font-inter text-[14px] transition-colors"
+                className="text-white hover:text-white font-inter text-[14px] transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 Services
               </Link>
               <button
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="text-white/80 hover:text-white p-1 transition-colors"
+                className="text-white hover:text-white p-1 transition-colors"
                 aria-label="Toggle services menu"
               >
                 <svg
@@ -143,7 +127,7 @@ export default function Navbar() {
             </div>
 
             {mobileServicesOpen && (
-              <div className="flex flex-col mt-2 pl-4 gap-3 border-l border-white/10">
+              <div className="flex flex-col mt-2 pl-4 gap-3 border-l border-[#333333]">
                 {[
                   { label: "Somatic Embodiment",       href: "/somatic-embodiment" },
                   { label: "Somatic Astrology",        href: "/somatic-astrology" },
@@ -153,7 +137,7 @@ export default function Navbar() {
                   <Link
                     key={s.label}
                     href={s.href}
-                    className="text-white/60 hover:text-[#C8A76D] font-inter text-[13px] transition-colors"
+                    className="text-[#aaaaaa] hover:text-[#C8A76D] font-inter text-[13px] transition-colors"
                     onClick={() => setMobileOpen(false)}
                   >
                     {s.label}

@@ -5,8 +5,8 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 const inputStyle = {
-  background: "rgba(255,255,255,0.06)",
-  border: "1px solid rgba(255,255,255,0.25)",
+  background: "#1f1f1f",
+  border: "1px solid #555555",
   borderRadius: "40px",
   padding: "16px 20px",
 };
@@ -64,7 +64,7 @@ export default function ContactForm() {
         >
           Thank you.
         </p>
-        <p className="font-inter text-white/60 text-[15px] max-w-[420px]">
+        <p className="font-inter text-[#aaaaaa] text-[15px] max-w-[420px]">
           Your message has reached us. Severin will be in touch shortly.
         </p>
       </div>
@@ -87,7 +87,7 @@ export default function ContactForm() {
             name="first_name"
             type="text"
             placeholder="First name"
-            className="font-inter text-white text-[14px] placeholder:text-white/30 outline-none transition-colors duration-300"
+            className="font-inter text-white text-[14px] placeholder:text-[#777777] outline-none transition-colors duration-300"
             style={inputStyle}
           />
         </div>
@@ -102,7 +102,7 @@ export default function ContactForm() {
             name="last_name"
             type="text"
             placeholder="Last name"
-            className="font-inter text-white text-[14px] placeholder:text-white/30 outline-none transition-colors duration-300"
+            className="font-inter text-white text-[14px] placeholder:text-[#777777] outline-none transition-colors duration-300"
             style={inputStyle}
           />
         </div>
@@ -115,13 +115,13 @@ export default function ContactForm() {
           <div
             className="flex items-center gap-[10px]"
             style={{
-              background: "rgba(255,255,255,0.06)",
-              border: "1px solid rgba(255,255,255,0.25)",
+              background: "#1f1f1f",
+              border: "1px solid #555555",
               borderRadius: "40px",
               padding: "0 20px",
             }}
           >
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" style={{ opacity: 0.45, flexShrink: 0 }}>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}>
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               <polyline points="22,6 12,13 2,6" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
@@ -131,7 +131,7 @@ export default function ContactForm() {
               type="email"
               required
               placeholder="example@gmail.com"
-              className="font-inter text-white text-[14px] placeholder:text-white/30 outline-none bg-transparent flex-1 py-[16px]"
+              className="font-inter text-white text-[14px] placeholder:text-[#777777] outline-none bg-transparent flex-1 py-[16px]"
             />
           </div>
         </div>
@@ -152,7 +152,7 @@ export default function ContactForm() {
             inputClass="custom-phone-input"
             dropdownStyle={{
               background: "#1a1a1a",
-              border: "1px solid rgba(255,255,255,0.15)",
+              border: "1px solid #383838",
               borderRadius: "12px",
               color: "#fff",
             }}
@@ -168,10 +168,10 @@ export default function ContactForm() {
             id="message"
             name="message"
             placeholder="How can we help?"
-            className="font-inter text-white text-[14px] placeholder:text-white/30 outline-none resize-none transition-colors duration-300"
+            className="font-inter text-white text-[14px] placeholder:text-[#777777] outline-none resize-none transition-colors duration-300"
             style={{
-              background: "rgba(255,255,255,0.06)",
-              border: "1px solid rgba(255,255,255,0.25)",
+              background: "#1f1f1f",
+              border: "1px solid #555555",
               borderRadius: "20px",
               padding: "16px 20px",
               minHeight: "160px",
@@ -193,7 +193,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={submitting}
-            className="w-full font-inter font-medium text-black transition-all duration-300 hover:brightness-110 hover:scale-[1.01] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
+            className="w-full font-inter font-medium text-black transition-all duration-300 hover:brightness-110 hover:scale-[1.01] disabled:bg-[#777777] disabled:text-[#444444] disabled:cursor-not-allowed disabled:hover:scale-100"
             style={{
               background: "#C6A34A",
               borderRadius: "40px",

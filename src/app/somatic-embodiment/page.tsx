@@ -13,13 +13,13 @@ export const metadata = {
 
 const pricingCards = [
   {
-    price: "$250",
+    price: "250",
     title: "Somatic Embodiment Session",
     description: "A focused session to slow down, regulate the nervous system, and reconnect with your inner authority.",
     highlighted: false,
   },
   {
-    price: "$900",
+    price: "900",
     title: "Integration Container",
     description: "4 Sessions\nFor deeper passages that unfold over time",
     highlighted: true,
@@ -127,7 +127,7 @@ function PricingSection() {
                         opacity: 0.7,
                       }}
                     >
-                      / USD
+                      CHF
                     </span>
                   </div>
 <br></br><br></br>

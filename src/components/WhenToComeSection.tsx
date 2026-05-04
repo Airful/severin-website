@@ -7,7 +7,7 @@ export default function WhenToComeSection() {
         <div className="flex items-center py-[60px] md:py-[120px] px-6 md:pl-[80px] md:pr-10">
           <div className="flex flex-col gap-6" style={{ maxWidth: "500px" }}>
 
-            <p className="uppercase text-white/50 text-[12px] tracking-[2px]">
+            <p className="uppercase text-[#888888] text-[12px] tracking-[2px]">
               WHEN TO COME
             </p>
 
@@ -19,7 +19,7 @@ export default function WhenToComeSection() {
               Stop Escaping
             </h2>
 
-            <div className="flex flex-col gap-4 font-inter text-white/70 text-[16px] leading-[150%]">
+            <div className="flex flex-col gap-4 font-inter text-[#cccccc] text-[16px] leading-[150%]">
               <p>
                 There is a moment when distraction stops working.<br />
                 When the next trip, the next project, the next conversation no longer fills the space.
@@ -47,7 +47,7 @@ export default function WhenToComeSection() {
             alt="When You're Ready to Stop Escaping"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-[#111111]" />
         </div>
 
       </div>

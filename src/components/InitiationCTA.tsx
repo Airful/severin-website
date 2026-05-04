@@ -4,8 +4,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 40 },
-  whileInView: { opacity: 1, y: 0 },
+  initial: { y: 40 },
+  whileInView: { y: 0 },
   viewport: { once: true },
   transition: { duration: 0.6, delay },
 });
@@ -20,15 +20,13 @@ export default function InitiationCTA() {
         backgroundPosition: "center",
       }}
     >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-[800px] px-5">
 
         <motion.p
           {...fadeUp(0)}
-          className="text-white/60 tracking-widest text-sm mb-4 uppercase"
+          className="text-[#aaaaaa] tracking-widest text-sm mb-4 uppercase"
         >
           WHEN EXPERIENCE NEEDS INTEGRATION
         </motion.p>
@@ -44,7 +42,7 @@ export default function InitiationCTA() {
 
         <motion.p
           {...fadeUp(0.4)}
-          className="text-white/70 mb-8 text-[16px] max-w-[500px] mx-auto"
+          className="text-[#cccccc] mb-8 text-[16px] max-w-[500px] mx-auto"
         >
           Intense experiences don&apos;t end when the retreat is over.
           Insight needs time, relationship, and nervous system support to become lived.
@@ -54,7 +52,7 @@ export default function InitiationCTA() {
         <motion.div {...fadeUp(0.6)}>
           <Link
             href="/contact"
-            className="inline-block bg-[#C8A76D] text-black px-8 py-3 rounded-full font-inter font-medium text-[15px] transition-all duration-300 hover:opacity-90 hover:scale-[1.03]"
+            className="inline-block bg-[#C8A76D] text-black px-8 py-3 rounded-full font-inter font-medium text-[15px] transition-all duration-300 hover:scale-[1.03]"
           >
             Begin Your Journey with Severin
           </Link>

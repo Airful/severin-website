@@ -5,8 +5,8 @@ import { useRef } from "react";
 
 const ease = "easeOut" as const;
 const fadeUp = (delay: number) => ({
-  initial: { opacity: 0, y: 40 },
-  whileInView: { opacity: 1, y: 0 },
+  initial: { y: 40 },
+  whileInView: { y: 0 },
   viewport: { once: true },
   transition: { duration: 0.6, ease, delay },
 });
@@ -35,7 +35,7 @@ export default function Experience() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 justify-between">
           {/* Left text */}
           <div className="flex-1 max-w-[660px]">
-            <motion.p {...fadeUp(0)} className="text-label uppercase tracking-widest text-[#FAF8F5]/10 mb-4 mb-6">
+            <motion.p {...fadeUp(0)} className="text-label uppercase tracking-widest text-[#2a2a2a] mb-4 mb-6">
               FROM DARKNESS TO REBIRTH
             </motion.p>
             <motion.h2
@@ -58,7 +58,7 @@ export default function Experience() {
             </motion.p>
             <motion.div {...fadeUp(0.45)} className="mt-6">
               <p className="text-para text-white">This work is for you if:</p>
-              <ul className="mt-3 space-y-2 pl-5 list-disc marker:text-white/70">
+              <ul className="mt-3 space-y-2 pl-5 list-disc marker:text-[#cccccc]">
                 <li className="text-para text-white">
                   You&apos;re moving through a major transition and old identities
                   no longer fit
@@ -82,7 +82,7 @@ export default function Experience() {
           <div className="flex flex-col gap-4 w-full lg:w-auto lg:min-w-[380px]">
             <motion.div
               {...fadeUp(0.2)}
-              className="rounded-[16px] px-8 py-7 flex items-start gap-8 border border-white/20 backdrop-blur-sm bg-[linear-gradient(90deg,rgba(181,147,40,0.15),rgba(181,147,40,0.08))]"
+              className="rounded-[16px] px-8 py-7 flex items-start gap-8 border border-[#444444] bg-[#1c1c1c]"
             >
               <img src="/om.svg" alt="" />
            <div className="flex flex-col items-center min-w-[180px] ml-[19px]">
@@ -100,7 +100,7 @@ export default function Experience() {
 
             <motion.div
               {...fadeUp(0.35)}
-              className="rounded-[16px] px-8 py-7 flex items-start gap-8 border border-white/20 backdrop-blur-sm bg-[linear-gradient(90deg,rgba(181,147,40,0.15),rgba(181,147,40,0.08))]"
+              className="rounded-[16px] px-8 py-7 flex items-start gap-8 border border-[#444444] bg-[#1c1c1c]"
             >
               <img src="/om.svg" alt="" />
               <div className="flex flex-col items-center min-w-[180px]">

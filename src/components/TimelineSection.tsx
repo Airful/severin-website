@@ -59,7 +59,7 @@ export default function TimelineSection() {
       {/* Golden overlay */}
       <div
         className="absolute inset-0"
-        style={{ background: "rgba(200,167,109,0.92)" }}
+        style={{ background: "#C8A76D" }}
       />
 
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 md:px-8 py-[50px] md:py-[100px]">
@@ -90,7 +90,7 @@ export default function TimelineSection() {
         <div className="relative" ref={lineRef}>
 
           {/* Center line track (desktop) */}
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-[2px] bg-black/20">
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-[2px] bg-[#333333]">
             <motion.div
               className="absolute top-0 left-0 w-full bg-black"
               style={{ height: lineHeight }}
@@ -101,8 +101,8 @@ export default function TimelineSection() {
           {items.map((item, i) => (
             <motion.div
               key={item.date}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: 40 }}
+              whileInView={{ y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               className={`relative flex flex-col md:flex-row items-center gap-8 md:gap-0 ${
@@ -120,14 +120,14 @@ export default function TimelineSection() {
                   />
                 ) : (
                   <div className="w-full md:text-right md:pr-[48px]" style={{ maxWidth: "400px" }}>
-                    <p className="text-[12px] tracking-[2px] uppercase text-black/50 mb-3">{item.date}</p>
+                    <p className="text-[12px] tracking-[2px] uppercase text-[#888888] mb-3">{item.date}</p>
                     <h3
                       className="font-caslon text-black mb-3"
                       style={{ fontSize: "clamp(24px, 2.8vw, 36px)", lineHeight: "115%" }}
                     >
                       {item.heading}
                     </h3>
-                    <p className="font-inter text-[15px] leading-[160%] text-black/70">{item.body}</p>
+                    <p className="font-inter text-[15px] leading-[160%] text-[#555555]">{item.body}</p>
                   </div>
                 )}
               </div>
@@ -136,7 +136,7 @@ export default function TimelineSection() {
               <div className="hidden md:flex w-[10%] justify-center items-center flex-shrink-0">
                 <div
                   className="w-[14px] h-[14px] rounded-full bg-black border-[3px] z-10 relative"
-                  style={{ borderColor: "rgba(200,167,109,0.92)" }}
+                  style={{ borderColor: "#C8A76D" }}
                 />
               </div>
 
@@ -144,14 +144,14 @@ export default function TimelineSection() {
               <div className={`w-full md:w-[45%] flex md:justify-start ${!item.imageLeft ? "order-1 md:order-none" : "order-2 md:order-none"}`}>
                 {item.imageLeft ? (
                   <div className="w-full md:pl-[48px]" style={{ maxWidth: "400px" }}>
-                    <p className="text-[12px] tracking-[2px] uppercase text-black/50 mb-3">{item.date}</p>
+                    <p className="text-[12px] tracking-[2px] uppercase text-[#888888] mb-3">{item.date}</p>
                     <h3
                       className="font-caslon text-black mb-3"
                       style={{ fontSize: "clamp(24px, 2.8vw, 36px)", lineHeight: "115%" }}
                     >
                       {item.heading}
                     </h3>
-                    <p className="font-inter text-[15px] leading-[160%] text-black/70">{item.body}</p>
+                    <p className="font-inter text-[15px] leading-[160%] text-[#555555]">{item.body}</p>
                   </div>
                 ) : (
                   <img

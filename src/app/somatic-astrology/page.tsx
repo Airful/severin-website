@@ -13,19 +13,19 @@ export const metadata = {
 
 const pricingCards = [
   {
-    price: "$200",
+    price: "200",
     title: "Core Reading",
     description: "Have one Astrology Reading With Me",
     highlighted: false,
   },
   {
-    price: "$550",
+    price: "550",
     title: "Going Deeper",
     description: "Get A Package of 4 Sessions With Me",
     highlighted: true,
   },
   {
-    price: "$300",
+    price: "300",
     title: "Relationship Reading",
     description: "Understand the Chemistry of Your Relationship",
     highlighted: false,
@@ -101,7 +101,7 @@ function PricingSection() {
                         opacity: 0.7, fontSize: "20px", fontWeight: 600, lineHeight: "100%",
                       }}
                     >
-                      / USD
+                      CHF
                     </span>
                   </div>
 
