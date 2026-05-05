@@ -1,8 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FadeIn from "@/components/animations/FadeIn";
-import ParallaxImg from "@/components/animations/ParallaxImg";
-import TimelineSection from "@/components/TimelineSection";
 
 export const metadata = {
   title: "About - Severin Geser",
@@ -12,332 +9,252 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-black pt-[72px]">
+    <main className="min-h-screen bg-[#0A0A0A] pt-[72px]">
       <Navbar />
+      <section className="bg-[#0A0A0A] px-5 py-[100px] text-center md:py-[128px]">
+        <div className="mx-auto max-w-[660px]">
+          <h1 className="font-caslon text-[clamp(42px,6vw,64px)] font-normal leading-[1.08] text-[#EDEDED]">
+            From Darkness to Embodiment
+          </h1>
 
-      {/* Hero section */}
-      <section className="bg-black text-white flex items-center justify-center text-center py-[60px] md:py-[80px]">
-        <div className="max-w-[1340px] mx-auto px-5 md:px-[40px] w-full flex justify-center">
-          <div className="max-w-[900px]">
-            {/* Tag */}
-            <p
-              className="font-inter uppercase mb-6"
-              style={{
-                fontSize: "13px",
-                letterSpacing: "0.18em",
-                fontWeight: "400",
-                color: "#928e8b",
-              }}
-            >
-              Meet The Movement Behind The Darkness
+          <div className="mt-10 space-y-6 font-inter text-[16px] leading-[1.7] text-[#EDEDED] md:text-[18px] md:leading-[1.75]">
+            <p>
+              I was born in Switzerland and have spent many years in
+              monasteries, silent retreats, and darkness retreats. I co-created
+              The Hermitage at Lake Atitlán, where I guided hundreds of people
+              through deep inner work.
             </p>
 
-            {/* Heading */}
-            <h1
-              className="font-caslon text-white mb-8"
-              style={{
-                fontSize: "clamp(44px, 5.8vw, 80px)",
-                lineHeight: "110%",
-                letterSpacing: "-0.04em",
-                fontWeight: "400",
-              }}
-            >
-              The Hermitage is No Longer a Place, It&apos;s a Portal
-            </h1>
+            <p>
+              From the outside, it looked meaningful and aligned, and in many
+              ways, it was. The work helped many people.
+            </p>
 
-            {/* Subtext */}
-            <p
-              className="font-inter text-[#cccccc]"
-              style={{
-                fontSize: "clamp(15px, 1.45vw, 18px)",
-                lineHeight: "1.65",
-              }}
-            >
-              What Started As A Retreat Center In Guatemala Has Evolved Into The
-              Global Home Of <br />Darkness Retreat Training, Accreditation, And Deep
-              Inner Transformation.
+            <p>
+              But inside, I was often disconnected from myself. I had built a
+              structure around helping others, a role that gave me purpose while
+              avoiding facing myself. Spiritual bypassing became my expertise.
+            </p>
+
+            <p>
+              Over time, life began to dismantle that. Through relationship,
+              separation, fatherhood, and burnout, I was brought face to face
+              with parts of myself I could no longer avoid, and the same depth I
+              was guiding others into became my own path. Darkness was no longer
+              something I offered. It became my own medicine, not as an idea,
+              but as something I had to live through.
+            </p>
+
+            <p>
+              What I&apos;m learning: Life moves in cycles. Patterns return
+              until they are met. And real change begins when we stop performing
+              and start relating honestly to ourselves.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Split section — image left, content right */}
-      <section className="w-full bg-black">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-
-          {/* LEFT — full-bleed image with parallax */}
-          <div className="relative h-[280px] md:h-[650px] overflow-hidden">
-            <ParallaxImg src="/self-praced/most.jpg" alt="The Hermitage" strength={10} objectPosition="bottom" />
-            <div className="absolute inset-0 z-10 bg-gradient-to-r from-transparent via-transparent to-[#111111]" />
-          </div>
-
-          {/* RIGHT — text content */}
-          <div className="flex items-center py-[40px] md:py-[120px] px-5 md:px-[40px]">
-            <div className="flex flex-col gap-6" style={{ maxWidth: "500px" }}>
-
-              <FadeIn>
-                <p className="uppercase text-[#888888] text-[12px] tracking-[2px]">
-                  NO LIGHT. NO DISTRACTION. JUST YOU AND THE TRUTH
-                </p>
-              </FadeIn>
-
-              <FadeIn delay={0.15}>
-                <h2
-                  className="font-caslon text-white leading-[110%]"
-                  style={{ fontSize: "clamp(32px, 4vw, 56px)", fontWeight: 400 }}
-                >
-                  From One Cave in Guatemala to a Global Network of Transformation
-                </h2>
-              </FadeIn>
-
-              <FadeIn delay={0.3}>
-                <div className="flex flex-col gap-4 font-inter text-white text-[16px] leading-[150%]">
-                  <p>
-                    Founded by Severin Geser, a former monk and meditation teacher, The Hermitage was never meant to be flashy or commercial. It was designed to disappear, so the seeker could finally face what&apos;s within.
-                  </p>
-                  <p>
-                    In 2025, The Hermitage became something bigger than a place: A global platform for darkness retreat education, facilitator training, and center accreditation, so the sacred work could expand without dilution or compromise.
-                  </p>
-                </div>
-              </FadeIn>
-
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-   
-      {/* Beige heading section with background image */}
-      <section className="relative w-full bg-[url('/about/62.jpg')] bg-cover bg-center bg-no-repeat py-[50px] md:py-[120px]">
-        <div className="relative z-10 max-w-[1340px] mx-auto px-5 md:px-[40px]">
-          <div className="max-w-[868px] mx-auto text-center">
-            <p className="text-[12px] tracking-[0.2em] uppercase text-[#666666] mb-4">
-              Founder. Facilitator. Former Monk.
-            </p>
-            <h2 className="font-caslon text-[clamp(36px,5vw,64px)] leading-[110%] tracking-[-1px] text-black mb-6">
-              Severin Geser Has Lived the<br /> Darkness and Returned <br />with a Map
-            </h2>
-            <p className="font-inter text-[16px] leading-[150%] text-[#333333]">
-              With over 1,000 people guided through darkness, Severin is one of the world&apos;s most <br />trusted facilitators and teachers of this rare modality.
-            </p>
-          </div>
-        </div>
-      </section>
-
-
-   {/* Full-width image section — left-aligned content */}
-      <section className="relative w-full bg-[url('/about/abots.jpg')] bg-cover bg-center bg-no-repeat md:bg-fixed">
-
-        <div className="relative z-10 max-w-[1340px] mx-auto px-5 md:px-[40px] py-[50px] md:py-[140px]">
-          <div className="max-w-[700px] text-left text-white">
-            <p className="font-caslon text-[32px] leading-[120%] text-white mb-4">
-              Born in Switzerland and called to the spiritual path early, Severin spent years in monasteries, silent retreats, and extended periods of darkness, not as an escape, but as a return to what is real.
-            </p>
-            <p className="font-inter text-[18px] leading-[150%] text-white mb-6">
-              His life&apos;s work has been holding space for others at the threshold, guiding more than 1,000 people through darkness retreats and deep initiatory processes across the world.
-            </p>
-            <a
-              href="/self-paced-retreat"
-              className="inline-flex items-center justify-center bg-[#B59328] text-black px-6 py-3 rounded-full text-[14px] font-medium font-inter transition-all duration-300 hover:bg-[#b8955f] hover:scale-[1.03]"
-            >
-              Start the Darkness Prep Course
-            </a>
-          </div>
-        </div>
-      </section>
-
-
-
-
-
-
-      {/* Why We Exist — 2x2 cards section */}
-      <section className="bg-black py-[40px] md:py-[100px]">
-        <div className="max-w-[1100px] mx-auto px-4 md:px-8">
-
-          {/* Top center content */}
-          <div className="text-center mb-10 md:mb-12">
-            <p className="text-[12px] tracking-[2px] uppercase mb-5" style={{ color: "#888" }}>
-              WHY WE EXIST
-            </p>
-            <h2
-              className="font-caslon text-white mb-5"
-              style={{ fontSize: "clamp(28px, 4vw, 48px)", lineHeight: "120%" }}
-            >
-              To Make the Sacred Accessible Without Diluting the Depth
-            </h2>
-            <p className="font-inter text-[16px] leading-[150%] max-w-[560px] mx-auto" style={{ color: "#fff" }}>
-              We believe transformation doesn&apos;t need noise, medicine, or spectacle. It needs stillness, safety, and sacred space.
-            </p>
-          </div>
-
-          {/* 2x2 Cards grid */}
-          <div className="grid md:grid-cols-2 gap-4 md:gap-8">
-
-            {/* Card 1 */}
-            <div className="group bg-[#111] rounded-[16px] overflow-hidden p-5 transition-all duration-300 hover:bg-[#C8A76D] hover:scale-[1.02]">
-              <img src="/about/exit1.png" alt="Sacred Stewardship" className="w-full h-[180px] object-cover rounded-[12px] mb-5" />
-              <p className="text-[12px] mb-3 text-[#aaa] group-hover:text-black/60">01</p>
-              <h3 className="font-caslon text-white text-[32px] leading-[110%] mb-2 group-hover:text-black">Sacred<br /> Stewardship</h3>
-              <p className="font-inter text-[14px] leading-[150%] text-[#aaa] group-hover:text-black/70">We honor the land, the practice, and the journey.</p>
-            </div>
-
-            {/* Card 2 — highlighted (yellow → black on hover) */}
-    
-            <div className="group bg-[#111] rounded-[16px] overflow-hidden p-5 transition-all duration-300 hover:bg-[#C8A76D] hover:scale-[1.02]">
-            <img src="/about/exit2.png"alt="Trauma-Aware Guidance" className="w-full h-[180px] object-cover rounded-[12px] mb-5" />
-              <p className="text-[12px] mb-3 text-[#aaa] group-hover:text-black/60">03</p>
-              <h3 className="font-caslon text-white text-[32px] leading-[110%] mb-2 group-hover:text-black">Inner <br />Authority</h3>
-              <p className="font-inter text-[14px] leading-[150%] text-[#aaa] group-hover:text-black/70">ou are your own source. Our role is to help you hear it.</p>
-            </div>
-
-
-
-            {/* Card 3 */}
-            <div className="group bg-[#111] rounded-[16px] overflow-hidden p-5 transition-all duration-300 hover:bg-[#C8A76D] hover:scale-[1.02]">
-              <img src="/about/exit3.png" alt="Trauma-Aware Guidance" className="w-full h-[180px] object-cover rounded-[12px] mb-5" />
-              <p className="text-[12px] mb-3 text-[#aaa] group-hover:text-black/60">03</p>
-              <h3 className="font-caslon text-white text-[32px] leading-[110%] mb-2 group-hover:text-black">Trauma-Aware<br /> Guidance</h3>
-              <p className="font-inter text-[14px] leading-[150%] text-[#aaa] group-hover:text-black/70">We train facilitators who protect, not project.</p>
-            </div>
-
-            {/* Card 4 */}
-            <div className="group bg-[#111] rounded-[16px] overflow-hidden p-5 transition-all duration-300 hover:bg-[#C8A76D] hover:scale-[1.02]">
-              <img src="/about/exit4.png" alt="No Commercial Spiritual Bypass" className="w-full h-[180px] object-cover rounded-[12px] mb-5" />
-              <p className="text-[12px] mb-3 text-[#aaa] group-hover:text-black/60">04</p>
-              <h3 className="font-caslon text-white text-[32px] leading-[110%] mb-2 group-hover:text-black">No Commercial <br />Spiritual Bypass</h3>
-              <p className="font-inter text-[14px] leading-[150%] text-[#aaa] group-hover:text-black/70">No dogma. No fakery. Just you, in truth, in stillness.</p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* What's Next section */}
-      <section className="bg-black overflow-hidden">
-        <div className="flex flex-col md:flex-row items-stretch">
-
-          {/* LEFT — text content, aligned to 1200px container */}
-          <div
-            className="flex-1 py-[40px] md:py-[80px] flex md:justify-end px-4 md:px-0"
-            style={{ minWidth: 0 }}
-          >
-            <div className="w-full max-w-[600px] md:pr-[60px]">
-              <p className="text-[12px] tracking-[2px] uppercase mb-5" style={{ color: "#888" }}>
-                WHAT&apos;S NEXT
-              </p>
-              <h2
-                className="font-caslon text-white mb-6"
-                style={{ fontSize: "clamp(36px, 5vw, 54px)", lineHeight: "110%" }}
-              >
-                A Darkness Retreat in Every Region. A Trained Guide in Every Circle
-              </h2>
-              <p className="font-inter text-[18px] leading-[150%] mb-8" style={{ color: "#fff" }}>
-                We envision a future where deep inner work is trusted, accessible, and held with integrity, across cultures and continents. That&apos;s why The Hermitage offers more than insight. We offer:
-              </p>
-
-              {/* Features grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-                {[
-                  "A global directory of accredited retreat centers",
-                  "A self-paced video course to prepare with integrity",
-                  "A world-class facilitator training pathway",
-                  "A growing community of seekers, guides, and sacred spaces",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-start gap-3 rounded-[12px] p-4"
-                    style={{ border: "1px solid #2a2a2a" }}
-                  >
-                    <span className="mt-[10px] w-[10px] h-[6px] rounded-[2px] flex-shrink-0" style={{ background: "#C8A76D" }} />
-                    <p className="font-inter text-[15px] leading-[150%] text-white">{item}</p>
-                  </div>
-                ))}
-              </div>
-
-              <a
-                href="/self-paced-retreat"
-                className="inline-flex items-center justify-center font-inter font-medium text-black transition-all duration-300 hover:bg-white"
-                style={{ background: "#C8A76D", padding: "14px 28px", borderRadius: "999px", fontSize: "15px" }}
-              >
-                Start the Prep Course
-              </a>
-            </div>
-          </div>
-
-          {/* RIGHT — full-bleed image, touches right screen edge */}
-          <div className="w-full md:w-[50%] min-h-[280px] md:min-h-0 flex-shrink-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/about/sd.png"
-              alt="What's Next"
-              className="w-full h-full object-cover"
-              style={{ display: "block" }}
-            />
-          </div>
-
-        </div>
-      </section>
-
-      <TimelineSection />
-
-      {/* CTA section — parallax background, center aligned */}
-      <section className="relative w-full overflow-hidden py-[60px] md:py-[120px] px-5">
-        <ParallaxImg src="/astrology/Background.jpg" alt="" strength={10} />
-        <div className="relative z-10 max-w-[760px] mx-auto text-center">
-
-          {/* Label */}
-          <p className="font-inter text-[12px] tracking-[0.22em] uppercase text-[#aaaaaa] mb-6">
-            READY TO HOLD SPACE FOR OTHERS?
-          </p>
-
-          {/* Heading */}
-          <h2
-            className="font-caslon text-white mb-6"
-            style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: "110%", letterSpacing: "-0.02em" }}
-          >
-            Start Your Journey into the Dark and Come Out Transformed
+      <section className="bg-[#C6A86B] px-5 pb-[112px] pt-[104px] text-center text-[#111111] md:pb-[124px] md:pt-[120px]">
+        <div className="mx-auto max-w-[668px]">
+          <h2 className="font-caslon text-[clamp(38px,5vw,56px)] font-normal leading-[1.1] text-[#111111]">
+            My own Path becomes my offering
           </h2>
 
-          {/* Paragraph */}
-          <p
-            className="font-inter mx-auto mb-10"
-            style={{ fontSize: "18px", lineHeight: "165%", color: "#cccccc", maxWidth: "700px" }}
-          >
-            Whether you&apos;re preparing for your own retreat, ready to guide others, or seeking clarity through astrology, Severin offers a path to support your next step.
-          </p>
+          <div className="mt-8 space-y-5 font-inter text-[16px] leading-[1.6] text-[#111111] md:text-[18px]">
+            <p>
+              Today, my work is to help people see the patterns they are living
+              and meet them in the body.
+            </p>
 
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-[30px]">
-            <a
-              href="/self-paced-retreat"
-              className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-white rounded-full transition-all duration-300"
-              style={{ border: "1px solid #666666", padding: "12px 24px" }}
-            >
-              Explore Prep Courses
-            </a>
-            <a
-              href="/service-individual"
-              className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-white rounded-full transition-all duration-300"
-              style={{ border: "1px solid #666666", padding: "12px 24px" }}
-            >
-              Apply for Facilitator Training
-            </a>
-             </div>
-             <br>
-             </br>
-               <br>
-             </br>
-            <a
-              href="/somatic-embodiment"
-              className="w-full sm:w-auto text-center font-inter text-[14px] font-medium text-black rounded-full transition-all duration-300 hover:brightness-110"
-              style={{ background: "#C9A646", padding: "14px 28px" }}
-            >
-              Book Somatic Astrology
-            </a>
-         
+            <p>
+              I use somatic awareness, nervous system regulation and years of
+              pattern recognition to bring clarity to the cycles that are
+              unfolding. Real change begins with safety. Only then can
+              everything be welcomed. Only then can what is there be felt and
+              integrated.
+            </p>
 
+            <p>
+              What I offer is simple. A grounded and steady space where you can
+              be met as you are, reconnect to your body, and stay present with
+              what is real.
+            </p>
+
+            <p>
+              This work is not about fixing or perfection. It is about being
+              fully human. It supports the return to an unshakable inner core,
+              the ability to stay present, grounded, and self-held through
+              change.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="relative w-full overflow-hidden bg-[url('/about/abots.jpg')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/55 to-transparent" />
+
+        <div className="relative z-10 mx-auto flex min-h-[80vh] max-w-[1200px] items-center px-6 py-16 md:min-h-[90vh] lg:px-20">
+          <div className="max-w-[650px] text-left">
+            <p className="font-caslon text-[22px] font-normal uppercase leading-[1.38] text-white md:text-[32px] md:leading-[1.35]">
+              Real change begins when you feel safe enough to stay with
+              yourself. The shift happens when you can remain present, even when
+              it&apos;s uncomfortable.
+            </p>
+
+            <p className="mt-6 font-inter text-[18px]  leading-[1.5] text-white/75 md:text-[16px]">
+              - Severin Geser
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="relative overflow-hidden bg-[#C6A86B] px-4 py-[80px] md:px-5 md:py-[120px]">
+        <div className="absolute inset-0 z-0 bg-[url('/about/13.png')] bg-cover bg-center bg-no-repeat opacity-[0.07]" />
+
+        <div className="relative z-10 mx-auto max-w-[1200px]">
+          {/* Header */}
+          <div className="mb-12 text-center md:mb-20">
+            <p className="font-inter text-[11px] font-medium uppercase tracking-[0.2em] text-[#111111]/50">
+              The Timeline
+            </p>
+            <h2 className="mt-4 font-caslon text-[clamp(34px,5vw,56px)] font-normal leading-[1.1] text-[#111111]">
+              My Journey back to Myself
+            </h2>
+            <div className="mx-auto mt-5 max-w-[560px]">
+              <p className="font-inter text-[15px] leading-[1.75] text-[#111111]/65 md:text-[16px]">
+                This work was not built in a straight line.
+                <br />
+                It unfolded through cycles of building, holding, losing, and
+                returning.
+                <br />
+                Each phase brought its own initiation, shaping how I live and
+                guide today.
+              </p>
+            </div>
+          </div>
+
+          {/* Timeline Body */}
+          <div className="relative">
+            {/* Center vertical line — desktop only */}
+            <div className="absolute bottom-0 left-1/2 top-0 hidden w-[2px] -translate-x-1/2 bg-[#111111]/15 md:block" />
+
+            <div className="flex flex-col gap-[60px] md:gap-[120px]">
+
+              {/* Item 1 — Image left, Text right */}
+              <div className="relative flex flex-col md:flex-row md:items-center">
+                <div className="absolute left-1/2 top-1/2 hidden h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#111111]/35 md:block" />
+                <div className="flex w-full md:w-1/2 md:justify-end md:pr-[60px]">
+                  <img
+                    src="/about/firstcopy.jpg"
+                    alt="Building the Hermitage"
+                    className="w-full rounded-2xl object-cover md:max-w-[450px]"
+                  />
+                </div>
+                <div className="mt-6 w-full md:mt-0 md:w-1/2 md:pl-[60px]">
+                  <p className="font-inter text-[11px] font-medium uppercase tracking-[0.18em] text-[#111111]/45">
+                    2014 – 2016
+                  </p>
+                  <h3 className="mt-3 font-caslon text-[26px] font-normal leading-[1.2] text-[#111111] md:text-[32px]">
+                    Building the Hermitage
+                  </h3>
+                  <p className="mt-3 font-inter text-[15px] leading-[1.75] text-[#111111]/70 md:text-[16px]">
+                    The Hermitage began as a vision to create a space for
+                    silence, retreat, and deep inner work. In these early years,
+                    I was building structure, learning to hold space, and
+                    stepping into responsibility for others.
+                  </p>
+                </div>
+              </div>
+
+              {/* Item 2 — Text left, Image right (image first on mobile via order) */}
+              <div className="relative flex flex-col md:flex-row md:items-center">
+                <div className="absolute left-1/2 top-1/2 hidden h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#111111]/35 md:block" />
+                <div className="order-2 mt-6 w-full md:order-1 md:mt-0 md:flex md:w-1/2 md:justify-end md:pr-[60px]">
+                  <div className="w-full text-left md:max-w-[400px] md:text-right">
+                    <p className="font-inter text-[11px] font-medium uppercase tracking-[0.18em] text-[#111111]/45">
+                      2016 – 2019
+                    </p>
+                    <h3 className="mt-3 font-caslon text-[26px] font-normal leading-[1.2] text-[#111111] md:text-[32px]">
+                      Growth and Depth
+                    </h3>
+                    <p className="mt-3 font-inter text-[15px] leading-[1.75] text-[#111111]/70 md:text-[16px]">
+                      The first dark retreats opened, and the work deepened.
+                      People came from around the world to enter silence and
+                      darkness. At the same time, I became a father, which
+                      brought a new level of responsibility, love, and grounding
+                      into my life.
+                    </p>
+                  </div>
+                </div>
+                <div className="order-1 w-full md:order-2 md:w-1/2 md:pl-[60px]">
+                  <img
+                    src="/about/secondcopy.jpg"
+                    alt="Growth and Depth"
+                    className="w-full rounded-2xl object-cover md:max-w-[450px]"
+                  />
+                </div>
+              </div>
+
+              {/* Item 3 — Image left, Text right */}
+              <div className="relative flex flex-col md:flex-row md:items-center">
+                <div className="absolute left-1/2 top-1/2 hidden h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#111111]/35 md:block" />
+                <div className="flex w-full md:w-1/2 md:justify-end md:pr-[60px]">
+                  <img
+                    src="/about/thirdcopy.jpg"
+                    alt="Holding Space and Losing Myself"
+                    className="w-full rounded-2xl object-cover md:max-w-[450px]"
+                  />
+                </div>
+                <div className="mt-6 w-full md:mt-0 md:w-1/2 md:pl-[60px]">
+                  <p className="font-inter text-[11px] font-medium uppercase tracking-[0.18em] text-[#111111]/45">
+                    2019 – 2025
+                  </p>
+                  <h3 className="mt-3 font-caslon text-[26px] font-normal leading-[1.2] text-[#111111] md:text-[32px]">
+                    Holding Space and Losing Myself
+                  </h3>
+                  <p className="mt-3 font-inter text-[15px] leading-[1.75] text-[#111111]/70 md:text-[16px]">
+                    The work expanded, and I guided hundreds of people through
+                    deep processes of transformation. From the outside, it
+                    looked successful. But internally, I began to feel the cost
+                    of holding everything together. This period brought me into
+                    burnout, disconnection, and the realization that I had built
+                    a life that no longer fully aligned.
+                  </p>
+                </div>
+              </div>
+
+              {/* Item 4 — Text left, Image right (image first on mobile via order) */}
+              <div className="relative flex flex-col md:flex-row md:items-center">
+                <div className="absolute left-1/2 top-1/2 hidden h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#111111]/35 md:block" />
+                <div className="order-2 mt-6 w-full md:order-1 md:mt-0 md:flex md:w-1/2 md:justify-end md:pr-[60px]">
+                  <div className="w-full text-left md:max-w-[400px] md:text-right">
+                    <p className="font-inter text-[11px] font-medium uppercase tracking-[0.18em] text-[#111111]/45">
+                      2025 – Now
+                    </p>
+                    <h3 className="mt-3 font-caslon text-[26px] font-normal leading-[1.2] text-[#111111] md:text-[32px]">
+                      Return and Rebuilding
+                    </h3>
+                    <p className="mt-3 font-inter text-[15px] leading-[1.75] text-[#111111]/70 md:text-[16px]">
+                      Selling The Hermitage marked the end of a chapter and the
+                      beginning of a more honest one. I stepped away from
+                      structure and into a deeper process of integration,
+                      reconnecting with myself, my children, and a new way of
+                      living and working. Today, my work is grounded in this
+                      experience.
+                    </p>
+                  </div>
+                </div>
+                <div className="order-1 w-full md:order-2 md:w-1/2 md:pl-[60px]">
+                  <img
+                    src="/about/fourthcopy.jpg"
+                    alt="Return and Rebuilding"
+                    className="w-full rounded-2xl object-cover md:max-w-[450px]"
+                  />
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </section>
 
