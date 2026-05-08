@@ -28,6 +28,12 @@ export default function Navbar() {
           >
             About
           </Link>
+          <Link
+            href="/darkness-retreat"
+            className="text-white hover:text-white font-inter text-[16px] transition-colors"
+          >
+            Dark Retreat
+          </Link>
           {/* Services dropdown — opens on hover */}
           <div className="group relative">
             <Link
@@ -100,6 +106,13 @@ export default function Navbar() {
             onClick={() => setMobileOpen(false)}
           >
             About
+          </Link>
+          <Link
+            href="/darkness-retreat"
+            className="text-white hover:text-white font-inter text-[14px] transition-colors"
+            onClick={() => setMobileOpen(false)}
+          >
+            Dark Retreat
           </Link>
           {/* Services row — text navigates, arrow toggles dropdown */}
           <div className="flex flex-col">
