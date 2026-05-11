@@ -14,7 +14,7 @@ export default function Navbar() {
 
         {/* Logo icon only */}
         <Link href="/" className="flex items-center">
-           <img src="./logo.svg" alt="Severin Geser" width={180} height={40} />
+           <img src="/logo.svg" alt="Severin Geser" width={180} height={40} />
         </Link>
 
 

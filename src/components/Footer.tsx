@@ -64,7 +64,7 @@ export default function Footer() {
 
         {/* CENTER */}
         <div className="mt-4 md:mt-20 text-center">
-          <img src="./logo.svg" alt="" style={{ margin: "0 auto" }} />
+          <img src="/logo.svg" alt="" style={{ margin: "0 auto" }} />
 
           {/* NAV */}
           <nav className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
