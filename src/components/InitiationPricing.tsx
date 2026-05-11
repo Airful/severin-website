@@ -18,6 +18,7 @@ const cards = [
     subtitle: "For what has already opened",
     highlighted: false,
     buttonText: "Enroll for CHF 147 Now",
+    bookHref: "/book/dark-retreat-preparation",
   },
   {
     price: "225",
@@ -25,6 +26,7 @@ const cards = [
     subtitle: "For longer passages where one session is not enough.",
     highlighted: true,
     buttonText: "Enroll for CHF 147 Now",
+    bookHref: "/book/dark-retreat-preparation",
   },
   {
     price: "225",
@@ -32,6 +34,7 @@ const cards = [
     subtitle: "For professionals & centers Advisory Work",
     highlighted: false,
     buttonText: "Enroll for CHF 147 Now",
+    bookHref: "/contact",
   },
 ];
 
@@ -157,7 +160,7 @@ export default function InitiationPricing() {
 
               {/* Button */}
               <Link
-                href="/contact"
+                href={card.bookHref}
                 className="w-full rounded-full py-3 text-center block"
                 style={{
                   fontFamily: "'Inter Tight', sans-serif",

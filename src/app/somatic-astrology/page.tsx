@@ -17,18 +17,21 @@ const pricingCards = [
     title: "Core Reading",
     description: "Have one Astrology Reading With Me",
     highlighted: false,
+    bookHref: "/book/astrology-core",
   },
   {
     price: "500",
     title: "Going Deeper",
     description: "Get A Package of 4 Sessions With Me",
     highlighted: true,
+    bookHref: "/book/somatic-astrology",
   },
   {
     price: "300",
     title: "Relationship Reading",
     description: "Understand the Chemistry of Your Relationship",
     highlighted: false,
+    bookHref: "/book/somatic-astrology",
   },
 ];
 
@@ -133,7 +136,7 @@ function PricingSection() {
 
                 {/* Button */}
                 <Link
-                  href="/contact"
+                  href={card.bookHref}
                   className="w-full rounded-full transition-opacity hover:opacity-80 text-center block mt-8"
                   style={{
                     fontFamily: "'Inter Tight', sans-serif",
@@ -202,7 +205,7 @@ function CtaBannerSection() {
 
         <FadeIn delay={0.45}>
           <Link
-            href="/contact"
+            href="/book/somatic-astrology"
             className="inline-block bg-[#C8A76D] text-black rounded-full px-8 py-3 mt-6 font-medium hover:opacity-90 transition-opacity"
             style={{ fontFamily: "'Inter Tight', sans-serif", fontSize: "15px" }}
           >
@@ -370,7 +373,7 @@ export default function SomaticAstrologyPage() {
 
             <FadeIn delay={0.4}>
               <Link
-                href="/contact"
+                href="/book/astrology-core"
                 className="inline-block bg-[#C8A76D] text-black font-medium rounded-full hover:opacity-90 transition-opacity w-fit"
                 style={{ fontSize: "15px", padding: "14px 32px" }}
               >
@@ -555,7 +558,7 @@ export default function SomaticAstrologyPage() {
                 </div>
 
                 <Link
-                  href="/contact"
+                  href="/book/astrology-core"
                   className="inline-block mt-8 bg-[#C8A76D] text-black font-medium rounded-full hover:bg-[#b8965c] transition-colors"
                   style={{ fontSize: "14px", padding: "12px 28px" }}
                 >

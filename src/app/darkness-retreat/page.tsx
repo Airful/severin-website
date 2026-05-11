@@ -379,12 +379,26 @@ export default function DarknessRetreatPage() {
 
               <FadeIn delay={0.6}>
                 <div className="mt-6">
-                  <Link
-                    href="/initiation-integration"
-                    className="bg-[#C8A46A] text-black font-inter font-medium text-[15px] rounded-full px-6 py-3 hover:opacity-90 transition-opacity cursor-pointer inline-block"
-                  >
-                    Work with me for Preparation & Integration
-                  </Link>
+                  <div className="flex flex-wrap gap-3">
+                    <Link
+                      href="/book/dark-retreat-consultation"
+                      className="bg-[#C8A46A] text-black font-inter font-medium text-[15px] rounded-full px-6 py-3 hover:opacity-90 transition-opacity cursor-pointer inline-block"
+                    >
+                      Book a Dark Retreat Consultation
+                    </Link>
+                    <Link
+                      href="/book/dark-retreat-preparation"
+                      className="border border-[#C8A46A] text-[#C8A46A] font-inter font-medium text-[15px] rounded-full px-6 py-3 hover:bg-[#C8A46A]/10 transition-colors cursor-pointer inline-block"
+                    >
+                      Preparation & Integration
+                    </Link>
+                    <Link
+                      href="/book/soul-coaching"
+                      className="border border-[#C8A46A] text-[#C8A46A] font-inter font-medium text-[15px] rounded-full px-6 py-3 hover:bg-[#C8A46A]/10 transition-colors cursor-pointer inline-block"
+                    >
+                      Soul Coaching (during retreat)
+                    </Link>
+                  </div>
                 </div>
               </FadeIn>
             </div>

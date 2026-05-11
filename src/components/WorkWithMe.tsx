@@ -83,7 +83,7 @@ export default function WorkWithMe() {
               {/* Button — desktop */}
               <motion.div {...fadeUp(0.3)} className="hidden lg:block mt-8">
                 <Link
-                  href="#services"
+                  href="/book/exploration-call"
                   className="inline-flex min-h-[54px] items-center justify-center rounded-full bg-[#C8A76D] px-7 font-inter text-[15px] font-medium text-black transition-colors duration-300 hover:bg-[#b8962d]"
                 >
                   Schedule a Call
@@ -94,7 +94,7 @@ export default function WorkWithMe() {
             {/* Button — mobile only */}
             <div className="lg:hidden bg-[#111111] px-8 sm:px-12 pb-10 pt-2 flex justify-center">
               <Link
-                href="#services"
+                href="/book/exploration-call"
                 className="inline-flex min-h-[54px] items-center justify-center rounded-full bg-[#C8A76D] px-7 font-inter text-[15px] font-medium text-black transition-colors duration-300 hover:bg-[#b8962d]"
               >
                 Schedule a Call

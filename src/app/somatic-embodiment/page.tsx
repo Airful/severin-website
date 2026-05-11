@@ -160,7 +160,7 @@ function PricingSection() {
 <br></br>
                 {/* Button */}
                 <Link
-                  href="/contact"
+                  href="/book/somatic-embodiment"
                   className="w-full rounded-full transition-opacity hover:opacity-80 text-center block"
                   style={{
                     fontFamily: "'Inter Tight', sans-serif",
@@ -265,7 +265,7 @@ function CtaBannerSection() {
 
         <FadeIn delay={0.45}>
           <Link
-            href="/contact"
+            href="/book/somatic-embodiment"
             className="inline-block transition-opacity hover:opacity-85"
             style={{
               fontFamily: "'Inter Tight', sans-serif",
@@ -451,7 +451,7 @@ export default function SomaticAstrologyPage() {
 
             <FadeIn delay={0.55}>
               <Link
-                href="/contact"
+                href="/book/somatic-embodiment"
                 className="inline-block bg-[#C6A15B] text-black px-7 py-3 rounded-full font-medium hover:opacity-90 transition-opacity w-fit"
               >
                 Begin Your Journey with Severin
@@ -634,7 +634,7 @@ export default function SomaticAstrologyPage() {
               </div>
 
               <Link
-                href="/contact"
+                href="/book/somatic-embodiment"
                 className="inline-block mt-5 md:mt-8 bg-[#C8A76D] text-black font-medium rounded-full hover:bg-[#b8965c] transition-colors"
                 style={{ fontSize: "14px", padding: "12px 24px" }}
               >

@@ -67,7 +67,7 @@ export default function ServicesHero() {
           </Link>
 
           <Link
-            href="/contact"
+            href="/book/exploration-call"
             className="font-inter text-white rounded-full transition-all duration-300 hover:border-white"
             style={{
               fontSize: "15px",

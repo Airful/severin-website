@@ -51,7 +51,7 @@ export default function InitiationCTA() {
 
         <motion.div {...fadeUp(0.6)}>
           <Link
-            href="/contact"
+            href="/book/dark-retreat-preparation"
             className="inline-block bg-[#C8A76D] text-black px-8 py-3 rounded-full font-inter font-medium text-[15px] transition-all duration-300 hover:scale-[1.03]"
           >
             Begin Your Journey with Severin

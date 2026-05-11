@@ -135,7 +135,7 @@ export default function InitiationRole() {
 
           <FadeIn delay={0.3}>
             <a
-              href="/contact"
+              href="/book/dark-retreat-preparation"
               className="mt-6 inline-block px-6 py-3 rounded-full bg-[#C8A76D] text-black font-inter font-medium text-[15px]
                          transition-all duration-300 hover:scale-[1.04]"
             >

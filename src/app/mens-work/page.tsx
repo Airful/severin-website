@@ -66,7 +66,7 @@ export default function MensWorkPage() {
               </p>
 
               <Link
-                href="/contact"
+                href="/book/mens-session"
                 className="inline-block mt-5 md:mt-8 px-8 py-3 md:py-4 bg-[#C8A76D] text-black font-medium text-sm rounded-full hover:bg-[#b8965c] transition-colors"
               >
                 Learn More
@@ -237,7 +237,7 @@ export default function MensWorkPage() {
                 </div>
 
                 <Link
-                  href="/contact"
+                  href="/book/mens-session"
                   className="inline-block mt-5 md:mt-8 bg-[#C8A76D] text-black font-medium rounded-full hover:bg-[#b8965c] transition-colors"
                   style={{ fontSize: "14px", padding: "12px 24px" }}
                 >
@@ -314,7 +314,7 @@ export default function MensWorkPage() {
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/book/mens-session"
                   className="inline-block text-center mt-8 bg-[#C8A76D] text-black font-medium rounded-full hover:bg-[#b8965c] transition-colors"
                   style={{ fontSize: "14px", padding: "12px 24px" }}
                 >
@@ -342,7 +342,7 @@ export default function MensWorkPage() {
                   </p>
                 </div>
                 <Link
-                  href="/contact"
+                  href="/book/mens-session"
                   className="inline-block text-center mt-8 bg-black text-white font-medium rounded-full hover:bg-black/80 transition-colors"
                   style={{ fontSize: "14px", padding: "12px 24px" }}
                 >
@@ -475,7 +475,7 @@ export default function MensWorkPage() {
               </p>
 
               <Link
-                href="/contact"
+                href="/book/mens-session"
                 className="inline-block bg-[#C8A76D] text-black font-medium rounded-full hover:bg-[#b8965c] transition-colors"
                 style={{ fontSize: "14px", padding: "12px 28px" }}
               >

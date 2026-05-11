@@ -53,7 +53,7 @@ export default function MensWorkHero() {
           {/* CTA */}
           <FadeIn delay={0.45}>
             <a
-              href="/contact"
+              href="/book/mens-session"
               className="inline-block mt-8 px-8 py-4 rounded-full text-black font-medium text-[14px] tracking-wide transition-all duration-300 hover:scale-[1.02]"
               style={{
                 backgroundColor: "#C7A97A",
