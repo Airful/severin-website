@@ -13,13 +13,13 @@ export const metadata = {
 
 const pricingCards = [
   {
-    price: "200",
+    price: "150",
     title: "Core Reading",
     description: "Have one Astrology Reading With Me",
     highlighted: false,
   },
   {
-    price: "550",
+    price: "500",
     title: "Going Deeper",
     description: "Get A Package of 4 Sessions With Me",
     highlighted: true,

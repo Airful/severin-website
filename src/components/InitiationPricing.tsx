@@ -13,21 +13,21 @@ const fadeUp = (delay: number) => ({
 
 const cards = [
   {
-    price: "250",
+    price: "225",
     title: "Preparation & Integration",
     subtitle: "For what has already opened",
     highlighted: false,
     buttonText: "Enroll for CHF 147 Now",
   },
   {
-    price: "250",
+    price: "225",
     title: "Ongoing Session",
     subtitle: "For longer passages where one session is not enough.",
     highlighted: true,
     buttonText: "Enroll for CHF 147 Now",
   },
   {
-    price: "250",
+    price: "225",
     title: "Advisory Retreat Centers",
     subtitle: "For professionals & centers Advisory Work",
     highlighted: false,

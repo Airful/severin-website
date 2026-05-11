@@ -303,7 +303,7 @@ export default function MensWorkPage() {
                     className="text-white"
                     style={{ ...serif, fontSize: "48px", lineHeight: "1", fontWeight: 800 }}
                   >
-                    $200 <span style={{ fontSize: "18px", opacity: 0.5 }}>/ USD</span>
+                    150 <span style={{ fontSize: "18px", opacity: 0.5 }}>CHF</span>
                   </p>
                   <br></br>        <br></br>
                   <p className="text-white mt-6" style={{ fontSize: "22px", fontWeight: 600 }}>
@@ -331,7 +331,7 @@ export default function MensWorkPage() {
                     className="text-black"
                     style={{ ...serif, fontSize: "48px", lineHeight: "1", fontWeight: 800 }}
                   >
-                    $200 <span style={{ fontSize: "18px", opacity: 0.6 }}>/ USD</span>
+                    150 <span style={{ fontSize: "18px", opacity: 0.6 }}>CHF</span>
                   </p>
                          <br></br>
                   <p className="text-black mt-6" style={{ fontSize: "22px", fontWeight: 600 }}>
