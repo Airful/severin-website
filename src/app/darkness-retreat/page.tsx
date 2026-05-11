@@ -140,6 +140,7 @@ export default function DarknessRetreatPage() {
 
       {/* ── Hero text ── */}
       <section
+        hidden
         style={{
           background: "rgb(108 90 59)",
           borderTop: "1px solid rgba(200, 167, 109, 0.15)",
@@ -297,8 +298,8 @@ export default function DarknessRetreatPage() {
         </div>
       </section>
 
-      {sections.slice(0, 2).map((section) => (
-        <div key={section.heading} className="pt-[70px] bg-black">
+      {sections.slice(0, 2).map((section, index) => (
+        <div key={section.heading} className={`${index === 0 ? "pt-0" : "pt-[70px]"} bg-black`}>
           <AlternatingBlock {...section} />
         </div>
       ))}
